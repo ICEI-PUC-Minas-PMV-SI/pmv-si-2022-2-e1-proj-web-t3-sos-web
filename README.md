@@ -6,13 +6,13 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cadastrar dados com relação a integridade e a veracidade dos endereços virtuais (url).
 
 ## Integrantes
 
 * Marco Túlio Denucci Di Spirito
 * Rafael Augusto Barroso Oliveira
-* Nome completo do aluno 3
+* Marcos Sabino Mendes de Sousa
 * Nome completo do aluno 4
 * Nome completo do aluno 5
 
