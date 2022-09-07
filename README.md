@@ -13,7 +13,7 @@ Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cad
 * Marco Túlio Denucci Di Spirito
 * Rafael Augusto Barroso Oliveira
 * Marcos Sabino Mendes de Sousa
-* Nome completo do aluno 4
+* Hugo Almeida Couto
 * Nome completo do aluno 5
 
 ## Orientador
