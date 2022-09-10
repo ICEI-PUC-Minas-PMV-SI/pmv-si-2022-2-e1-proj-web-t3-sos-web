@@ -6,7 +6,7 @@
 
 `SEMESTRE: 1º`
 
-Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cadastrar dados com relação a integridade e a veracidade dos endereços virtuais (url).
+Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cadastrar dados relacionados a integridade e a veracidade de endereços virtuais (url's) disponíveis na web.
 
 ## Integrantes
 
@@ -18,7 +18,7 @@ Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cad
 
 ## Orientador
 
-* Nome completo do professor 1
+* Luciana de Nardin
 
 # Planejamento
 
