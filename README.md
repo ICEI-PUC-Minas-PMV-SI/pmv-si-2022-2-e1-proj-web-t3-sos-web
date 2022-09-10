@@ -14,7 +14,7 @@ Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cad
 * Rafael Augusto Barroso Oliveira
 * Marcos Sabino Mendes de Sousa
 * Hugo Almeida Couto
-* Nome completo do aluno 5
+* Michael Henrique Ferreira Dias
 
 ## Orientador
 
