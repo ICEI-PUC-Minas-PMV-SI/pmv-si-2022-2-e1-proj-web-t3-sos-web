@@ -4,7 +4,7 @@ Os ataques cibernéticos estão cada vez mais presentes em nosso contexto pós-p
 
 ## Problema
 Ao longo de 2020, foram realizadas 194 milhões de compras online no Brasil que movimentaram R$ 87,4 bilhões, de acordo com a consultoria Ebit | Nielsen. O valor representa um crescimento de 41% em relação ao ano anterior, quando não havia na pandemia.
-Os golpes digitais cresceram mais rápido que as vendas online. A equipe de inteligência de ameças da Tempest identificou quase 7 mil perfis falsos em redes sociais que podem ter sido usados para aplicar golpes como atendente impostor ou phishing. No mesmo período de 2019, antes da crise sanitária, a empresa de cibersegurança tinha identificado apenas 23 perfis. 
+Os golpes digitais cresceram mais rápido que as vendas online. A equipe de inteligência de ameças da Tempest identificou quase 7 mil perfis falsos em redes sociais que podem ter sido usados para aplicar golpes como atendente impostor ou phishing. No mesmo período de 2019, antes da crise sanitária, a empresa de cibersegurança tinha identificado apenas 23 perfis(1). 
 O que visamos solucionar se refere à exposição do usuário virtual aos endereços não confiáveis que podem lesar tanto compradores quanto vendedores. Um exemplo é o famoso "phishing", no qual consiste em o usuário passar os seus dados pessoais para uma plataforma não confiável (na qual ele não pode autenticar sua veracidade). Isso pode ser feito em um site parecido com outro que ele conhece e não percebe que na verdade está sendo redirecionado para um site falso.
 
 ## Objetivos
@@ -20,7 +20,11 @@ Esse projeto é desenvolvido por entender que é necessário um mecanismo que po
 Visamos ajudar todos os usuários que procuram fazer acesso a meios de compra e venda online de maneira mais segura e que querem promover um meio virtual confiável.
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
-## Bibliografia
 
-https://www.tecmundo.com.br/seguranca/222665-golpe-atendente-impostor-cresce-aumento-vendas-online.htm
+## Referências bibliográficas
+
+[1] Golpe do atendente impostor, disponível em https://www.tecmundo.com.br/seguranca/222665-golpe-atendente-impostor-cresce-aumento-vendas-online.htm
+
+** Links úteis **:
+
 https://fdr.com.br/2021/11/20/lista-de-sites-falsos-pra-voce-evitar-comprar-durante-black-friday/
