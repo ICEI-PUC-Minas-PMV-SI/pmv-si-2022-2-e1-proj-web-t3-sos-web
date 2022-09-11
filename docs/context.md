@@ -25,6 +25,6 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 
 [1] Golpe do atendente impostor, disponível em https://www.tecmundo.com.br/seguranca/222665-golpe-atendente-impostor-cresce-aumento-vendas-online.htm
 
-** Links úteis **:
+Links úteis:
 
 https://fdr.com.br/2021/11/20/lista-de-sites-falsos-pra-voce-evitar-comprar-durante-black-friday/
