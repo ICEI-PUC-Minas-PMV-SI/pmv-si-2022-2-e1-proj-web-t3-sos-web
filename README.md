@@ -15,6 +15,7 @@ Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cad
 * Marcos Sabino Mendes de Sousa
 * Hugo Almeida Couto
 * Michael Henrique Ferreira Dias
+* Lucas Soares Gomes
 
 ## Orientador
 
