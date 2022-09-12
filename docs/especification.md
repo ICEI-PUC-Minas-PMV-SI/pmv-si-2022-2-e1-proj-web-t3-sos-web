@@ -6,18 +6,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-`PERSONA 1: ` texto aqui.
+**PERSONA 1:** texto aqui.
 
----
-`PERSONA 2: ` texto aqui.
+**PERSONA 2:** texto aqui.
 
----
-`PERSONA 3: ` texto aqui.
+**PERSONA 3:** texto aqui.
 
----
-`PERSONA 4: ` texto aqui.
-
----
+**PERSONA 4:** texto aqui.
 
 ## Histórias de Usuários
 
