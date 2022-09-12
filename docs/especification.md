@@ -29,7 +29,7 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 **HISTÓRIA 2:**
 
-**HISTÓRIA 3:**
+**HISTÓRIA 3:** Eu, Lucas Henrique, sou técnico de PCM de uma empresa farmacêutica. Sou responsável por realizar compras de ferramentas e componentes de manutenção. Sempre procuro por produtos com custo x benefício e em fornecedores confiáveis. Necessito de alguma aplicação onde me mostre a veracidade dos fornecedores, assim realizando compras seguras.
 
 **HISTÓRIA 4:** Eu, Andrea, uso a internet constantemente, embora não faça compras online com frequência. Gostaria de saber quando uma oferta seria confiável e se o link é de fato seguro. Isso poderia me prevenir de estar acessando um site que apenas quer pegar os meus dados e o meu dinheiro, sem ao menos me entregarem o produto esperado.
 
