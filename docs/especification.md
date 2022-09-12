@@ -6,7 +6,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-**PERSONA 1:** texto aqui.
+**PERSONA 1:** Wander tem 69 anos, é administrador e recebeu um e-mail do que parecia ser a sua fatura de TV a cabo. Ao abrir o e-mail, deparou-se com um boleto contendo seus dados todos corretos e então pagou a fatura. Posteriormente descobriu que aquele e-mail enviado não era de sua operadora de TV a cabo e ele pagou um boleto falso.
 
 **PERSONA 2:** texto aqui.
 
