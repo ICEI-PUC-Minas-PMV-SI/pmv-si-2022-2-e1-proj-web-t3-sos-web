@@ -8,7 +8,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 **PERSONA 1:** Wander tem 69 anos, é administrador e recebeu um e-mail do que parecia ser a sua fatura de TV a cabo. Ao abrir o e-mail, deparou-se com um boleto contendo seus dados todos corretos e então pagou a fatura. Posteriormente descobriu que aquele e-mail enviado não era de sua operadora de TV a cabo e ele pagou um boleto falso.
 
-**PERSONA 2:** texto aqui.
+**PERSONA 2:** Ana Lúcia tem 38 anos, é uma fisioterapeuta que está em busca de comprar móveis para nova clínica, e está em busca de produtos acessíveis, porém nunca realizou compras online. Ao consultar em seu smartphone, se depara com uma imensa variedade de produtos, entretanto, possui um pé atrás sobre a segurança de seus dados.
 
 **PERSONA 3:** texto aqui.
 
