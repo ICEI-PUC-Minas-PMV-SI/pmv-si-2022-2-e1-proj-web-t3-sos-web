@@ -5,20 +5,19 @@ Os ataques cibernéticos estão cada vez mais presentes em nosso contexto pós-p
 ## Problema
 Ao longo de 2020, foram realizadas 194 milhões de compras online no Brasil que movimentaram R$ 87,4 bilhões, de acordo com a consultoria Ebit | Nielsen. O valor representa um crescimento de 41% em relação ao ano anterior, quando não havia na pandemia.
 Os golpes digitais cresceram mais rápido que as vendas online. A equipe de inteligência de ameças da Tempest identificou quase 7 mil perfis falsos em redes sociais que podem ter sido usados para aplicar golpes como atendente impostor ou phishing. No mesmo período de 2019, antes da crise sanitária, a empresa de cibersegurança tinha identificado apenas 23 perfis(1). 
-O que visamos solucionar se refere à exposição do usuário virtual aos endereços não confiáveis que podem lesar tanto compradores quanto vendedores. Um exemplo é o famoso "phishing", no qual consiste em o usuário passar os seus dados pessoais para uma plataforma não confiável (na qual ele não pode autenticar sua veracidade). Isso pode ser feito em um site parecido com outro que ele conhece e não percebe que na verdade está sendo redirecionado para um site falso.
+Por esses e outros motivos, visamos solucionar questões de segurança que dizem respeito à exposição das pessoas a endereços não confiáveis na web. Esses endereços podem lesar tanto compradores quanto vendedores, tanto é que temos o exemplo do "phishing", no qual consiste em um usuário passar os seus dados pessoais para uma plataforma não confiável (na qual ele não pode autenticar sua veracidade) e assim fisgarem pessoas para caírem nos seus golpes.
 
 ## Objetivos
 
-Um dos objetivos é criar uma plataforma com a qual o usuário possa consultar e cadastrar dados com relação a integridade e a veracidade dos endereços virtuais (url). O projeto também tem como objetivo originar um hábito de consulta para os usuários e consequentemente, gerar um ambiente virtual mais seguro para aqueles que o frequentam.
+Tendo em vista o contexto citado, temos como objetivo criar uma plataforma em que o usuário possa consultar e cadastrar dados sobre a integridade e a veracidade dos endereços virtuais. Uma lista de endereços irá aparecer mostrando quais são de certa forma, inseguros. O projeto também tem como objetivo originar um hábito de consulta para os usuários e consequentemente, gerando um ambiente virtual mais seguro para aqueles que o frequentam.
 
 ## Justificativa
 
-Esse projeto é desenvolvido por entender que é necessário um mecanismo que possa validar a confiabilidade do ambiente de que se tem suspeita, transparecendo assim a veracidade do endereço de url para aqueles que pretendem utilizar os meios de compra e venda online, tendo como base os princípios éticos e morais dos usuários.
+Esse projeto é desenvolvido por entender que é necessário um mecanismo que possa validar a confiabilidade do ambiente em que há suspeita, transparecendo assim a veracidade do endereço de url para aqueles que pretendem utilizar os meios de compra e venda online, tendo como base os princípios éticos e morais da comunidade de usuários da plataforma.
 
 ## Público-Alvo
 
-Visamos ajudar todos os usuários que procuram fazer acesso a meios de compra e venda online de maneira mais segura e que querem promover um meio virtual confiável.
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Visamos ajudar todos os usuários que procuram fazer acesso aos meios de compra e venda online de maneira mais segura e que querem promover um meio virtual confiável. Os vendedores por exemplo, podem ter a garantia que não estarão listados na plataforma e assim terem uma maior credibilidade. Agências de segurança podem mapear melhor os sites que tem conduta maliciosa. Os compradores, é claro, são os que mais se beneficiam. Eles irão poder pesquisar se o link em que clicaram possui histórico de fraudes ou golpes. Isso poderá melhorar a experiência dessas pessoas com as compras online, ajudando cada vez mais a terem a disponibilidade e a facilidade de adquirirem produtos e serviços pela internet, como o Cláudio de 47 anos, que embora esteja bem atenado nas redes sociais, não teve confiança suficiente para fazer o pedido de sua televisão almejada pela web.
 
 
 ## Referências bibliográficas
