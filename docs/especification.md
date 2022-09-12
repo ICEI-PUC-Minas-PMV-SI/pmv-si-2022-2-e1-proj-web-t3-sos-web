@@ -12,7 +12,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 **PERSONA 3:** Mateus Ferreira Ribeiro, 31 anos, solteiro, pequeno empresário, graduado em administração. Montou sua loja virtual de venda de eletrônicos, adquiriu um pequeno estoque e cadastrou seu perfil como vendedor no mercado livre e shopee. Futuramente almeja entrar no marketplace das grandes lojas.  Seu objetivo é virar um grande empresário e expandir seus negócios para lojas físicas. Seu desafio é ter ganho de credibilidade e confiança nas redes. Tem medo de usuários fakes e uma das suas vontade é ter uma ferramenta disponível para prevenção de golpes virtuais, tanto para ele quanto para seus clientes. 
 
-**PERSONA 4:** texto aqui.
+**PERSONA 4:** Andrea Nunes, 27 anos, formada em Pedagogia, porém trabalha como recepcionista em uma clínica de odontologia. Encontrou uma oferta pela internet com preço baixíssimo e imperdível. Ao abrir o link, ela foi redirecionada para um site muito similar a uma das grandes empresas de compra e venda. Após isso, colocou os seus dados e finalizou a compra usando seu cartão de crédito. Seu produto no entanto, nunca chegou. Ela constatou que tinha caído em um golpe. O site possuía o link e a interface quase que idênticos ao site original, diferenciando apenas por uma letra a mais na url. Ao falar com as autoridades, disseram que seria muito difícil localizar os estelionatários uma vez que o site estava fora do ar. O banco não ressarciu seu dinheiro.
 
 ## Histórias de Usuários
 
