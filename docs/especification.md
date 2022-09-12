@@ -31,7 +31,7 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 **HISTÓRIA 3:**
 
-**HISTÓRIA 4:**
+**HISTÓRIA 4:** Eu, Andrea, uso a internet constantemente, embora não faça compras online com frequência. Gostaria de saber quando uma oferta seria confiável e se o link é de fato seguro. Isso poderia me prevenir de estar acessando um site que apenas quer pegar os meus dados e o meu dinheiro, sem ao menos me entregarem o produto esperado.
 
 > **Links Úteis**:
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
