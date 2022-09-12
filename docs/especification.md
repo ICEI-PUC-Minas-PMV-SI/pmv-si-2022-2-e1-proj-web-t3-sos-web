@@ -14,7 +14,6 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 **PERSONA 4:** Andrea Nunes, 27 anos, formada em Pedagogia, porém trabalha como recepcionista em uma clínica de odontologia. Encontrou uma oferta pela internet com preço baixíssimo e imperdível. Ao abrir o link, ela foi redirecionada para um site muito similar a uma das grandes empresas de compra e venda. Após isso, colocou os seus dados e finalizou a compra usando seu cartão de crédito. Seu produto no entanto, nunca chegou. Ela constatou que tinha caído em um golpe. O site possuía o link e a interface quase que idênticos ao site original, diferenciando apenas por uma letra a mais na url. Ao falar com as autoridades, disseram que seria muito difícil localizar os estelionatários uma vez que o site estava fora do ar. O banco não ressarciu seu dinheiro.
 
-**PERSONA 5:** Lucas Henrique, tem 26 anos, formado em técnico de eletromecânica e atualmente cursa engenharia de sistemas, trabalha como técnico de PCM em uma empresa farmacêutica referência no Brasil. Ele esta à procura de ferramentas de manutenção. Ao pesquisar, encontrou um conjunto de ferramentas de uma marca internacional em um site brasileiro, mas com um valor bem elevado. Pesquisando pelo mesmo produto em outros sites, encontrou o mesmo em um site estrangeiro para importação com opção de frete para o Brasil. Porém ele tem receio de realizar importações, pois já foi vítima de golpe, onde comprou um produto de uso pessoal e não recebeu, outra vez ele recebeu um produto de marca paralela. Hoje ele tem certo receio de realizar importações através de sites na internet.
 
 ## Histórias de Usuários
 
@@ -24,7 +23,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Wander              | Verificar veracidade de e-mails    |Para assim poder pagar boletos verdadeiros|
+|Wander              |     ||
+|Ana Lúcia           |     ||
+|Mat eus Ferreira    |     ||
+|Andrea Nunes        |     ||
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
