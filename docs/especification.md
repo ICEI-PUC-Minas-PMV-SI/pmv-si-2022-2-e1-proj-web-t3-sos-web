@@ -49,8 +49,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
+|RF-001| Permitir que o usuário registre sites suspeitos| ALTA |  |
+|RF-002| Exibir sites com mais números de denúncias| MÉDIA | |
+|RF-003| Ferramenta onde o usuário possa realizar busca específica por site| ALTA | |
 
 
 ### Requisitos não Funcionais
