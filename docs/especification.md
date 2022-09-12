@@ -10,7 +10,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 **PERSONA 2:** Ana Lúcia tem 38 anos, é uma fisioterapeuta que está em busca de comprar móveis para nova clínica, e está em busca de produtos acessíveis, porém nunca realizou compras online. Ao consultar em seu smartphone, se depara com uma imensa variedade de produtos, entretanto, possui um pé atrás sobre a segurança de seus dados.
 
-**PERSONA 3:** texto aqui.
+**PERSONA 3:** Mateus Ferreira Ribeiro, 31 anos, solteiro, pequeno empresário, graduado em administração. Montou sua loja virtual de venda de eletrônicos, adquiriu um pequeno estoque e cadastrou seu perfil como vendedor no mercado livre e shopee. Futuramente almeja entrar no marketplace das grandes lojas.  Seu objetivo é virar um grande empresário e expandir seus negócios para lojas físicas. Seu desafio é ter ganho de credibilidade e confiança nas redes. Tem medo de usuários fakes e uma das suas vontade é ter uma ferramenta disponível para prevenção de golpes virtuais, tanto para ele quanto para seus clientes. 
 
 **PERSONA 4:** texto aqui.
 
@@ -24,6 +24,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+
+**HISTÓRIA 1:**
+
+**HISTÓRIA 2:**
+
+**HISTÓRIA 3:**
+
+**HISTÓRIA 4:**
 
 > **Links Úteis**:
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
