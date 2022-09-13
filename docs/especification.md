@@ -7,7 +7,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ## Personas
 | Wander               |                              |                 |
 |----------------------|------------------------------|--------------------------------|
-|![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Wander.jpg)|**Idade:** 69 anos - **Ocupação:** Administrador.|**Aplicativos:** Whatsapp, Facebook e Gmail|**Motivações:**  Wander possui a necessidade de realizar seus pagamentos de maneira mais prática.|**Frustações:** Baseiam-se na falta de confibialidade e de segurança em relação aos e-mails recebidos.|**Hobbies:** Ler, conversar com a família e caminhar.|
+|![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Wander.jpg)|**Idade:** 69 anos - **Ocupação:** Administrador.|**Aplicativos:** Whatsapp, Facebook e Gmail.
+|**Motivações:**  Wander possui a necessidade de realizar seus pagamentos de maneira mais prática.|**Frustações:** Baseiam-se na falta de confibialidade e de segurança em relação aos e-mails recebidos.|**Hobbies:** Ler, conversar com a família e caminhar.|
 | Ana Lucia               |                           |                 |
 |-------------------------|---------------------------|--------------------------------|
 **PERSONA 1:** Wander tem 69 anos, é administrador e recebeu um e-mail do que parecia ser a sua fatura de TV a cabo. Ao abrir o e-mail, deparou-se com um boleto contendo seus dados todos corretos e então pagou a fatura. Posteriormente descobriu que aquele e-mail enviado não era de sua operadora de TV a cabo e ele pagou um boleto falso.
