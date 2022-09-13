@@ -9,7 +9,7 @@ Por esses e outros motivos, visamos solucionar questões de segurança que dizem
 
 ## Objetivos
 
-Tendo em vista o contexto citado, temos como objetivo criar uma plataforma em que o usuário possa consultar e cadastrar dados sobre a integridade e a veracidade dos endereços virtuais. Uma lista de endereços irá aparecer mostrando quais são de certa forma, inseguros. O projeto também tem como objetivo originar um hábito de consulta para os usuários e consequentemente, gerando um ambiente virtual mais seguro para aqueles que o frequentam.
+Tendo em vista o contexto citado, temos como objetivo criar uma aplicação em que o usuário possa consultar e cadastrar dados sobre a integridade e a veracidade dos endereços virtuais. Uma lista de endereços irá aparecer mostrando quais são de certa forma, inseguros. O projeto também tem como objetivo originar um hábito de consulta para os usuários e consequentemente, gerando um ambiente virtual mais seguro para aqueles que o acessam.
 
 ## Justificativa
 
