@@ -15,9 +15,9 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 | Mateus             |                                 |                       |
 |![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Mateus.jpg)|**Idade:** 31 anos - **Ocupação:** Pequeno Empresário.|**Aplicativos:** Whatsapp, Facebook, Insagram e Twitter.
 |**Motivações:** Mateus Montou sua loja virtual de venda de eletrônicos, adquiriu um pequeno estoque e cadastrou seu perfil como vendedor no mercado livre e shopee. Futuramente almeja entrar no marketplace das grandes lojas.  Seu objetivo é virar um grande empresário e expandir seus negócios para lojas físicas..|**Frustações:**  Seu desafio é ter ganho de credibilidade e confiança nas redes. Tem medo de usuários fakes e uma das suas vontade é ter uma ferramenta disponível para prevenção de golpes virtuais, tanto para ele quanto para seus clientes. |**Hobbies:** Jogar Video-game, sair com os amigos, e festejar.|
-
-**PERSONA 4:** Andrea Nunes, 27 anos, formada em Pedagogia, porém trabalha como recepcionista em uma clínica de odontologia. Encontrou uma oferta pela internet com preço baixíssimo e imperdível. Ao abrir o link, ela foi redirecionada para um site muito similar a uma das grandes empresas de compra e venda. Após isso, colocou os seus dados e finalizou a compra usando seu cartão de crédito. Seu produto no entanto, nunca chegou. Ela constatou que tinha caído em um golpe. O site possuía o link e a interface quase que idênticos ao site original, diferenciando apenas por uma letra a mais na url. Ao falar com as autoridades, disseram que seria muito difícil localizar os estelionatários uma vez que o site estava fora do ar. O banco não ressarciu seu dinheiro.
-
+| Andrea Nunes       |                                 |                       |
+|![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/AndreaNunes.jpg)|**Idade:** 27 anos - **Ocupação:** Pedagoga.|**Aplicativos:** Whatsapp, Insagram e Pinterest.
+|**Motivações:** Andrea busca trazer comodidade e praticidade ao seu dia-a-dia, e recentemente começou a cogitar a realização de compras online.|**Frustações:** Ela gostaria de saber quando uma oferta seria confiável e se o link é de fato seguro. Isso poderia me prevenir de estar acessando um site que apenas quer pegar os meus dados e o meu dinheiro, sem ao menos me entregarem o produto esperado. |**Hobbies:** Viajar, ver filmes e ouvir música.|
 
 ## Histórias de Usuários
 
