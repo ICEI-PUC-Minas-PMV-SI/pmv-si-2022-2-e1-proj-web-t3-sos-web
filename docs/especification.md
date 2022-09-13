@@ -8,6 +8,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 | Wander               |                              |                 |
 |----------------------|------------------------------|--------------------------------|
 |![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Wander.jpg)|**Idade:** 69 anos - **Ocupação:** Administrador.|**Motivações:**  Wander possui a necessidade de realizar seus pagamentos de maneira mais prática.|**Frustações:** Baseiam-se na falta de confibialidade e de segurança em relação aos e-mails recebidos.|**Hobbies:** Ler, conversar com a família e caminhar.|
+
 **PERSONA 1:** Wander tem 69 anos, é administrador e recebeu um e-mail do que parecia ser a sua fatura de TV a cabo. Ao abrir o e-mail, deparou-se com um boleto contendo seus dados todos corretos e então pagou a fatura. Posteriormente descobriu que aquele e-mail enviado não era de sua operadora de TV a cabo e ele pagou um boleto falso.
 
 **PERSONA 2:** Ana Lúcia tem 38 anos, é uma fisioterapeuta que está em busca de comprar móveis para nova clínica, e está em busca de produtos acessíveis, porém nunca realizou compras online. Ao consultar em seu smartphone, se depara com uma imensa variedade de produtos, entretanto, possui um pé atrás sobre a segurança de seus dados.
