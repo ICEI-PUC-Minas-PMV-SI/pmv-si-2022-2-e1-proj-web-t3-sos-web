@@ -5,11 +5,11 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
-| Wander               |                              |                 |
-|----------------------|------------------------------|--------------------------------|
+| Wander             |                                 |                    |
+|--------------------|---------------------------------|-----------------------------------|
 |![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Wander.jpg)|**Idade:** 69 anos - **Ocupação:** Administrador.|**Aplicativos:** Whatsapp, Facebook e Gmail.
 |**Motivações:**  Wander possui a necessidade de realizar seus pagamentos de maneira mais prática.|**Frustações:** Baseiam-se na falta de confibialidade e de segurança em relação aos e-mails recebidos.|**Hobbies:** Ler, conversar com a família e caminhar.|
-| Wander               |                              |                 |
+| Wander             |                                 |                    |
 |![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Ana%20Lucia.jpg)|**Idade:** 38 anos - **Ocupação:** Fisioterapeuta.|**Aplicativos:** Whatsapp, Facebook, Instagram e aplicativos de Compras.
 |**Motivações:** Ana Lúcia está em busca de comprar móveis e equipamentos para sua nova clínica.|**Frustações:** Consistem na constante insegurança em relação segurança de seus dados pessoais na internet, além da autenticidade dos endereços online.|**Hobbies:** Filmes, viajar com a família, e dançar.|
 
