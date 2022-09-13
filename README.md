@@ -10,16 +10,16 @@ Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cad
 
 ## Integrantes
 
-* Marco Túlio Denucci Di Spirito
-* Rafael Augusto Barroso Oliveira
-* Marcos Sabino Mendes de Sousa
-* Hugo Almeida Couto
-* Michael Henrique Ferreira Dias
+* Hugo Almeida
 * Lucas Soares Gomes
+* Marcos Sabino Mendes de Sousa
+* Marco Túlio Denucci Di Spirito
+* Michael Henrique Ferreira Dias 
+* Rafael Augusto Barroso
 
 ## Orientador
 
-* Luciana de Nardin
+* Luciana De Nardin
 
 # Planejamento
 
