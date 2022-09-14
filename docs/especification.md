@@ -17,36 +17,18 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 |**Motivações:** Mateus Montou sua loja virtual de venda de eletrônicos, adquiriu um pequeno estoque e cadastrou seu perfil como vendedor no mercado livre e shopee. Futuramente almeja entrar no marketplace das grandes lojas.  Seu objetivo é virar um grande empresário e expandir seus negócios para lojas físicas..|**Frustações:**  Seu desafio é ter ganho de credibilidade e confiança nas redes. Tem medo de usuários fakes e uma das suas vontade é ter uma ferramenta disponível para prevenção de golpes virtuais, tanto para ele quanto para seus clientes. |**Hobbies:** Jogar Video-game, sair com os amigos, e festejar.|
 | Andrea Nunes       |                                 |                       |
 |![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/AndreaNunes.jpg)|**Idade:** 27 anos - **Ocupação:** Pedagoga.|**Aplicativos:** Whatsapp, Insagram e Pinterest.
-|**Motivações:** Andrea busca trazer comodidade e praticidade ao seu dia-a-dia, e recentemente começou a cogitar a realização de compras online.|**Frustações:** Ela gostaria de saber quando uma oferta seria confiável e se o link é de fato seguro. Isso poderia me prevenir de estar acessando um site que apenas quer pegar os meus dados e o meu dinheiro, sem ao menos me entregarem o produto esperado. |**Hobbies:** Viajar, ver filmes e ouvir música.|
+|**Motivações:** Andrea busca trazer comodidade e praticidade ao seu dia-a-dia, e recentemente começou a cogitar a realização de compras online.|**Frustações:** Ela gostaria de saber quando um vedendor, hospedado em um site confiável, entrega o produto que realmente está sendo anuciado |**Hobbies:** Viajar, ver filmes e ouvir música.|
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Wander              |     ||
-|Ana Lúcia           |     ||
-|Mat eus Ferreira    |     ||
-|Andrea Nunes        |     ||
+|Wander              | Uma aplicação para verificar a integridade de emails recebidos | Para que possa realizar pagamentos de emails verdadeiros | 
+|Ana Lúcia           | Sites confiáveis              |Para não cair em golpes em compras |
+|Mateus Ferreira     | Ter ganho de credibilidade    |Vender seus produtos|
+|Andrea Nunes        | Vendedores/produtos confiáveis     |Para receber o que realmente é esperado |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-**HISTÓRIA 1:**
-
-**HISTÓRIA 2:**
-
-**HISTÓRIA 3:** Eu, Lucas Henrique, sou resposnável pela manutenção na empresa onde trabalho. Sempre procuro por produtos com custo x benefício e em fornecedores confiáveis. Necessito de alguma aplicação onde me mostre a veracidade dos fornecedores nacionais e internacionais, assim realizando compras seguras onde eu receba o produto e que o mesmo tenha as especificações registradas no anúncio.
-
-**HISTÓRIA 4:** Eu, Andrea, uso a internet constantemente, embora não faça compras online com frequência. Gostaria de saber quando uma oferta seria confiável e se o link é de fato seguro. Isso poderia me prevenir de estar acessando um site que apenas quer pegar os meus dados e o meu dinheiro, sem ao menos me entregarem o produto esperado.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
@@ -57,16 +39,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
 |RF-001| Permitir que o usuário registre sites suspeitos| ALTA |  |
-|RF-002| Exibir sites com mais números de denúncias| MÉDIA | |
-|RF-003| Ferramenta onde o usuário possa realizar busca específica por site| ALTA | |
-
-
+|RF-002| Exibir sites com maiores números de denúncias| MÉDIA | |
+|RF-003| Ferramenta onde o usuário possa realizar busca específica por site/e-mail suspeito| ALTA | |
+|RF-004| Permitir que o usuário classifique o site desejado |MÉDIA| | |
+|RF-005| API que irá mandar automaticamente um feedback mostrando o status atual da demanda |BAIXA| ||
+|RF-006| Cadastro dos usuários |MÉDIA| ||
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-001| A aplicação deve ser responsiva para rodar em um dispositivos móvel | MÉDIA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-003| A aplicação deve ser compatível em qualquer navegador |ALTA|
+|RNF-004| Proteger dados pessoais do usuário |ALTA|
+|RNF-005| Autenticação do usuário |ALTA|
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -90,8 +76,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
+|02| Autenticação irá apenas conferir se os dados do login existem|
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
