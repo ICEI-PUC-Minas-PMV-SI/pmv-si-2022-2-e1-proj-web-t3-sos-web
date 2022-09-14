@@ -38,20 +38,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário registre sites suspeitos| ALTA |  |
-|RF-002| Exibir sites com maiores números de denúncias| MÉDIA | |
-|RF-003| Ferramenta onde o usuário possa realizar busca específica por site/e-mail suspeito| ALTA | |
-|RF-004| Permitir que o usuário classifique o site desejado |MÉDIA| | |
+|RF-001| A aplicação deve permitir que um usuário autenticado registre sites/e-mails suspeitos| ALTA |  |
+|RF-002| A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails com maiores números de denúncias| MÉDIA | |
+|RF-003| A aplicação deve permitir que um usuário qualquer possa realizar busca específica por site/e-mail suspeito| ALTA | |
+|RF-004| A aplicação deve permitir que o usuário autenticado classifique positiva ou negativamente o site desejado |MÉDIA| | |
 |RF-005| API que irá mandar automaticamente um feedback mostrando o status atual da demanda |BAIXA| ||
-|RF-006| Cadastro dos usuários |MÉDIA| ||
+|RF-006| A aplicação deve permitir que um usuário qualquer se cadastre |MÉDIA| ||
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-|RNF-003| A aplicação deve ser compatível em qualquer navegador |ALTA|
-|RNF-004| Proteger dados pessoais do usuário |ALTA|
+|RNF-001| A aplicação deve ser responsiva para rodar em um dispositivos móveis | MÉDIA | 
+|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-003| A aplicação deve ser compatível com os principais navegadores utilizados atualmente |ALTA|
+|RNF-004| A aplicação deve garantir a proteção de dados pessoais do usuário respeitando a LGPD (Lei Geral de Proteção de Dados) |ALTA|
 |RNF-005| Autenticação do usuário |ALTA|
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
