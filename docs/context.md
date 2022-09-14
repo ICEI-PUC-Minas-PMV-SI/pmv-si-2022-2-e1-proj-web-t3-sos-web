@@ -3,7 +3,7 @@
 Os ataques cibernéticos estão cada vez mais presentes em nosso contexto pós-pandemia, que fez surgir um “boom” nos serviços online e acelerou ainda mais a imersão da população à internet. Com isso, muitas das coisas que faríamos presencialmente podem ser feitas sem sair de casa, como as compras online. Apesar de ser um facilitador, há uma incerteza que paira nas pessoas quando vão fazer suas compras: a confiabilidade. Alguns são desconfiados e procuram os vendedores com maior número de estrelas ou reviews a fim de terem certeza de que irão adquirir um produto de qualidade, porém mesmo com cuidado não estamos isentos de sermos vítimas dos estelionatários.
 
 ## Problema
-
+Números de golpes pela internet aumentam significativamente todos os dias, surgindo assim a incerteza da veracidade dos links(sites) a ser clicados e dos e-mails recebidos. Por exemplo temos as plataformas de compra e venda online, onde oferecem um baixo nível de segurança em relação aos produtos oferecidos, sem haver uma obrigatoriedade e/ou fiscalização dos itens, podendo deixar o consumidor em situações maléficas quanto a qualidade, veracidade, dentre outros critérios a serem levados em consideração.Sendo este o principal problema a ser resolvido/minimizado com esse projeto. 
 
 ## Objetivos
 
@@ -17,7 +17,8 @@ Esse projeto é desenvolvido por entender que é necessário um mecanismo que po
 
 ## Público-Alvo
 
-Visamos ajudar todos os usuários que procuram fazer acesso aos meios de compra e venda online de maneira mais segura e que querem promover um meio virtual confiável. Os vendedores por exemplo, podem ter a garantia que não estarão listados na plataforma e assim terem uma maior credibilidade. Agências de segurança podem mapear melhor os sites que tem conduta maliciosa. Os compradores, é claro, são os que mais se beneficiam. Eles irão poder pesquisar se o link em que clicaram possui histórico de fraudes ou golpes. Isso poderá melhorar a experiência dessas pessoas com as compras online, ajudando cada vez mais a terem a disponibilidade e a facilidade de adquirirem produtos e serviços pela internet, como o Cláudio de 47 anos, que embora esteja bem atenado nas redes sociais, não teve confiança suficiente para fazer o pedido de sua televisão almejada pela web.
+Usuários que procuram fazer acesso aos meios de compra e venda online de maneira mais segura e que querem promover um meio virtual mais confiável. Os vendedores não fraudadores por exemplo, podem ter a garantia que não estarão listados na plataforma e assim terão uma maior credibilidade. Agências de segurança podem mapear melhor os sites que tem conduta maliciosa. Os compradores,os mais beneficiados, poderão pesquisar se o link em que clicarem possui histórico de fraudes ou golpes.
+ 
 
 
 ## Referências bibliográficas
