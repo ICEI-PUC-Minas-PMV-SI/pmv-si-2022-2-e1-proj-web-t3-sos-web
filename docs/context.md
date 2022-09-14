@@ -23,6 +23,7 @@ Visamos ajudar todos os usuários que procuram fazer acesso aos meios de compra 
 ## Referências bibliográficas
 
 [1] Golpe do atendente impostor, disponível em https://www.tecmundo.com.br/seguranca/222665-golpe-atendente-impostor-cresce-aumento-vendas-online.htm#:~:text=Usu%C3%A1rios%20de%20redes%20sociais%20e,a%20aumentar%20os%20crimes%20digitais.
+
 [2] Phishing, disponível em https://br.malwarebytes.com/phishing/
 
 ### Links úteis:
