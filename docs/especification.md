@@ -1,21 +1,23 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
-| Wander             |                                 |                       |
+| **Wander**             |                                 |                       |
 |--------------------|---------------------------------|-----------------------------------|
 |![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Wander.jpg)|**Idade:** 69 anos - **Ocupação:** Administrador.|**Aplicativos:** Whatsapp, Facebook e Gmail.
 |**Motivações:**  Wander possui a necessidade de realizar seus pagamentos de maneira mais prática.|**Frustações:** Baseiam-se na falta de confibialidade e de segurança em relação aos e-mails recebidos.|**Hobbies:** Ler, conversar com a família e caminhar.|
-| Ana Lucia          |                                 |                       |
+
+| **Ana Lucia**          |                                 |                       |
+|--------------------|---------------------------------|-----------------------------------|
 |![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Ana%20Lucia.jpg)|**Idade:** 38 anos - **Ocupação:** Fisioterapeuta.|**Aplicativos:** Whatsapp, Facebook, Instagram e aplicativos de Compras.
 |**Motivações:** Ana Lúcia está em busca de comprar móveis e equipamentos para sua nova clínica.|**Frustações:** Consiste na constante insegurança em relação aos seus dados pessoais na internet.|**Hobbies:** Filmes, viajar com a família, e dançar.|
-| Mateus             |                                 |                       |
+
+| **Mateus**             |                                 |                       |
+|--------------------|---------------------------------|-----------------------------------|
 |![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Mateus.jpg)|**Idade:** 31 anos - **Ocupação:** Pequeno Empresário.|**Aplicativos:** Whatsapp, Facebook, Insagram e Twitter.
 |**Motivações:** Mateus Montou sua loja virtual de venda de eletrônicos, adquiriu um pequeno estoque e cadastrou seu perfil como vendedor no mercado livre e shopee. Futuramente almeja entrar no marketplace das grandes lojas.  Seu objetivo é virar um grande empresário e expandir seus negócios para lojas físicas..|**Frustações:**  Seu desafio é ter ganho de credibilidade e confiança nas redes. Tem medo de usuários fakes e uma das suas vontade é ter uma ferramenta disponível para prevenção de golpes virtuais, tanto para ele quanto para seus clientes. |**Hobbies:** Jogar Video-game, sair com os amigos, e festejar.|
-| Andrea Nunes       |                                 |                       |
+
+| **Andrea Nunes**       |                                 |                       |
+|--------------------|---------------------------------|-----------------------------------|
 |![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/AndreaNunes.jpg)|**Idade:** 27 anos - **Ocupação:** Pedagoga.|**Aplicativos:** Whatsapp, Insagram e Pinterest.
 |**Motivações:** Andrea busca trazer comodidade e praticidade ao seu dia-a-dia, e recentemente começou a cogitar a realização de compras online.|**Frustações:** Ela gostaria de saber quando um vedendor, hospedado em um site confiável, entrega o produto que realmente está sendo anunciado |**Hobbies:** Viajar, ver filmes e ouvir música.|
 ## Histórias de Usuários
@@ -42,7 +44,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails com maiores números de denúncias| MÉDIA | |
 |RF-003| A aplicação deve permitir que um usuário qualquer possa realizar busca específica por site/e-mail suspeito| ALTA | |
 |RF-004| A aplicação deve permitir que o usuário autenticado classifique positiva ou negativamente o site desejado |MÉDIA| | |
-|RF-005| API que irá mandar automaticamente um feedback mostrando o status atual da demanda |BAIXA| ||
+|RF-005| A aplicação deve permitir que um usuário autenticado possa consultar o status atual dos sites/email suspeitos cadastrados |BAIXA| ||
 |RF-006| A aplicação deve permitir que um usuário qualquer se cadastre |MÉDIA| ||
 ### Requisitos não Funcionais
 
@@ -52,22 +54,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
 |RNF-003| A aplicação deve ser compatível com os principais navegadores utilizados atualmente |ALTA|
 |RNF-004| A aplicação deve garantir a proteção de dados pessoais do usuário respeitando a LGPD (Lei Geral de Proteção de Dados) |ALTA|
-|RNF-005| Autenticação do usuário |ALTA|
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-005| A aplicação deve garantir a autenticidade do usuário ao realizar o cadastro |ALTA|
 
 ## Restrições
 
@@ -75,11 +62,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Autenticação irá apenas conferir se os dados do login existem|
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|01| Autenticação irá apenas conferir se os dados do login existem|
+|02| Somente usuários maiores de idade (+18) possam efetuar cadastro|
+|03| A partir de 5 denúncias o site/e-mail suspeito será exibido na blacklist|
