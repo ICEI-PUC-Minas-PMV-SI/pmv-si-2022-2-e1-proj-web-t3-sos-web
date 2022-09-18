@@ -27,9 +27,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Wander              | Uma aplicação para verificar a integridade de emails recebidos | Para que possa realizar pagamentos de emails verdadeiros | 
-|Ana Lúcia           | Sites confiáveis              |Para não cair em golpes em compras |
-|Mateus Ferreira     | Ter ganho de credibilidade    |Vender seus produtos|
-|Andrea Nunes        | Vendedores/produtos confiáveis     |Para receber o que realmente é esperado |
+|Ana Lúcia           | Uma aplicação para verificar a classificação de sites |Para não ter seus dados pessoais fraldados |
+|Mateus Ferreira     | Ter ganho de credibilidade, garantindo seus clientes | Vender seus produtos |
+|Andrea Nunes        | Uma aplicação para verificar Vendedores/produtos confiáveis | Para receber o que realmente é esperado |
 
 
 ## Requisitos
@@ -40,11 +40,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| A aplicação deve permitir que um usuário autenticado registre sites/e-mails suspeitos| ALTA |  |
-|RF-002| A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails com maiores números de denúncias| MÉDIA | |
-|RF-003| A aplicação deve permitir que um usuário qualquer possa realizar busca específica por site/e-mail suspeito| ALTA | |
+|RF-001| A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores/produtos suspeitos| ALTA |  |
+|RF-002| A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias| MÉDIA | |
+|RF-003| A aplicação deve permitir que um usuário qualquer possa realizar busca específica por site/e-mail/vendedor/produto suspeito| ALTA | |
 |RF-004| A aplicação deve permitir que o usuário autenticado classifique positiva ou negativamente o site desejado |MÉDIA| | |
-|RF-005| A aplicação deve permitir que um usuário autenticado possa consultar o status atual dos sites/email suspeitos cadastrados |BAIXA| ||
+|RF-005| A aplicação deve permitir que um usuário autenticado possa consultar o status atual dos sites/e-mails/vendedores/produtos suspeitos cadastrados |BAIXA| ||
 |RF-006| A aplicação deve permitir que um usuário qualquer se cadastre |MÉDIA| ||
 ### Requisitos não Funcionais
 
@@ -65,4 +65,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| Autenticação irá apenas conferir se os dados do login existem|
 |02| Somente usuários maiores de idade (+18) possam efetuar cadastro|
-|03| A partir de 5 denúncias o site/e-mail suspeito será exibido na blacklist|
+|03| A partir de 5 denúncias o site/e-mail/vendedor/produto suspeito será exibido na blacklist|
