@@ -55,6 +55,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-003| A aplicação deve ser compatível com os principais navegadores utilizados atualmente |ALTA|
 |RNF-004| A aplicação deve garantir a proteção de dados pessoais do usuário respeitando a LGPD (Lei Geral de Proteção de Dados) |ALTA|
 |RNF-005| A aplicação deve garantir a autenticidade do usuário ao realizar o cadastro |ALTA|
+|RNF-006|O design da aplicação deve ser de fácil entendimento |MÉDIA|
 
 ## Restrições
 
