@@ -26,10 +26,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Wander              | Uma aplicação para verificar a integridade de emails recebidos | Para que possa realizar pagamentos de emails verdadeiros | 
-|Ana Lúcia           | Uma aplicação para verificar a classificação de sites |Para não ter seus dados pessoais fraldados |
+|Wander              | Ter certeza de que o e-mail seja verdadeiro | Para que possa realizar pagamentos confiáveis | 
+|Ana Lúcia           | Ter confiança para realizar compras em sites |Para não ter seus dados pessoais fraudados |
 |Mateus Ferreira     | Ter ganho de credibilidade, garantindo seus clientes | Vender seus produtos |
-|Andrea Nunes        | Uma aplicação para verificar Vendedores/produtos confiáveis | Para receber o que realmente é esperado |
+|Andrea Nunes        | Ter confiança em vendedores/produtos | Para receber o que realmente é esperado | 
 
 
 ## Requisitos
@@ -40,12 +40,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores/produtos suspeitos| ALTA |  |
+|RF-001| A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores/produtos suspeitos| ALTA | |
 |RF-002| A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias| MÉDIA | |
-|RF-003| A aplicação deve permitir que um usuário qualquer possa realizar busca específica por site/e-mail/vendedor/produto suspeito| ALTA | |
-|RF-004| A aplicação deve permitir que o usuário autenticado classifique positiva ou negativamente o site desejado |MÉDIA| | |
-|RF-005| A aplicação deve permitir que um usuário autenticado possa consultar o status atual dos sites/e-mails/vendedores/produtos suspeitos cadastrados |BAIXA| ||
-|RF-006| A aplicação deve permitir que um usuário qualquer se cadastre |MÉDIA| ||
+|RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor/produto suspeito| ALTA | |
+|RF-004| A aplicação deve permitir que o usuário logado classifique positiva ou negativamente o site desejado |MÉDIA| | |
+|RF-005| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |BAIXA| | |
+|RF-006| A aplicação deve permitir que um usuário logado gerencie o seu cadastro |ALTA| | |
+|RF-007| A aplicação deve permitir que um usuário logue em sua conta para que realize/acompanhar denúncias |MÉDIA| | |
+|RF-008| Somente um administrador logado pederá decidir a ação ser tomada após as denúncias de tal suspeito |ALTA| | |
+|RF-009| A aplicação deve permitir que um usuário logado altere o status da denúncia |MÉDIA| | |
+|RF-009| A aplicação deve permitir que um usuário (logado ou não) ordene a lista de suspeitos de maneira personalizada: menos denunciado e mais denunciado, por região, por tipo de produto/serviço |MÉDIA| | |
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
@@ -56,13 +60,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-004| A aplicação deve garantir a proteção de dados pessoais do usuário respeitando a LGPD (Lei Geral de Proteção de Dados) |ALTA|
 |RNF-005| A aplicação deve garantir a autenticidade do usuário ao realizar o cadastro |ALTA|
 |RNF-006|O design da aplicação deve ser de fácil entendimento |MÉDIA|
-
+|RNF-007|A aplicação deve encaminhar um e-mail constando o status/informações atual da denúncia através de uma API |BAIXA|
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| Autenticação irá apenas conferir se os dados do login existem|
-|02| Somente usuários maiores de idade (+18) possam efetuar cadastro|
-|03| A partir de 5 denúncias o site/e-mail/vendedor/produto suspeito será exibido na blacklist|
+|01| Somente usuários maiores de idade (+18) possam efetuar cadastro|
+|02| A partir de 5 denúncias o site/e-mail/vendedor/produto suspeito será exibido na blacklist|
