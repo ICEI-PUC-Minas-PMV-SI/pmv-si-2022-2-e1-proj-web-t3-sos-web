@@ -51,7 +51,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-009| A aplicação deve permitir que um usuário logado altere o status da denúncia(Cancelar) |MÉDIA| | |
 |RF-010| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise |MÉDIA| | |
 |RF-011| A aplicação deve permitir que um usuário (logado ou não) ordene a lista de suspeitos de maneira personalizada: menos denunciado e mais denunciado, por região, por tipo de produto/serviço |MÉDIA| | |
-|RF-012| Todo cadastro de usuários deve ser autenticado pelo sistema
+|RF-012| Todo cadastro de usuários deve ser autenticado pelo sistema |ALTA| | |
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
