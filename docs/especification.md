@@ -26,8 +26,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Wander              | Ter certeza de que o e-mail seja verdadeiro | Para que possa realizar pagamentos confiáveis | 
-|Ana Lúcia           | Ter confiança para realizar compras em sites |Para não ter seus dados pessoais fraudados |
+|Wander              | Ter certeza de que o e-mail seja verdadeiro | Para realizar pagamentos confiáveis | 
+|Ana Lúcia           | Ter confiança para realizar compras em sites |Para não ter meus dados pessoais fraudados |
 |Mateus Ferreira     | Ter ganho de credibilidade, garantindo seus clientes | Vender seus produtos |
 |Andrea Nunes        | Ter confiança em vendedores/produtos | Para receber o que realmente é esperado | 
 
@@ -46,21 +46,24 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-004| A aplicação deve permitir que o usuário logado classifique positiva ou negativamente o site desejado |MÉDIA| | |
 |RF-005| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |BAIXA| | |
 |RF-006| A aplicação deve permitir que um usuário logado gerencie o seu cadastro |ALTA| | |
-|RF-007| A aplicação deve permitir que um usuário logue em sua conta para que realize/acompanhar denúncias |MÉDIA| | |
-|RF-008| Somente um administrador logado pederá decidir a ação ser tomada após as denúncias de tal suspeito |ALTA| | |
-|RF-009| A aplicação deve permitir que um usuário logado altere o status da denúncia |MÉDIA| | |
-|RF-009| A aplicação deve permitir que um usuário (logado ou não) ordene a lista de suspeitos de maneira personalizada: menos denunciado e mais denunciado, por região, por tipo de produto/serviço |MÉDIA| | |
+|RF-007| A aplicação deve permitir que um usuário logue em sua conta para que realize/acompanhe denúncias |MÉDIA| | |
+|RF-008| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito |ALTA| | |
+|RF-009| A aplicação deve permitir que um usuário logado altere o status da denúncia(Cancelar) |MÉDIA| | |
+|RF-010| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise |MÉDIA| | |
+|RF-011| A aplicação deve permitir que um usuário (logado ou não) ordene a lista de suspeitos de maneira personalizada: menos denunciado e mais denunciado, por região, por tipo de produto/serviço |MÉDIA| | |
+|RF-012| Todo cadastro de usuários deve ser autenticado pelo sistema
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva para rodar em um dispositivos móveis | MÉDIA | 
+|RNF-001| A aplicação deve ser responsiva  | MÉDIA | 
 |RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
 |RNF-003| A aplicação deve ser compatível com os principais navegadores utilizados atualmente |ALTA|
 |RNF-004| A aplicação deve garantir a proteção de dados pessoais do usuário respeitando a LGPD (Lei Geral de Proteção de Dados) |ALTA|
 |RNF-005| A aplicação deve garantir a autenticidade do usuário ao realizar o cadastro |ALTA|
 |RNF-006|O design da aplicação deve ser de fácil entendimento |MÉDIA|
-|RNF-007|A aplicação deve encaminhar um e-mail constando o status/informações atual da denúncia através de uma API |BAIXA|
+|RNF-007|A aplicação deverá encaminhar um e-mail constando o status/informações atual da denúncia através de uma API |MÉDIA|
+|RNF-008|Somente o usuário cadastrado poderá realizar/visualizar uma denúncia. |ALTA|
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
