@@ -15,7 +15,7 @@ Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cad
 * Marcos Sabino Mendes de Sousa
 * Marco Túlio Denucci Di Spirito
 * Michael Henrique Ferreira Dias 
-* Rafael Augusto Barroso
+* Rafael Augusto Barroso Oliveira
 
 ## Orientador
 
