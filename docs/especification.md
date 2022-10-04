@@ -58,13 +58,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| A aplicação deve ser responsiva  | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-|RNF-003| A aplicação deve ser compatível com os principais navegadores utilizados atualmente |ALTA|
-|RNF-004| A aplicação deve garantir a proteção de dados pessoais do usuário respeitando a LGPD (Lei Geral de Proteção de Dados) |ALTA|
-|RNF-005| A aplicação deve garantir a autenticidade do usuário ao realizar o cadastro |ALTA|
-|RNF-006|O design da aplicação deve ser de fácil entendimento |MÉDIA|
-|RNF-007|A aplicação deverá encaminhar um e-mail constando o status/informações atual da denúncia através de uma API |MÉDIA|
-|RNF-008|Somente o usuário cadastrado poderá realizar/visualizar uma denúncia. |ALTA|
+|RNF-002| A aplicação deve ser compatível com os principais navegadores utilizados atualmente |ALTA|
+|RNF-003| A aplicação deve garantir a proteção de dados pessoais do usuário respeitando a LGPD (Lei Geral de Proteção de Dados) |ALTA|
+|RNF-004| A aplicação deve garantir a autenticidade do usuário ao realizar o cadastro |ALTA|
+|RNF-005| O design da aplicação deve ser de fácil entendimento |MÉDIA|
+|RNF-006| Somente o usuário cadastrado poderá realizar/visualizar uma denúncia. |ALTA|
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
