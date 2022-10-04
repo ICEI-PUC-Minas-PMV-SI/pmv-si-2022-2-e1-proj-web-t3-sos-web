@@ -42,7 +42,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----| ----|
 |RF-001| A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores/produtos suspeitos| ALTA | |
 |RF-002| A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias| MÉDIA | |
-|RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor/produto suspeito| ALTA | |
+|RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor| ALTA | |
 |RF-004| A aplicação deve permitir que o usuário logado classifique positiva ou negativamente o site desejado |MÉDIA| | |
 |RF-005| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |BAIXA| | |
 |RF-006| A aplicação deve permitir que um usuário logado gerencie o seu cadastro |ALTA| | |
@@ -62,7 +62,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-003| A aplicação deve garantir a proteção de dados pessoais do usuário respeitando a LGPD (Lei Geral de Proteção de Dados) |ALTA|
 |RNF-004| A aplicação deve garantir a autenticidade do usuário ao realizar o cadastro |ALTA|
 |RNF-005| O design da aplicação deve ser de fácil entendimento |MÉDIA|
-|RNF-006| Somente o usuário cadastrado poderá realizar/visualizar uma denúncia. |ALTA|
+
+
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -70,4 +71,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| Somente usuários maiores de idade (+18) possam efetuar cadastro|
-|02| A partir de 5 denúncias o site/e-mail/vendedor/produto suspeito será exibido na blacklist|
+|02| A partir de 5 denúncias o site/e-mail/vendedor será exibido na blacklist|
