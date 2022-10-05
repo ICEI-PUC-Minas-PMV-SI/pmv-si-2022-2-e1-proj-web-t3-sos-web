@@ -7,6 +7,6 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## User Flow 
 
-![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/User%20Flow%20new.jpg)
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/User%20Flow.jpg)
 
 ## Wireframe
