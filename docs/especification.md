@@ -40,19 +40,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores/produtos suspeitos| ALTA | |
+|RF-001| A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos| ALTA | |
 |RF-002| A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias| MÉDIA | |
-|RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor/produto suspeito| ALTA | |
-|RF-004| A aplicação deve permitir que o usuário logado classifique positiva ou negativamente o site desejado |MÉDIA| | |
-|RF-005| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |BAIXA| | |
-|RF-006| A aplicação deve permitir que um usuário logado gerencie o seu cadastro |ALTA| | |
-|RF-007| A aplicação deve permitir que um usuário logue em sua conta para que realize/acompanhe denúncias |MÉDIA| | |
-|RF-008| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito |ALTA| | |
-|RF-009| A aplicação deve permitir que um usuário logado altere o status da denúncia(Cancelar) |MÉDIA| | |
-|RF-010| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise |MÉDIA| | |
-|RF-011| A aplicação deve permitir que um usuário (logado ou não) ordene a lista de suspeitos de maneira personalizada: menos denunciado e mais denunciado, por região, por tipo de produto/serviço |MÉDIA| | |
-|RF-012| Todo cadastro de usuários deve ser autenticado pelo sistema |ALTA| | |
-|RF-013| Permitir que o usuário comente uma denúncia desde que esteja logado |BAIXA| | |
+|RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito| ALTA | |
+|RF-004| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |BAIXA| | |
+|RF-005| A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise |ALTA| | |
+|RF-006| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito |ALTA| | |
+|RF-007| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise |MÉDIA| | |
+|RF-008| A aplicação deve permitir que um usuário (logado ou não) ordene a lista de suspeitos de maneira personalizada: menos denunciado e mais denunciado, por região, por tipo de produto/serviço |MÉDIA| | |
+|RF-009| Todo cadastro de usuários deve ser autenticado pelo sistema |ALTA| | |
+|RF-010| Permitir que o usuário comente uma denúncia desde que esteja logado |BAIXA| | |
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
