@@ -27,8 +27,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## RF-005 A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Tela%20do%20usu%C3%A1rio%201.jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%20confirma%C3%A7%C3%A3o%201.jpg)
-## RF-004 A aplicação deve permitir que um usuário logado possa consultar o status da denúncia
-## RF-007 Toda denúncia realizada pelo usuário entrará com status de pendente/em análise 
+## RF-004 A aplicação deve permitir que um usuário logado possa consultar o status da denúncia/RF-007 Toda denúncia realizada pelo usuário entrará com status de pendente(em análise) 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%202.jpg)
 ## RF-001	A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos	
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Criar%20Den%C3%BAncia%20este.jpg)
