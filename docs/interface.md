@@ -21,7 +21,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## MÉDIA RF-003 A aplicação deve permitir que um usuário NÃO LOGADO possa realizar busca específica por site/e-mail/vendedor(lojas) internacional ou nacional e nocividade. 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Entrar%20como%20convidado%202.jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%201.jpg)
-## RF-002 A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores com maiores números de denúncias 
+## RF-002 A aplicação deve permitir que um usuário LOGADO ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores com maiores números de denúncias 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%20(2).jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Den%C3%BAncias1.jpg)
 ## RF-005 A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise)
