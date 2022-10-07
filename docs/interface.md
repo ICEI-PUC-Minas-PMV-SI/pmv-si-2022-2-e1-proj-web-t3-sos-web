@@ -12,30 +12,41 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Wireframe
 
-
 ## RF-009 Todo cadastro de usuários deve ser validado pelo sistema
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Login.jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/cadastro.jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Recupera%C3%A7%C3%A3o%20de%20Senha%204%201.jpg)
+---
 ## MÉDIA RF-003 A aplicação deve permitir que um usuário NÃO LOGADO possa realizar busca específica por site/e-mail/vendedor(lojas) internacional ou nacional e nocividade. 
+
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Entrar%20como%20convidado%202.jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%201.jpg)
-## RF-002 A aplicação deve permitir que um usuário LOGADO ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores com maiores números de denúncias 
+---
+## RF-002 A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores com maiores números de denúncias.
+
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%20(2).jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Den%C3%BAncias1.jpg)
-## RF-005 A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise)
+---
+## RF-005 A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise).
+
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Tela%20do%20usu%C3%A1rio%201.jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%20confirma%C3%A7%C3%A3o%201.jpg)
-## RF-004 A aplicação deve permitir que um usuário logado possa consultar o status da denúncia/RF-007 Toda denúncia realizada pelo usuário entrará com status de pendente(em análise) 
-![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%202.jpg)
-## RF-001	A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos	
-![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Criar%20Den%C3%BAncia%20este.jpg)
+---
+## RF-004 A aplicação deve permitir que um usuário logado possa consultar o status da denúncia
+## RF-007 Toda denúncia realizada pelo usuário entrará com status de pendente/em análise 
 
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%202.jpg)
+---
+## RF-001	A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos	
+
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Criar%20Den%C3%BAncia%20este.jpg)
+---
 ## RF-010 Permitir que o usuário comente uma denúncia desde que esteja logado
+
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Comentarios%20denuncias%20este.jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/adicionar-comentarios.jpg)
-
+---
 RF-001	A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos	
 RF-002	A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias	MÉDIA	
 RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito	ALTA	
