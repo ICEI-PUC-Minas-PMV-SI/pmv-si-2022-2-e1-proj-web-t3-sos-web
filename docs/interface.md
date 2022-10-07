@@ -24,3 +24,15 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%20(2).jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Comentarios%20denuncias%20este.jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/adicionar-comentarios.jpg)
+
+RF-001	A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos	
+RF-002	A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias	MÉDIA	
+RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito	ALTA	
+RF-004	A aplicação deve permitir que um usuário logado possa consultar o status da denúncia	BAIXA	
+RF-005	A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise	ALTA	
+RF-006	Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito	ALTA	
+RF-007	Toda denúncia realizada pelo usuário entrará com status de pendente/em análise	MÉDIA	
+RF-008	A aplicação deve permitir que um usuário (logado ou não) ordene a lista de suspeitos de maneira personalizada: menos denunciado e mais denunciado, por região, por tipo de produto/serviço	MÉDIA	
+RF-009	Todo cadastro de usuários deve ser autenticado pelo sistema	ALTA	
+RF-010	Permitir que o usuário comente uma denúncia desde que esteja logado
+
