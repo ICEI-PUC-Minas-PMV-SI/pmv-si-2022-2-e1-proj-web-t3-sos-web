@@ -31,7 +31,6 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## RF-001	A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos	
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Criar%20Den%C3%BAncia%20este.jpg)
 
-![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Acompanhar%20den%C3%BAncia%20(2).jpg)
 ## RF-010 Permitir que o usuário comente uma denúncia desde que esteja logado
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/telas/Comentarios%20denuncias%20este.jpg)
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/adicionar-comentarios.jpg)
