@@ -4,7 +4,7 @@ Inicialmente o site dispõe de uma tela de Login, onde encontra-se alguns elemen
 
 - Logotipo no centro superior;
 - Menu login com entrada para o usuário e senha;
-- Abaixo encontram os botões de entrada, recuperação de senha e de cadastro.
+- Abaixo encontram os botões de entrada, recuperação de senha , de cadastro e de entrada como convidado caso este não for cadastrado.
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Login%20(1).jpg)
 
