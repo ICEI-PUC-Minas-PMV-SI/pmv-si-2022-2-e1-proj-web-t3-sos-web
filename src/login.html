@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="login.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
-        <title>SOS Web</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>SOS Web</title>
+  </head>
 
-    <body>
-        <div class="sign-up">
-            <div class="logo-container">
-                <img src="./logo.svg" alt="logo"/> 
-                <h1>
-                    WEB  
-                </h1>
-            </div>
-            <div class="form-container"> 
-                <p>LOGIN</p>
-                <form name="form_login" action="do_login.html" method="POST">
-                    <input
-                        type="text"
-                        class="input-login"
-                        name="nome"
-                        placeholder="Usuário"
-                    /><br>
-                    <input
-                        type="password"
-                        class="input-login"
-                        name="senha"
-                        placeholder="Senha"
-                    /><br>
-                    <input type="submit" class="login-button" value="Entrar">
-                </form>
-            </div>
-            <div class="options">
-                <a> Esqueceu a Senha?</a><br>
-                <a> Cadastrar</a><br>
-                <a> Entrar como convidado</a><br>
-            </div>
+  <body>
+    <div class="card-base sign-up">
+      <div class="logo-container">
+        <img src="./logo.svg" alt="logo" />
+        <h1>WEB</h1>
+      </div>
+      <div class="form-container">
+        <p class="text-main-color">LOGIN</p>
+        <form
+          name="form_login"
+          class="form-login"
+          action="do_login.html"
+          method="POST"
+        >
+          <input
+            type="text"
+            class="input-base"
+            name="nome"
+            placeholder="Usuário"
+          /><br />
+          <input
+            type="password"
+            class="input-base"
+            name="senha"
+            placeholder="Senha"
+          /><br />
+          <input type="submit" class="button-base bg-main-color" value="Entrar" />
+        </form>
+        <div class="options">
+          <a> Esqueceu a Senha?</a>
+          <a> Cadastrar</a>
+          <a> Entrar como convidado</a>
         </div>
-    </body>
-
+      </div>
+    </div>
+  </body>
 </html>
-

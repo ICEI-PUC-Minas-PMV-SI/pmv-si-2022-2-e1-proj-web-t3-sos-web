@@ -1,93 +1,96 @@
 body {
-    background-color: #F94949;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f94949;
 }
 
 .sign-up {
-    margin-top: 30px;
-    width: 345px;
-    height: 750px;
-    background-color: #fff;
-    border-radius: 15px;
+  margin: 10rem auto;
+  padding: 3rem;
 }
 
 .sign-up p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    margin-top: 70px;
-    margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .sign-up a {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 30px;
 }
 
-.input-login {
-    border: 1px solid #CEB8A7 !important;
-    border-radius: 10px;
-    width: 180px;
-    height: 25px;
-    padding: 5px 5px 5px 10px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.form-container input::placeholder {
-    margin-left: 20px;
-    color: #CEB8A7;
-}
-
-.form-container input:focus {
-    outline-color: #F94949;
-}
-
-.login-button {
-    border: #F94949;
-    background-color: #F94949;
-    border-radius: 20px;
-    width: 215px;
-    height: 45px;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    cursor: pointer;
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-container {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  padding: 1rem auto;
+}
+
+.form-container p {
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.form-container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-container h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    color: #F94949;
-    margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-left: 5px;
 }
 
 .options {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.options a {
+  margin: 0.5rem auto;
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .sign-up {
+    width: 25rem;
+  }
+}
+@media (min-width: 800px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .sign-up {
+    width: 30rem;
+  }
+}
+@media (min-width: 1024px) {
+  /* big landscape tablets, laptops, and desktops */
+  .sign-up {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
+    justify-content: space-around;
+  }
 }
