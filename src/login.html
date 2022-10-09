@@ -4,13 +4,14 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
         <title>SOS Web</title>
     </head>
 
     <body>
         <div class="sign-up">
-            
-            <!-- todo código deverá ser criado aqui -->
             <div class="logo-container">
                 <img src="./logo.svg" alt="logo"/> 
                 <h1>
@@ -18,14 +19,24 @@
                 </h1>
             </div>
             <div class="form-container"> 
-                <h1>LOGIN</h1>
+                <p>LOGIN</p>
                 <form name="form_login" action="do_login.html" method="POST">
-                    <input type="text" name="nome" value="" placeholder="Usuário" /><br>
-                    <input type="password" name="senha" value="" placeholder="Senha"><br>
+                    <input
+                        type="text"
+                        class="input-login"
+                        name="nome"
+                        placeholder="Usuário"
+                    /><br>
+                    <input
+                        type="password"
+                        class="input-login"
+                        name="senha"
+                        placeholder="Senha"
+                    /><br>
                     <input type="submit" class="login-button" value="Entrar">
                 </form>
             </div>
-            <div id="options">
+            <div class="options">
                 <a> Esqueceu a Senha?</a><br>
                 <a> Cadastrar</a><br>
                 <a> Entrar como convidado</a><br>

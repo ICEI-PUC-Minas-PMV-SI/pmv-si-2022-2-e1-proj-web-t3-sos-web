@@ -7,39 +7,66 @@ body {
 
 .sign-up {
     margin-top: 30px;
-    width: 500px;
-    height: 800px;
+    width: 345px;
+    height: 750px;
     background-color: #fff;
+    border-radius: 15px;
 }
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    color: black;
-    font-size: 0.3cm;
+
+.sign-up p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
     margin-top: 70px;
     margin-bottom: 10px;
+}
+
+.sign-up a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.input-login {
+    border: 1px solid #CEB8A7 !important;
+    border-radius: 10px;
+    width: 180px;
+    height: 25px;
+    padding: 5px 5px 5px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.form-container input::placeholder {
+    margin-left: 20px;
+    color: #CEB8A7;
+}
+
+.form-container input:focus {
+    outline-color: #F94949;
 }
 
 .login-button {
     border: #F94949;
     background-color: #F94949;
-    border-radius: 10px;
-    width: 150px;
-    height: 20px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    width: 215px;
+    height: 45px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
+
 .form-container {
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-input {
-    margin-top: 8px;
-    margin-bottom: 8px;
 }
 
 .logo-container {
@@ -48,18 +75,19 @@ input {
     justify-content: center;
     margin-top: 40px;
 }
+
 .logo-container h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
     color: #F94949;
     margin-left: 5px;
 }
 
-#options{
+.options {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-a{
-    margin: 20px;
+    cursor: pointer;
 }
