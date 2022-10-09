@@ -11,3 +11,13 @@ body {
     height: 500px;
     background-color: #fff;
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.logo-container h1 {
+    color: #F94949;
+    margin-left: 5px;
+}
