@@ -7,8 +7,8 @@ body {
 
 .sign-up {
     margin-top: 30px;
-    width: 300px;
-    height: 500px;
+    width: 500px;
+    height: 800px;
     background-color: #fff;
 }
 h1 {
@@ -26,4 +26,25 @@ h1 {
     height: 20px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.logo-container h1 {
+    color: #F94949;
+    margin-left: 5px;
+}
+
+#options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a{
+    margin: 20px;
 }
