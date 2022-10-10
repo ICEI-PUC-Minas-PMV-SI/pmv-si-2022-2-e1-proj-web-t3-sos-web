@@ -22,6 +22,11 @@ O site criado é responsivo para vários tamanhos de telas, como demonstrado aba
  ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/responsiva%203.jpeg)
 
 
+** Foram utilizados os seguintes ícones para acesso das listas, procuras e perfil do logado respectivamente:
+
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/img/Barra%20navega%C3%A7%C3%A3o.png)
+
+
 
 
 
