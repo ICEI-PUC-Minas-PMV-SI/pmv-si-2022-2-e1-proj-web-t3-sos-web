@@ -1,0 +1,142 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f94949;
+}
+
+.denounce {
+  background-color: white;
+  margin: 10rem auto;
+  padding-top: 30px;
+  height: 80vh;
+  width: 70vw;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.denounce h1{
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.denounce-analyses {
+  margin-top: 15px;
+  background-color: #fef281;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+  line-height: 2em;
+  padding-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  width: 55rem;
+  height:fit-content;
+  min-height: 10rem;
+  }
+
+.title-denounce-analyses {
+  margin: 0;
+  padding-left: 15px;
+  background-color: #ffe606;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.denounce-malicious {
+  margin-top: 15px;
+  background-color: #fd9980;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+  line-height: 2em;
+  padding-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  width: 55rem;
+  height:fit-content;
+  min-height: 10rem;
+}
+
+.title-denounce-malicious {
+  margin: 0;
+  padding-left: 15px;
+  background-color: #fe523a;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.denounce h3 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.denounce h4 {
+  font-weight: bolder;
+}
+
+.denounce h5 {
+  line-height: 1;
+  margin-right: 10px;
+}
+
+button{
+  height: 50px;
+  width: 50px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin: 15px;
+  border-color: transparent;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bolder;
+  }
+
+  .menu-bar{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 10px;
+    width: 95%;
+    height: 7;
+    margin-bottom: 10px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .menu-bar img{
+
+  }
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .sign-up {
+    width: 25rem;
+  }
+}
+@media (min-width: 800px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .sign-up {
+    width: 30rem;
+  }
+}
+@media (min-width: 1024px) {
+  /* big landscape tablets, laptops, and desktops */
+  .sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
