@@ -1,0 +1,65 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f94949;
+}
+
+.user {
+    background-color: white;
+    margin: 10rem auto;
+    padding-top: 30px;
+    height: 80vh;
+    width: 70vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user h1 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+}
+
+.telephone-container {
+    display: flex;
+    align-items: center;
+}
+
+.age-container {
+    display: flex;
+    align-items: center;
+}
+
+.data-container {
+    display: flex;
+    align-items: center;
+}
+
+.chat-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 10px;
+    width: 95%;
+    height: 7;
+    margin-bottom: 10px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    padding: 10px;
+}
