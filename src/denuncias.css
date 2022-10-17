@@ -1,0 +1,128 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.denunciations {
+  margin: 10rem auto;
+  padding: 3rem;
+}
+
+.denunciations header h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.form-search {
+  margin: 1rem 0;
+}
+
+.form-search p {
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.form-search form {
+  display: flex;
+  justify-content: center;
+}
+
+.button-search {
+  margin-left: 1rem;
+  display: inline-block;
+  position: relative;
+  width: 2rem;
+  border-radius: 10px;
+  padding: 0.3rem;
+  background-color: var(--main);
+  color: white;
+}
+
+.button-search .img-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters p {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.filters button {
+  margin: 0 0.2rem;
+  border: none;
+  padding: 0.3rem;
+}
+
+main {
+  margin: 1rem 0;
+}
+
+table {
+  margin: 1rem 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-header {
+  font-weight: 600;
+}
+
+.table-header th {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.table-footer {
+  /* margin: 1rem 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .denunciations {
+    width: 25rem;
+  }
+}
+@media (min-width: 800px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .denunciations {
+    width: 30rem;
+  }
+}
+@media (min-width: 1024px) {
+  /* big landscape tablets, laptops, and desktops */
+  /* .sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  } */
+}
