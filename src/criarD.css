@@ -1,0 +1,84 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f94949;
+  }
+  
+  .sign-up {
+    margin: 10rem auto;
+    padding: 3rem;
+  }
+  
+  .sign-up p {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .sign-up a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  
+  .form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .form-container {
+    padding: 1rem auto;
+  }
+  
+  .form-container p {
+    text-transform: uppercase;
+    margin: 1rem;
+  }
+  
+  .form-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-container h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 5px;
+  }
+  @media (min-width: 600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .sign-up {
+      width: 25rem;
+    }
+  }
+  @media (min-width: 800px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .sign-up {
+      width: 30rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    /* big landscape tablets, laptops, and desktops */
+    .sign-up {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  
+  
