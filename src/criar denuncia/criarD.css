@@ -27,7 +27,7 @@ body {
   .form-login {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: left;
   }
   
@@ -47,7 +47,12 @@ body {
     justify-content: center;
     text-align: center;
   }
-  
+  .button-base
+  {
+    background-color: #f94949;
+  }
+
+ 
   .logo-container {
     display: flex;
     align-items: center;
@@ -60,6 +65,14 @@ body {
     font-size: 40px;
     margin-left: 5px;
   }
+  .anexar
+  {
+   
+  }
+    
+   
+    
+  
   @media (min-width: 600px) {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
     .sign-up {
