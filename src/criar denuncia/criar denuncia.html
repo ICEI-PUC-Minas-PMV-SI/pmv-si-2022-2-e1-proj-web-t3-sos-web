@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRIAR DENÚNCIA</title>
-
+    <link rel="stylesheet" href="../base.css" />
     <link rel="stylesheet" href="criarD.css" />
-    <link rel="stylesheet" href="basecriar.css" />
 
 </head>
 <body>
@@ -25,32 +24,34 @@
             <input
               type="text"
               class="input-base"
-              name="nome"/>
+              name="nome"
+              size="50"
+              />
+              
                 <br/>  
                 <br/>
-            Link ou email da denúncia:
-            
-            <input
+            <label id="label"> Link ou email da denúncia: 
+             <input
               type="text"
               class="input-base"
               name="link"
-              
-            />
+              size="50" />
+            </label>
             <br/>
             <br/>
             <br/>
            Conte sua história:
-           <textarea name="texto" rows="10" cols="50"> preencha com algum texto </textarea>
+           <textarea name="texto" rows="10" cols="50" > preencha com algum texto </textarea>
               <br/>
               <br/>
               <br/>
               <br/>
-              <p1>Anexar Documento</p1> 
+              <div class="anexar">Anexar Documento  <img src="...\img\clip.jpg" width="20" height="20"></div> 
               <br/>
-           </form>
            
-            <input type="submit" class="button-base"  value="Finalizar Denúncia" />
-          
+           
+            <input type="submit" class="button-base"  value="Finalizar Denúncia" /> 
+          </form>
          
         </div>
     </div>
