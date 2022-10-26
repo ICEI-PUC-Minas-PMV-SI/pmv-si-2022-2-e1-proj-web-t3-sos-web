@@ -44,7 +44,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias| MÉDIA | Michael |
 |RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito| ALTA | Michael |
 |RF-004| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |BAIXA| | Hugo |
-|RF-005| A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise |ALTA| | Hugo / Rafael |
+|RF-005| A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise |ALTA| | Hugo / Rafael
 |RF-006| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito |ALTA| | |
 |RF-007| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise |MÉDIA| | |
 |RF-008| Todo cadastro de usuários deve ser validado pelo sistema |ALTA| |Todos |
