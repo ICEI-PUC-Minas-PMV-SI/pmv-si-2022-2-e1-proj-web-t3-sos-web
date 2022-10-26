@@ -49,7 +49,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise |MÉDIA| | |
 |RF-008| Todo cadastro de usuários deve ser validado pelo sistema |ALTA| | |
 |RF-009| Permitir que o usuário comente uma denúncia desde que esteja logado |BAIXA| | |
-|RF-010| Permitir que o usuário recupere sua senha esquecida |BAIXA| | Marcos |
+|RF-010| Permitir que o usuário recupere sua senha esquecida |BAIXA|  Marcos |
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
