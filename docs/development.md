@@ -15,7 +15,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 |RF-007| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise | MÉDIA | | |
 |RF-008| Todo cadastro de usuários deve ser validado pelo sistema | ALTA | |
 |RF-009| Permitir que o usuário comente uma denúncia desde que esteja logado | BAIXA | | 
-|RF-010| Permitir que o usuário recupere sua senha esquecida | BAIXA | |
+|RF-010| Permitir que o usuário recupere sua senha esquecida | BAIXA | recuperar-senha |
 ### Requisitos não Funcionais
 
 > **Links Úteis**:
