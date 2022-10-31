@@ -10,10 +10,10 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 |RF-002| A aplicação deve permitir que um usuário cadastrado ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias | MÉDIA |../denuncias/denuncias.html |
 |RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito | ALTA |../denuncias-convidado/denuncias-convidado.html |
 |RF-004| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia | BAIXA |../minhas-denuncias/minhas-denuncias.html |
-|RF-005| A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise | ALTA |../usuario/usuario.html --- |
+|RF-005| A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise | ALTA |../usuario/usuario.html  |
 |RF-006| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito | ALTA | | |
 |RF-007| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise | MÉDIA |../minhas-denuncias/minhas-denuncias.html|
-|RF-008| Todo cadastro de usuários deve ser validado pelo sistema | ALTA | ../login/login.html --- ../cadastro/cadastro.html |
+|RF-008| Todo cadastro de usuários deve ser validado pelo sistema | ALTA | ../login/login.html  ../cadastro/cadastro.html |
 |RF-009| Permitir que o usuário comente uma denúncia desde que esteja logado | BAIXA |../addcoments/addcoments.html | 
 |RF-010| Permitir que o usuário recupere sua senha esquecida | BAIXA | ../recuperar-senha/recuperar-senha.html |
 
