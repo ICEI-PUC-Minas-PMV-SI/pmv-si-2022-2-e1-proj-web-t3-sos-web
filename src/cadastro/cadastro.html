@@ -1,70 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./cadastro.css" />
-    <link rel="stylesheet" href="../base.css" />
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../base.css" />
+  <link rel="stylesheet" href="./cadastro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+    rel="stylesheet" />
 
+  <title>Cadastro - SOS WEB</title>
 </head>
+
 <body>
-    <div class="card-base sign-up">
-        <div class="form-container">
-          <p class="text-main-color">Cadastro</p>
-          <form
-            name="form_login"
-            class="form-login"
-            action="do_login.html"
-            method="POST"
-          > <br/>
-            <input
-              type="text"
-              class="input-base"
-              name="nome"
-              placeholder="Nome Completo"
-            /><br />
-            <input
-              type="text"
-              class="input-base"
-              name="cpf"
-              placeholder="CPF"
-            /><br />
-            <input
-              type="email"
-              class="input-base"
-              name="Email"
-              placeholder="Email"
-              /><br />
-             <input
-              type="tel"
-              class="input-base"
-              name="Telefone"
-              placeholder="Telefone"
-              /><br />
-              <br/>
-              <br/>
-              <input
-              type="text"
-              class="input-base"
-              name="usuario"
-              placeholder="Usuário"
-              /><br />
-              <input
-              type="password"
-              class="input-base"
-              name="senha"
-              placeholder="Senha"
-              /><br />
-              <br/>
-              <br/>
-            <input type="submit" class="button-base bg-main-color" value="Cadastrar" />
-          </form>
-         
-        </div>
+  <div class="card-base sign-up">
+    <div class="form-container">
+      <p class="text-main-color">Cadastro</p>
+      <form name="form_login" class="form-login" action="do_login.html" method="POST"> <br />
+        <input type="text" class="input-base" name="nome" placeholder="Nome Completo" /><br />
+        <input type="text" class="input-base" name="cpf" placeholder="CPF" /><br />
+        <input type="email" class="input-base" name="Email" placeholder="Email" /><br />
+        <input type="tel" class="input-base" name="Telefone" placeholder="Telefone" /><br />
+        <br />
+        <br />
+        <input type="text" class="input-base" name="usuario" placeholder="Usuário" /><br />
+        <input type="password" class="input-base" name="senha" placeholder="Senha" /><br />
+        <br />
+        <br />
+        <input type="submit" class="button-base bg-main-color" value="Cadastrar" />
+      </form>
     </div>
- </body>
- 
-  </html>
+  </div>
+</body>
+
+</html>
