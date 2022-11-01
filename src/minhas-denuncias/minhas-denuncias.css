@@ -1,17 +1,6 @@
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f94949;
-}
-
 .denounce {
   background-color: white;
-  margin: 10rem auto;
   padding-top: 30px;
-  height: 80vh;
-  width: 70vw;
   text-align: justify;
   display: flex;
   flex-direction: column;

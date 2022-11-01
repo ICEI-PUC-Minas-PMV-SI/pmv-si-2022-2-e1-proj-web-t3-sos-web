@@ -1,62 +1,93 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="stylesheet" href="./usuario.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <title>SOS Web</title>
-  </head>
 
-  <body>
-    <div class="card-base user">
-        <img src="../assets/user.svg" alt="logo" />
-        <span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../base.css" />
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="./usuario.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+    rel="stylesheet" />
+  <title>SOS Web</title>
+</head>
+
+<body>
+  <div class="left-navbar">
+    <div class="logo-nav">
+      <img src="../assets/white_icon.svg" alt="sos-logo">
+      <h4>WEB</h4>
+    </div>
+    <div class="nav-options">
+      <div class="home-nav">
+        <img id="home-icon" class="left-nav-icon" src="../assets/icon-home.svg" alt="home">
+        <p>Denúncias</p>
+      </div>
+      <div class="user-denunciations-nav">
+        <img id="denunciations-icon" class="left-nav-icon" src="../assets/icon-tasklist.svg" alt="denunciations">
+        <p>Minhas denúncias</p>
+      </div>
+      <div class="logout-nav">
+        <img id="logout-icon" class="left-nav-icon" src="../assets/exit.svg" alt="logout">
+        <p>Sair</p>
+      </div>
+    </div>
+  </div>
+  <div class="app">
+    <div class="top-navbar">
+      <p>Lorem ipsum</p>
+      <img src="../assets/user.svg" alt="user">
+    </div>
+    <div class="app-container">
+      <div class="card-app">
+        <div class="user">
+          <img src="../assets/user.svg" alt="logo" />
+          <span>
             Nome do usuário
-        </span>
-        <div class="email-container">
+          </span>
+          <div class="email-container">
             <img src="../assets/email.svg" alt="logo" />
             <span style="margin-left: 10px;">
-                michaelalberto@gmail.com
+              michaelalberto@gmail.com
             </span>
-        </div>
-        <div class="telephone-container">
+          </div>
+          <div class="telephone-container">
             <img src="../assets/telephone.svg" alt="logo" />
-            <span style="margin-left: 10px;">   
-                55 (31) 99999-9999
+            <span style="margin-left: 10px;">
+              55 (31) 99999-9999
             </span>
-        </div>
-        <div class="age-container">
+          </div>
+          <div class="age-container">
             <img src="../assets/age-group.svg" alt="logo" />
             <span style="margin-left: 10px;">
-                18 anos
+              18 anos
             </span>
-        </div>
-        <div class="data-container">
+          </div>
+          <div class="data-container">
             <img src="../assets/data.svg" alt="logo" />
             <span style="margin-left: 10px;">
-                10 Análises
+              10 Análises
             </span>
-        </div>
-        <div class="chat-container">
+          </div>
+          <div class="chat-container">
             <img src="../assets/chat.svg" alt="logo" />
             <span style="margin-left: 10px;">
-               1 Comentário
+              1 Comentário
             </span>
-        </div>
-        <div class="menu-bar">
+          </div>
+          <!-- <div class="menu-bar">
             <img src="../assets/icon-user.svg" alt="icon">
             <img src="../assets/icon-home.svg" alt="icon">
             <img src="../assets/icon-tasklist.svg" alt="icon">
-          </div>
+          </div> -->
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
