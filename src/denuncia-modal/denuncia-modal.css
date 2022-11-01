@@ -1,0 +1,212 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.denunciations {
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.denunciations header,
+.denunciations main {
+  padding: 5px 30px 5px 30px;
+}
+
+.denunciations header h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.form-search {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.form-search p {
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.form-search form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-search .input-base {
+  width: 100%;
+  padding: 15px;
+}
+
+.button-search {
+  margin-left: 1rem;
+  display: inline-block;
+  position: relative;
+  width: 2rem;
+  border-radius: 10px;
+  padding: 0.3rem;
+  background-color: var(--main);
+  color: white;
+}
+
+.button-search .img-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters p {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.filters button {
+  margin: 0 0.2rem;
+  border: none;
+  padding: 0.3rem;
+}
+
+.filters .button-base {
+  border-radius: 20px;
+  width: 20%;
+  height: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main {
+  margin: 1rem 0;
+}
+
+table {
+  /* margin: 1rem 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  */
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+
+th,
+td {
+  margin: 1rem 0;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-header {
+  font-weight: 600;
+}
+
+.table-header th {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.table-footer {
+  /* margin: 1rem 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+
+.form-search form {
+  display: flex;
+  justify-content: left;
+}
+
+.form-search .input-base {
+  width: 80%;
+  padding: 15px;
+}
+
+.denunciations header {
+  padding: 5px 120px 5px 120px;
+}
+
+.denunciations main {
+  padding: 0px 50px 0px 50px;
+}
+
+.checkboxModal {
+  display: none;
+
+
+}
+
+
+.abrirmodal:hover {
+  cursor: pointer;
+}
+
+
+#check:checked+.modal {
+  display: flex;
+
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 1000px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal .fecharmodal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  cursor: pointer;
+  color: red;
+
+}
+
+.modal .conteudomodal {
+  width: 600px;
+  height: 350px;
+  background-color: white;
+  justify-content: center;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+  overflow: auto;
+}
+
+.sitemodal {
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+
+}
+
+.paramodal {
+  font-size: 20px;
+
+
+
+}
