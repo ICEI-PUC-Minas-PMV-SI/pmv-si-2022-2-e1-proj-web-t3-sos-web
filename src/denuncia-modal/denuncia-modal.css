@@ -130,7 +130,6 @@ tr:nth-child(even) {
   margin-bottom: 1.25rem;
 }
 
-
 .form-search form {
   display: flex;
   justify-content: left;
@@ -147,66 +146,4 @@ tr:nth-child(even) {
 
 .denunciations main {
   padding: 0px 50px 0px 50px;
-}
-
-.checkboxModal {
-  display: none;
-
-
-}
-
-
-.abrirmodal:hover {
-  cursor: pointer;
-}
-
-
-#check:checked+.modal {
-  display: flex;
-
-}
-
-.modal {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  width: 1000px;
-  height: 400px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal .fecharmodal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-
-  cursor: pointer;
-  color: red;
-
-}
-
-.modal .conteudomodal {
-  width: 600px;
-  height: 350px;
-  background-color: white;
-  justify-content: center;
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px black;
-  overflow: auto;
-}
-
-.sitemodal {
-  font-size: 40px;
-  font-style: bold;
-  text-align: center;
-
-}
-
-.paramodal {
-  font-size: 20px;
-
-
-
 }
