@@ -35,7 +35,7 @@ body {
   color: #fff;
 }
 
-.card-base {
+.card-mobile {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
@@ -69,13 +69,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 10px;
-  width: 100%;
-  height: 3rem;
-  margin-bottom: 10px;
   background-color: #e9e9e9;
   border-radius: 10px;
-  padding: 10px;
+  width: 100%;
 }
 
 /*
@@ -181,14 +177,14 @@ body {
   width: 35px;
 }
 
-.card-app {
+.card-desktop {
   /* display: flex;
   flex-direction: column; */
   background-color: #fff;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.25) 0 0 10px;
   width: 90%;
-  /* height: auto; */
+  height: auto;
   /* margin: auto; */
   margin-top: 2rem;
   background-color: #ffffff;
