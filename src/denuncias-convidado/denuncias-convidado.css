@@ -8,7 +8,8 @@ body {
   padding: 3rem;
 }
 
-.guest-denunciations header, .guest-denunciations main {
+.guest-denunciations header,
+.guest-denunciations main {
   padding: 5px 30px 5px 30px;
 }
 
@@ -135,7 +136,8 @@ tr:nth-child(even) {
     height: 80vh;
   }
 
-  .guest-denunciations header, .guest-denunciations main {
+  .guest-denunciations header,
+  .guest-denunciations main {
     padding: 0px 0px 0px 0px;
   }
 }
@@ -156,7 +158,7 @@ tr:nth-child(even) {
   }
   .form-search .input-base {
     width: 100%;
-    padding: 15px;  
+    padding: 15px;
   }
 }
 
@@ -169,7 +171,7 @@ tr:nth-child(even) {
   .form-search form {
     display: flex;
     justify-content: left;
-  } 
+  }
 }
 
 @media (min-width: 1024px) {
@@ -184,7 +186,7 @@ tr:nth-child(even) {
   }
   .form-search .input-base {
     width: 80%;
-    padding: 15px;  
+    padding: 15px;
   }
 }
 
@@ -199,9 +201,9 @@ tr:nth-child(even) {
   }
   .form-search .input-base {
     width: 80%;
-    padding: 15px;  
+    padding: 15px;
   }
-  .guest-denunciations header{
+  .guest-denunciations header {
     padding: 10px 120px 10px 120px;
   }
   .guest-denunciations main {

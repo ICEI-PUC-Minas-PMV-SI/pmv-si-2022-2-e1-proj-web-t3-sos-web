@@ -151,7 +151,7 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 400px) {
-  .card-desktop {
+  .card-app {
     width: 20rem;
   }
   .denunciations {

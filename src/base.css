@@ -35,7 +35,7 @@ body {
   color: #fff;
 }
 
-.card-app {
+.card-mobile {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
@@ -177,7 +177,7 @@ body {
   width: 35px;
 }
 
-.card-desktop {
+.card-app {
   /* display: flex;
   flex-direction: column; */
   background-color: #fff;
