@@ -172,9 +172,6 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 400px) {
-  .card-app {
-    width: 20rem;
-  }
   .modal-container {
     width: 15rem;
   }
@@ -195,21 +192,6 @@ tr:nth-child(even) {
 @media (max-width: 800px) {
   .modal-container {
     width: 17rem;
-  }
-  body {
-    margin: 0 auto;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f94949;
-  }
-  .app {
-    margin-left: 0rem;
-  }
-  .left-navbar,
-  .top-navbar {
-    display: none;
   }
   .denunciations main,
   .denunciations header {

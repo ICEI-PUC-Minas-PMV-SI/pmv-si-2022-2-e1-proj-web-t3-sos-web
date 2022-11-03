@@ -261,3 +261,27 @@ body {
   margin: 2rem;
   font-size: 20px;
 }
+
+@media (max-width: 400px) {
+  .card-app {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f94949;
+  }
+  .app {
+    margin-left: 0rem;
+  }
+  .left-navbar,
+  .top-navbar {
+    display: none;
+  }
+}

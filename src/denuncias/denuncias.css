@@ -151,8 +151,8 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 400px) {
-  .card-app {
-    width: 20rem;
+  .modal-container {
+    width: 15rem;
   }
   .denunciations {
     padding: 1rem 2rem 1rem 2rem;
@@ -169,20 +169,8 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 800px) {
-  body {
-    margin: 0 auto;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f94949;
-  }
-  .app {
-    margin-left: 0rem;
-  }
-  .left-navbar,
-  .top-navbar {
-    display: none;
+  .modal-container {
+    width: 17rem;
   }
   .denunciations main,
   .denunciations header {

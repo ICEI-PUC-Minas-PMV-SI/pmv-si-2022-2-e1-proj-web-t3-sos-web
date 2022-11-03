@@ -51,3 +51,11 @@
   font-size: 40px;
   margin-left: 5px;
 }
+
+@media (min-width: 400px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (min-width: 800px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}

@@ -92,19 +92,10 @@ button {
   font-weight: bolder;
 }
 
-
-@media (min-width: 600px) {
+@media (min-width: 400px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-
 }
 
 @media (min-width: 800px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
-
 }
-
-@media (min-width: 1024px) {
-  /* big landscape tablets, laptops, and desktops */
-
-}
- 
