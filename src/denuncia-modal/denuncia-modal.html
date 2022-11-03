@@ -2,12 +2,11 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../base.css" />
-  <link rel="stylesheet" href="../index.css" />
   <link rel="stylesheet" href="./denuncia-modal.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +17,7 @@
 </head>
 
 <body>
+  <!-- DESKTOP -->
   <div class="left-navbar">
     <div class="logo-nav">
       <img src="../assets/white_icon.svg" alt="sos-logo">
@@ -45,7 +45,7 @@
     </div>
     <div class="app-container">
       <div class="card-desktop">
-        <div class="card-mobile denunciations">
+        <div class="denunciations">
           <header>
             <h1>Denúncias</h1>
             <div class="form-search">
@@ -81,80 +81,195 @@
                 e aparentemente a plataforma não pune os estelionatários.
               </div>
             </div>
+          </div>
 
+          <main>
+            <table style="overflow-x: auto">
+              <tr class="table-header">
+                <th>Site/E-mail</th>
+                <th>Nome</th>
+                <th>Nocividade</th>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html"><span>Baixa</span></a></td>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Média</a></td>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Média</a></td>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Média</a></td>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Baixa</a></td>
+              </tr>
+              <tr>
+                <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+                <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+              </tr>
+            </table>
+            <div class="table-footer">
+              <p>Total de registros: 10</p>
+              <p>Página 1 de 143</p>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MOBILE -->
+  <div class="card-mobile denunciations">
+    <header>
+      <div class="option-header">
+        <img class="tree-dots-option" src="../assets/tree-dots.svg" alt="Search" />
+      </div>
+      <h1>Denúncias</h1>
+      <div class="form-search">
+        <!-- Pesquisa -->
+        <p>Pesquisa</p>
+        <form name="form-search" class="form-search" method="POST">
+          <input type="search" class="input-base" name="search" placeholder="Pesquisa" />
+          <div class="button-search">
+            <img class="img-search" src="../assets/icon-search.svg" alt="Search" />
+          </div>
+        </form>
+      </div>
+      <div class="filters">
+        <!-- Filtro -->
+        <p>Filtros</p>
+        <button class="filter-button">Internacional</button>
+        <button class="filter-button">Nacional</button>
+        <button class="filter-button">Outros</button>
+      </div>
+    </header>
+    <!-- Tabela -->
+
+    <main>
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <a class="close-modal" type="button" href="../denuncias/denuncias.html">
+            <p class="btn-close-modal">x</p>
+          </a>
+          <div class="modal-header">
+            <h1> Aloha </h1>
+          </div>
+          <div class="modal-content">
+            <p class="Malicioso"> Malicioso </p>
+            <br />
+            <p class="aloha">www.aloha.net</p>
+            <br />
+            Esse site de compras possui muitos comentários e avaliações de golpes
+            e aparentemente a plataforma não pune os estelionatários.
           </div>
         </div>
       </div>
-
-      <main>
-
-        <table style="overflow-x: auto">
-          <tr class="table-header">
-            <th>Site/E-mail</th>
-            <th>Nome</th>
-            <th>Nocividade</th>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Baixa</td>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Média</td>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Alta</td>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Alta</td>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Alta</td>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Média</td>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Alta</td>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Média</td>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Baixa</td>
-          </tr>
-          <tr>
-            <td>www.aloha.com.br</td>
-            <td>Aloha</td>
-            <td>Alta</td>
-          </tr>
-
-        </table>
-        <div class="table-footer">
-          <p>Total de registros: 10</p>
-          <p>Página 1 de 143</p>
-        </div>
-      </main>
-    </div>
+      <table style="overflow-x: auto">
+        <tr class="table-header">
+          <!-- Cabeçalho da tabela -->
+          <th>Site/E-mail</th>
+          <th>Nome</th>
+          <th>Nocividade</th>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Baixa</a></td>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Média</a></td>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Média</a></td>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Média</a></td>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Baixa</a></td>
+        </tr>
+        <tr>
+          <td><a href="../denuncia-modal/denuncia-modal.html">www.aloha.com.br</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Aloha</a></td>
+          <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
+        </tr>
+      </table>
+      <!-- Rodapé da tabela -->
+      <div class="table-footer">
+        <p>Total de registros: 10</p>
+        <p>Página 1 de 143</p>
+      </div>
+      <!-- Barra de menu-->
+      <div class="menu-bar">
+        <img src="../assets/icon-user.svg" alt="icon">
+        <img src="../assets/icon-home.svg" alt="icon">
+        <img src="../assets/icon-tasklist.svg" alt="icon">
+      </div>
+    </main>
   </div>
-  </div>
-  </div>
+
 </body>
 
 </html>

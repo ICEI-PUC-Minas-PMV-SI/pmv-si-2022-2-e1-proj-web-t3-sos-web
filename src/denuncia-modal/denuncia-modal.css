@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .denunciations header,
@@ -16,9 +16,10 @@ body {
 }
 
 .denunciations header h1 {
+  text-align: center;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .form-search {
@@ -48,7 +49,7 @@ body {
   width: 2rem;
   border-radius: 10px;
   padding: 0.3rem;
-  background-color: var(--main);
+  background-color: var(--theme);
   color: white;
 }
 
@@ -64,10 +65,11 @@ body {
 .filters {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .filters p {
+  text-align: right;
   margin-right: 1rem;
   font-weight: 600;
 }
@@ -87,15 +89,27 @@ body {
   cursor: pointer;
 }
 
-main {
-  margin: 1rem 0;
+.filter-button {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-header {
+  display: flex;
+  justify-content: flex-end;
 }
 
 table {
-  /* margin: 1rem 0;
+  margin: 1rem 0;
   border-collapse: collapse;
   border-spacing: 0;
-  */
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
@@ -155,4 +169,69 @@ tr:nth-child(even) {
 
 .aloha {
   font-weight: bolder;
+}
+
+@media (max-width: 400px) {
+  .modal-container {
+    width: 15rem;
+
+  }
+
+  .denunciations {
+    padding: 1rem 2rem 1rem 2rem;
+    width: 15rem;
+    height: 75vh;
+  }
+
+  table {
+    margin-left: -0.6em;
+  }
+
+  .form-search .input-base {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card-mobile {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal-container {
+    width: 17rem;
+
+
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f94949;
+
+  }
+
+  .left-navbar,
+  .app {
+    display: none;
+  }
+
+  .denunciations main,
+  .denunciations header {
+    padding: 0;
+  }
+
+  .button-base {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 801px) {
+  .card-mobile {
+    display: none;
+  }
 }
