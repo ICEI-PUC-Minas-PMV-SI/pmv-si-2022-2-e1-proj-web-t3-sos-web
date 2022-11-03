@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../base.css" />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recuperar Senha</title>
   <link rel="stylesheet" href="recuperar-senha.css">
+  <title>Recuperar senha - SOS WEB</title>
+
 </head>
+<div class="left-navbar">
+  <div class="logo-nav">
+    <img src="../assets/white_icon.svg" alt="sos-logo">
+    <h4>WEB</h4>
+  </div>
+  <div class="nav-options">
+    <div class="logout-nav">
+      <img id="logout-icon" class="left-nav-icon" src="../assets/exit.svg" alt="logout">
+      <p>Retornar ao início</p>
+    </div>
+  </div>
+</div>
 
 <body>
-  <div class="card-base recup-senha">
-    <h1>RECUPERAR SENHA</h1> <br>
+  <div class="card-mobile recup-senha">
+    <h1>Recuperar Senha</h1> <br>
     <form name="form_login" class="form-login" action="do_login.html" method="POST">
       <input type="password" name="insirasuanovasenha" placeholder="Insira Sua Nova Senha" class="input-base"> <br>
-      <input type="password" name="insiranovamente" placeholder="Insira Novamente a Senha" class="input-base">
-      <br>
-      <input type="submit" class="button-base bg-main-color" value="Salvar">
+      <input type="password" name="insiranovamente" placeholder="Insira Novamente a Senha" class="input-base"> <br>
+      <input type="submit" class="button-base bg-main-color" name="botton-salvar" value="Salvar">
     </form>
   </div>
 </body>
-
-</html>

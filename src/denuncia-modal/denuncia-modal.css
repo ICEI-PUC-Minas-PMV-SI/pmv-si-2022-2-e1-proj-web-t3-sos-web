@@ -150,19 +150,48 @@ tr:nth-child(even) {
   margin-bottom: 1.25rem;
 }
 
+.modal-header {
+  text-align: left;
+  margin-left: 25px;
+  font-weight: bolder;
+}
+
+.modal-content {
+  background-color: beige;
+  background-size: 500px;
+}
+
+.Malicioso {
+  color: red;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.aloha {
+  font-weight: bolder;
+}
+
 @media (max-width: 400px) {
+  .modal-container {
+    width: 15rem;
+
+  }
+
   .denunciations {
     padding: 1rem 2rem 1rem 2rem;
     width: 15rem;
     height: 75vh;
   }
+
   table {
     margin-left: -0.6em;
   }
+
   .form-search .input-base {
     width: 100%;
     padding: 15px;
   }
+
   .card-mobile {
     display: flex;
     flex-direction: column;
@@ -171,21 +200,31 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 800px) {
+  .modal-container {
+    width: 17rem;
+
+
+  }
+
   body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f94949;
+
   }
+
   .left-navbar,
   .app {
     display: none;
   }
+
   .denunciations main,
   .denunciations header {
     padding: 0;
   }
+
   .button-base {
     font-size: 0.6rem;
   }

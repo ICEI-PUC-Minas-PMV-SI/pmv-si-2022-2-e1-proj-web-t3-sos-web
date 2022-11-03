@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRIAR DENÚNCIA</title>
-  <link rel="stylesheet" href="../base.css" />
-  <link rel="stylesheet" href="../index.css" />
-  <link rel="stylesheet" href="criar-denuncia.css" />
 
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../base.css" />
+  <link rel="stylesheet" href="./criar-denuncia.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+    rel="stylesheet" />
+
+  <title>Criar denúncia - SOS WEB</title>
 </head>
 
 <body>
@@ -39,36 +43,31 @@
       <img src="../assets/user.svg" alt="user">
     </div>
     <div class="app-container">
-      <div class="card-app">
+      <div class="card-desktop">
         <div class="sign-up">
           <!-- DIV DA PÁGINA -->
           <div class="form-container">
             <h1 class="text-main-color">Criar Denúncia </h1>
             <form name="form_login" class="form-login" action="do_login.html" method="POST">
-              <br />
-              Nome da instituição/vendedor:
+              <b>Nome da instituição/vendedor:</b>
 
               <input type="text" class="input-base" name="nome" size="40px" />
 
               <br />
               <br />
 
-              Link ou email da denúncia
+              <b>Link ou email da denúncia</b>
 
               <input type="text" class="input-base" name="link" size="40px" />
               <br />
               <br />
-              <br />
-              Conte sua história:
+              <b>Conte sua história:</b>
               <textarea name="texto" rows="10" cols="50" style="resize:none"> preencha com algum texto </textarea>
-              <br />
-              <br />
-              <br />
               <br />
               <class id="anexar"> Anexar documento <img src="../assets/paper-clip 1.jpg" width="28" height="28">
               </class>
               <br />
-              <input type="submit" class="button-base bg-main-color" value="Finalizar Denúncia" />
+              <input type="submit" class="button-base bg-main-color" size="30px" value="Finalizar Denúncia" />
             </form>
             <!-- <div class=" menu-bar">
               <img src="../assets/icon-user.svg" alt="icon">

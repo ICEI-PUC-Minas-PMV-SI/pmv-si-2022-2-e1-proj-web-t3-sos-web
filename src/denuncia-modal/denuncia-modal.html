@@ -7,13 +7,13 @@
 
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../base.css" />
-  <link rel="stylesheet" href="./denuncias.css" />
+  <link rel="stylesheet" href="./denuncia-modal.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
     rel="stylesheet" />
 
-  <title>Denúncias - SOS WEB</title>
+  <title>Denúncias modal - SOS Web</title>
 </head>
 
 <body>
@@ -64,6 +64,25 @@
               <button class="button-base">Outros</button>
             </div>
           </header>
+          <div class="modal-overlay">
+            <div class="modal-container">
+              <a class="close-modal" type="button" href="../denuncias/denuncias.html">
+                <p class="btn-close-modal">x</p>
+              </a>
+              <div class="modal-header">
+                <h1> Aloha </h1>
+              </div>
+              <div class="modal-content">
+                <p class="Malicioso"> Malicioso </p>
+                <br />
+                <p class="aloha">www.aloha.net</p>
+                <br />
+                Esse site de compras possui muitos comentários e avaliações de golpes
+                e aparentemente a plataforma não pune os estelionatários.
+              </div>
+            </div>
+          </div>
+
           <main>
             <table style="overflow-x: auto">
               <tr class="table-header">
@@ -131,6 +150,8 @@
       </div>
     </div>
   </div>
+
+
   <!-- MOBILE -->
   <div class="card-mobile denunciations">
     <header>
@@ -157,7 +178,26 @@
       </div>
     </header>
     <!-- Tabela -->
+
     <main>
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <a class="close-modal" type="button" href="../denuncias/denuncias.html">
+            <p class="btn-close-modal">x</p>
+          </a>
+          <div class="modal-header">
+            <h1> Aloha </h1>
+          </div>
+          <div class="modal-content">
+            <p class="Malicioso"> Malicioso </p>
+            <br />
+            <p class="aloha">www.aloha.net</p>
+            <br />
+            Esse site de compras possui muitos comentários e avaliações de golpes
+            e aparentemente a plataforma não pune os estelionatários.
+          </div>
+        </div>
+      </div>
       <table style="overflow-x: auto">
         <tr class="table-header">
           <!-- Cabeçalho da tabela -->
@@ -229,6 +269,7 @@
       </div>
     </main>
   </div>
+
 </body>
 
 </html>
