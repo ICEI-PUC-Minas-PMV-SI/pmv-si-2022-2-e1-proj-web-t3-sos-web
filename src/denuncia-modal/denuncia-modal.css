@@ -135,3 +135,24 @@ tr:nth-child(even) {
   margin-top: 1.5rem;
   margin-bottom: 1.25rem;
 }
+
+.modal-header {
+  text-align: left;
+  margin-left: 25px;
+  font-weight: bolder;
+}
+
+.modal-content {
+  background-color: beige;
+  background-size: 500px;
+}
+
+.Malicioso {
+  color: red;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.aloha {
+  font-weight: bolder;
+}
