@@ -151,6 +151,9 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 400px) {
+  .card-desktop {
+    width: 20rem;
+  }
   .denunciations {
     padding: 1rem 2rem 1rem 2rem;
     width: 15rem;
@@ -172,14 +175,18 @@ tr:nth-child(even) {
 
 @media (max-width: 800px) {
   body {
+    margin: 0 auto;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f94949;
   }
-  .left-navbar,
   .app {
+    margin-left: 0rem;
+  }
+  .left-navbar,
+  .top-navbar {
     display: none;
   }
   .denunciations main,
@@ -188,11 +195,5 @@ tr:nth-child(even) {
   }
   .button-base {
     font-size: 0.6rem;
-  }
-}
-
-@media (min-width: 801px) {
-  .card-mobile {
-    display: none;
   }
 }
