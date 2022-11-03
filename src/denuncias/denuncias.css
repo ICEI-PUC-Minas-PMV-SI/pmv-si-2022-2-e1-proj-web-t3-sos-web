@@ -166,11 +166,6 @@ tr:nth-child(even) {
     width: 100%;
     padding: 15px;
   }
-  .card-mobile {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-  }
 }
 
 @media (max-width: 800px) {
