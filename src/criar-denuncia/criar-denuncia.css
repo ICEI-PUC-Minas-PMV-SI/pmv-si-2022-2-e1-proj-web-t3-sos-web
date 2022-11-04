@@ -25,6 +25,7 @@
   width: 100%;
   margin: 1rem 0;
 }
+
 .menu-bar {
   display: flex;
   align-items: center;
@@ -54,6 +55,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .button-base {
   background-color: #f94949;
 }
@@ -70,11 +72,13 @@
   font-size: 40px;
   margin-left: 5px;
 }
+
 #anexar {
   font-weight: bold;
 }
 
 @media (min-width: 400px) {
+
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
 
