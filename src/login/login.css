@@ -80,6 +80,7 @@ body {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .sign-up {
     width: 30rem;
+    height: max-content;
   }
 }
 @media (min-width: 1024px) {

@@ -1,13 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  background-color: var(--theme);
 }
 
 .recup-senha {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 5rem;
+  margin: 10rem auto;
+  padding: 3rem;
 }
 
 h1 {
@@ -21,7 +20,6 @@ h1 {
   height: 30px;
   width: 100px;
   margin-left: 37px;
-
 }
 
 .input-base {
@@ -30,4 +28,14 @@ h1 {
 
 .logout-nav {
   margin-top: 270px;
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 800px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1024px) {
+  /* big landscape tablets, laptops, and desktops */
 }
