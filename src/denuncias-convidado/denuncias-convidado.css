@@ -4,7 +4,10 @@ body {
 }
 
 .guest-denunciations {
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .guest-denunciations header,
@@ -13,10 +16,10 @@ body {
 }
 
 .guest-denunciations header h1 {
+  text-align: center;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
-  text-align: center;
+  font-size: 2rem;
 }
 
 .form-search {
@@ -46,7 +49,7 @@ body {
   width: 2rem;
   border-radius: 10px;
   padding: 0.3rem;
-  background-color: var(--main);
+  background-color: var(--theme);
   color: white;
 }
 
@@ -62,10 +65,11 @@ body {
 .filters {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .filters p {
+  text-align: right;
   margin-right: 1rem;
   font-weight: 600;
 }
@@ -85,15 +89,27 @@ body {
   cursor: pointer;
 }
 
-main {
-  margin: 1rem 0;
+.filter-button {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-header {
+  display: flex;
+  justify-content: flex-end;
 }
 
 table {
-  /* margin: 1rem 0;
+  margin: 1rem 0;
   border-collapse: collapse;
   border-spacing: 0;
-  */
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
@@ -105,6 +121,11 @@ td {
   margin: 1rem 0;
   text-align: center;
   padding: 0.5rem 0;
+}
+
+td a {
+  color: black;
+  text-decoration: none;
 }
 
 tr:nth-child(even) {
@@ -126,10 +147,41 @@ tr:nth-child(even) {
   align-items: center;
   justify-content: space-between;
   margin-top: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 @media (max-width: 400px) {
+  .modal-container {
+    width: 15rem;
+  }
+
+  .guest-denunciations {
+    padding: 1rem 2rem 1rem 2rem;
+    width: 15rem;
+    height: 75vh;
+  }
+
+  table {
+    margin-left: -0.6em;
+  }
+
+  .form-search .input-base {
+    width: 100%;
+    padding: 15px;
+  }
 }
 
 @media (max-width: 800px) {
+  .modal-container {
+    width: 17rem;
+  }
+
+  .guest-denunciations main,
+  .guest-denunciations header {
+    padding: 0;
+  }
+
+  .button-base {
+    font-size: 0.6rem;
+  }
 }
