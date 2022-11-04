@@ -52,14 +52,23 @@
   margin-left: 5px;
 }
 
+.escreva {
+  font-weight: bolder;
+  font-size: large;
+  justify-content: left;
+  text-align: left;
+  align-items: flex-start;
+}
+
 @media (min-width: 400px) {
-  .sign-up {
-    justify-items: center;
-  }
+
+
 
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
 
 @media (min-width: 800px) {
+
+
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
