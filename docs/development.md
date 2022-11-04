@@ -30,7 +30,12 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 |Usuario |  |  | |
 |Senha|  |  | |
 
-
+*Cadastro de Denúncias*
+|Nome  | Tipo  | Descrição | Exemplo |
+|------|-----------------------------------------|----| ----|
+|Instituição/vendedor| Texto | colocar nome da loja, vendedor| Magazine luiza  |
+|Link/email |  |  | |
+|Cnpj/CPF|  |  | |
 
 
 
