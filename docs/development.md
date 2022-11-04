@@ -35,8 +35,8 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 |------|-----------------------------------------|----| ----|
 |Instituição/vendedor| Texto | colocar nome da loja, vendedor| Magazine luiza  |
 |Link/email |  |  | |
-|Cnpj/CPF|  |  | |
-
+|Cnpj/Cpf|  |  | |
+|História |  |  | |
 
 
 > **Links Úteis**:
