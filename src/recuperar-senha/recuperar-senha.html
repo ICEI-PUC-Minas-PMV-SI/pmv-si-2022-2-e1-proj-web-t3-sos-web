@@ -13,12 +13,20 @@
 </head>
 
 <body>
-  <div class="card-mobile recup-senha">
-    <h1>Recuperar Senha</h1> <br>
-    <form name="form_login" class="form-login" action="do_login.html" method="POST">
-      <input type="password" name="insirasuanovasenha" placeholder="Insira Sua Nova Senha" class="input-base"> <br>
-      <input type="password" name="insiranovamente" placeholder="Insira Novamente a Senha" class="input-base"> <br>
-      <input type="submit" class="button-base bg-main-color" name="botton-salvar" value="Salvar">
-    </form>
+  <div class="card-mobile sign-up">
+    <div class="logo-container">
+      <img src="../assets/logo.svg" alt="logo" />
+      <h1>WEB</h1>
+    </div>
+    <div class="form-container">
+      <p class="text-main-color">RECUPERAR SENHA</p>
+      <form name="form_recupsenha" class="form-recupsenha" action="recupsenha.html" method="POST">
+        <input type="password" class="input-base" name="senha1" placeholder="Insira sua nova senha" /><br />
+        <input type="password" class="input-base" name="senha" placeholder="Repita sua nova senha" /><br />
+        <input type="submit" class="button-base bg-main-color" value="Salvar" />
+      </form>
+    </div>
   </div>
 </body>
+
+</html>
