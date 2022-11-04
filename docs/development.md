@@ -19,15 +19,16 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 # Descrição das estruturas:
 
+*Cadastro do Usuário*
 
 |Nome  | Tipo  | Descrição | Exemplo |
 |------|-----------------------------------------|----| ----|
-| Cadastro| Texto | Dados pessoais | nome, email, telefone...|
-| |  |  | |
-| |  |  | |
-| |  |  | |
-| |  |  | |
-
+| Nome Completo| Texto | Dados pessoais | João Augusto|
+|CPF |  |  | |
+|Email |  |  | |
+|Telefone|  |  | |
+|Usuario |  |  | |
+|Senha|  |  | |
 
 
 
