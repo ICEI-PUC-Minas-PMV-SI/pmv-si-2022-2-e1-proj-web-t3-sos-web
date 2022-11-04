@@ -55,6 +55,15 @@
   padding: 10px;
 }
 
+.edit-icon {
+  margin-left: 1rem;
+}
+
+.user-image {
+  margin-left: 3rem;
+
+}
+
 @media (min-width: 400px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
