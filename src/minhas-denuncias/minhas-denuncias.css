@@ -7,7 +7,9 @@
   align-items: center;
   justify-content: space-evenly;
   height: 80vh;
+  border-radius: 15px;
 }
+
 
 .denounce h1 {
   text-align: center;
@@ -72,7 +74,10 @@
 }
 
 .denounce h4 {
-  font-weight: bolder;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .denounce h5 {
@@ -92,10 +97,28 @@ button {
   font-weight: bolder;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
+
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .denounce h4 {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .denounce h1 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (min-width: 800px) {
+
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .denounce h4 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .denounce h1 {
+    font-size: 3rem;
+  }
 }
