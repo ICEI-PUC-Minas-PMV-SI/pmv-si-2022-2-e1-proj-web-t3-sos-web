@@ -6,6 +6,15 @@ body {
   background-color: #f94949;
 }
 
+
+.text-main-color {
+
+  text-align: center;
+  font-size: larger;
+
+
+}
+
 .sign-up {
   margin: 10rem auto;
   padding: 3rem;
@@ -60,19 +69,35 @@ body {
   font-size: 40px;
   margin-left: 5px;
 }
+
+@media (min-width: 400px) {
+  .sign-up {
+    width: 20rem;
+
+  }
+
+
+}
+
 @media (min-width: 600px) {
+
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .sign-up {
     width: 25rem;
   }
 }
+
 @media (min-width: 800px) {
+
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .sign-up {
     width: 30rem;
+    height: max-content;
   }
 }
+
 @media (min-width: 1024px) {
+
   /* big landscape tablets, laptops, and desktops */
   .sign-up {
     display: flex;
@@ -80,4 +105,3 @@ body {
     justify-content: space-around;
   }
 }
-

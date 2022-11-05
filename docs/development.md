@@ -19,18 +19,24 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 # Descrição das estruturas:
 
+*Cadastro do Usuário*
 
 |Nome  | Tipo  | Descrição | Exemplo |
 |------|-----------------------------------------|----| ----|
-| Cadastro| Texto | Dados pessoais | nome, email, telefone...|
-| |  |  | |
-| |  |  | |
-| |  |  | |
-| |  |  | |
+| Nome Completo| Texto | Dados pessoais | João Augusto|
+|CPF |  |  | |
+|Email |  |  | |
+|Telefone|  |  | |
+|Usuario |  |  | |
+|Senha|  |  | |
 
-
-
-
+*Cadastro de Denúncias*
+|Nome  | Tipo  | Descrição | Exemplo |
+|------|-----------------------------------------|----| ----|
+|Instituição/vendedor| Texto | colocar nome da loja, vendedor| Magazine luiza  |
+|Link/email |  |  | |
+|Cnpj/Cpf|  |  | |
+|História |  |  | |
 
 
 > **Links Úteis**:
