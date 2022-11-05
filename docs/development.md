@@ -11,7 +11,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 |RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito |  |../denuncias-convidado/denuncias-convidado.html |
 |RF-004| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |  |../minhas-denuncias/minhas-denuncias.html |
 |RF-005| A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise |  |../usuario/usuario.html  |
-|RF-006| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito |  | | |
+|RF-006| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito |  | ../admin/admin.html |
 |RF-007| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise |  |../minhas-denuncias/minhas-denuncias.html|
 |RF-008| Todo cadastro de usuários deve ser validado pelo sistema |  | ../login/login.html  ../cadastro/cadastro.html |
 |RF-009| Permitir que o usuário comente uma denúncia desde que esteja logado |  |../addcoments/addcoments.html | 
