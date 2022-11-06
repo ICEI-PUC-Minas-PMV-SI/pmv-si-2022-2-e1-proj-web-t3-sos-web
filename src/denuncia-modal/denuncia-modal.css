@@ -171,7 +171,25 @@ tr:nth-child(even) {
   font-weight: bolder;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination p {
+  margin-right: 0.75rem;
+}
+
+.pagination img {
+  margin-bottom: 0.1rem;
+}
+
 @media (max-width: 400px) {
+  .card-app {
+    height: 85vh;
+    padding-bottom: 1rem;
+  }
   .modal-container {
     width: 15rem;
   }

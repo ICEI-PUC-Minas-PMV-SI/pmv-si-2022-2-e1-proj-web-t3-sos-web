@@ -1,263 +1,242 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="stylesheet" href="./admin.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Administrador - SOS WEB</title>
-  </head>
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../base.css" />
+  <link rel="stylesheet" href="./admin.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- DESKTOP -->
-    <div class="left-navbar">
-      <div class="logo-nav">
-        <img src="../assets/white_icon.svg" alt="sos-logo" />
-        <h4>WEB</h4>
+  <title>Administrador - SOS WEB</title>
+</head>
+
+<body>
+  <!-- DESKTOP -->
+  <div class="left-navbar">
+    <div class="logo-nav">
+      <img src="../assets/white_icon.svg" alt="sos-logo" />
+      <h4>WEB</h4>
+    </div>
+    <div class="nav-options">
+      <div class="home-nav">
+        <img id="home-icon" class="left-nav-icon" src="../assets/icon-home.svg" alt="home" />
+        <p>Denúncias</p>
       </div>
-      <div class="nav-options">
-        <div class="home-nav">
-          <img
-            id="home-icon"
-            class="left-nav-icon"
-            src="../assets/icon-home.svg"
-            alt="home"
-          />
-          <p>Denúncias</p>
-        </div>
-        <div class="user-denunciations-nav">
-          <img
-            id="denunciations-icon"
-            class="left-nav-icon"
-            src="../assets/icon-tasklist.svg"
-            alt="denunciations"
-          />
-          <p>Gerenciar denúncias</p>
-        </div>
-        <div class="logout-nav">
-          <img
-            id="logout-icon"
-            class="left-nav-icon"
-            src="../assets/exit.svg"
-            alt="logout"
-          />
-          <p>Sair</p>
-        </div>
+      <div class="user-denunciations-nav">
+        <img id="denunciations-icon" class="left-nav-icon" src="../assets/icon-tasklist.svg" alt="denunciations" />
+        <p>Gerenciar denúncias</p>
+      </div>
+      <div class="logout-nav">
+        <img id="logout-icon" class="left-nav-icon" src="../assets/exit.svg" alt="logout" />
+        <p>Sair</p>
       </div>
     </div>
-    <div class="app">
-      <div class="top-navbar">
-        <p>Lorem ipsum</p>
-        <img src="../assets/user.svg" alt="user" />
-      </div>
-      <div class="app-container">
-        <div class="card-app">
-          <div class="denunciations">
-            <header>
-              <h1>Denúncias</h1>
-              <div class="form-search">
-                <p>Pesquisa</p>
-                <form name="form-search" class="form-search" method="POST">
-                  <input
-                    type="search"
-                    class="input-base"
-                    name="search"
-                    placeholder="Pesquisa"
-                  />
-                  <div class="button-search">
-                    <img
-                      class="img-search"
-                      src="../assets/icon-search.svg"
-                      alt="Search"
-                    />
-                  </div>
-                </form>
-              </div>
-              <div class="filters">
-                <p>Filtros</p>
-                <button class="button-base">Pendente</button>
-                <button class="button-base">Aprovada</button>
-                <button class="button-base">Negada</button>
-              </div>
-            </header>
-            <main>
-              <table style="overflow-x: auto">
-                <tr class="table-header">
-                  <th>Site/E-mail</th>
-                  <th>Nome</th>
-                  <th>Nocividade</th>
-                  <th>Usuário responsável</th>
-                  <th>Situacão</th>
-                  <th>Acão</th>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Baixa</td>
-                  <td>John Doe</td>
-                  <td>Negada</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Média</td>
-                  <td>John Doe</td>
-                  <td>Aprovada</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Alta</td>
-                  <td>John Doe</td>
-                  <td>Pendente</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Alta</td>
-                  <td>John Doe</td>
-                  <td>Pendente</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Alta</td>
-                  <td>John Doe</td>
-                  <td>Negada</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Média</td>
-                  <td>John Doe</td>
-                  <td>Aprovada</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Alta</td>
-                  <td>John Doe</td>
-                  <td>Aprovada</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Média</td>
-                  <td>John Doe</td>
-                  <td>Negada</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Baixa</td>
-                  <td>John Doe</td>
-                  <td>Negada</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>www.aloha.com.br</td>
-                  <td>Aloha</td>
-                  <td>Alta</td>
-                  <td>John Doe</td>
-                  <td>Pendente</td>
-                  <td>
-                    <button class="icon-button">
-                      <img src="../assets/icon-check.svg" alt="approve" />
-                    </button>
-                    <button class="icon-button">
-                      <img src="../assets/icon-cancel.svg" alt="cancel" />
-                    </button>
-                  </td>
-                </tr>
-              </table>
-              <div class="table-footer">
-                <p>Total de registros: 10</p>
+  </div>
+  <div class="app">
+    <div class="top-navbar">
+      <p>Lorem ipsum</p>
+      <img src="../assets/user.svg" alt="user" />
+    </div>
+    <div class="app-container">
+      <div class="card-app">
+        <div class="denunciations">
+          <header>
+            <h1>Denúncias</h1>
+            <div class="form-search">
+              <p>Pesquisa</p>
+              <form name="form-search" class="form-search" method="POST">
+                <input type="search" class="input-base" name="search" placeholder="Pesquisa" />
+                <div class="button-search">
+                  <img class="img-search" src="../assets/icon-search.svg" alt="Search" />
+                </div>
+              </form>
+            </div>
+            <div class="filters">
+              <p>Filtros</p>
+              <button class="button-base">Pendente</button>
+              <button class="button-base">Aprovada</button>
+              <button class="button-base">Negada</button>
+            </div>
+          </header>
+          <main>
+            <table style="overflow-x: auto">
+              <tr class="table-header">
+                <th>Site/E-mail</th>
+                <th>Nome</th>
+                <th>Nocividade</th>
+                <th>Usuário responsável</th>
+                <th>Situacão</th>
+                <th>Acão</th>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Baixa</td>
+                <td>John Doe</td>
+                <td>Negada</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Média</td>
+                <td>John Doe</td>
+                <td>Aprovada</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Alta</td>
+                <td>John Doe</td>
+                <td>Pendente</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Alta</td>
+                <td>John Doe</td>
+                <td>Pendente</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Alta</td>
+                <td>John Doe</td>
+                <td>Negada</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Média</td>
+                <td>John Doe</td>
+                <td>Aprovada</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Alta</td>
+                <td>John Doe</td>
+                <td>Aprovada</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Média</td>
+                <td>John Doe</td>
+                <td>Negada</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Baixa</td>
+                <td>John Doe</td>
+                <td>Negada</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>www.aloha.com.br</td>
+                <td>Aloha</td>
+                <td>Alta</td>
+                <td>John Doe</td>
+                <td>Pendente</td>
+                <td>
+                  <button class="icon-button">
+                    <img src="../assets/icon-check.svg" alt="approve" />
+                  </button>
+                  <button class="icon-button">
+                    <img src="../assets/icon-cancel.svg" alt="cancel" />
+                  </button>
+                </td>
+              </tr>
+            </table>
+            <div class="table-footer">
+              <p>Total de registros: 10</p>
+              <div class="pagination">
                 <p>Página 1 de 143</p>
+                <img src="../assets/chevron-right.svg" alt="next-pagination">
               </div>
-            </main>
-          </div>
+            </div>
+          </main>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
