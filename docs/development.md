@@ -24,6 +24,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 |Nome  | Tipo  | Descrição | Exemplo |
 |------|-----------------------------------------|----| ----|
 | Nome Completo| Texto | Dados pessoais | João Augusto|
+| Data de Nascimento| Data | Dados pessoais | 25/12/1998|
 |CPF | Texto | Número do documento | nº 000.000.008-00 |
 |Email | Texto | Endereço eletrônico | aluno@email.com |
 |Telefone| Número | Meio de Comunicação | 21 0800-8000 |
