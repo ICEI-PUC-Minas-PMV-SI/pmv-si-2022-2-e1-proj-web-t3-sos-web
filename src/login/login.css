@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--theme);
 }
 
@@ -68,6 +71,19 @@ body {
 
 .options a {
   margin: 0.5rem auto;
+}
+
+.button-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  text-decoration: inherit;
+  width: 70%;
+  height: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {
