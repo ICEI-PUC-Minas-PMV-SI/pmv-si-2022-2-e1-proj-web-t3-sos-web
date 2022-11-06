@@ -25,7 +25,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 |------|-----------------------------------------|----| ----|
 | Nome Completo| Texto | Dados pessoais | João Augusto|
 |CPF | Texto | Número do documento | nº 000.000.008-00 |
-|EMAIL | Texto | Endereço eletrônico | aluno@email.com |
+|Email | Texto | Endereço eletrônico | aluno@email.com |
 |Telefone| Número | Meio de Comunicação | 21 0800-8000 |
 |Usuario | Texto | Nome da pessoa que irá utilizar a plataforma | JONAS13 |
 |Senha| Texto | Meio de confirmação de acesso visando segurança | senha1300 |
@@ -34,9 +34,9 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 |Nome  | Tipo  | Descrição | Exemplo |
 |------|-----------------------------------------|----| ----|
 |Instituição/vendedor| Texto | colocar nome da loja, vendedor| Magazine luiza  |
-|LINK/EMAIL  | Texto | Endereço eletrônico | www.magazinEEluiza.com.br |
+|Link/Email  | Texto | Endereço eletrônico | www.magazinEEluiza.com.br |
 |CNPJ/CPF| Número | Confirmador nacional de existência | XX. XXX. XXX/0001-XX |
-|HISTÓRIA| Texto | Campo destinado ao usúario regristar o ocorrido | Realizei uma compra neste site e o produto nunca chegou. |
+|História| Texto | Campo destinado ao usúario regristar o ocorrido | Realizei uma compra neste site e o produto nunca chegou. |
 
 
 > **Links Úteis**:
