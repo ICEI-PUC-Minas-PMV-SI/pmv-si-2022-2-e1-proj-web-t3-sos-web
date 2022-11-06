@@ -34,7 +34,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 *Cadastro de Denúncias*
 |Nome  | Tipo  | Descrição | Exemplo |
 |------|-----------------------------------------|----| ----|
-|Instituição/vendedor| Texto | Colocar nome da loja, vendedor| Magazine luiza  |
+|Instituição/Vendedor| Texto | Colocar nome da loja, vendedor que o usúario realizou a compra| Magazine luiza  |
 |Link/Email  | Texto | Endereço eletrônico | www.magazinEEluiza.com.br |
 |CNPJ/CPF| Número | Confirmador nacional de existência | XX. XXX. XXX/0001-XX |
 |História| Texto | Campo destinado ao usúario regristar o ocorrido | Realizei uma compra neste site e o produto nunca chegou. |
