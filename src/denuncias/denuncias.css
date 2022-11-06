@@ -164,9 +164,13 @@ tr:nth-child(even) {
   margin-bottom: 0.1rem;
 }
 
+.menu-bar {
+  display: none;
+}
+
 @media (max-width: 400px) {
   .card-app {
-    height: 85vh;
+    height: 93vh;
     padding-bottom: 1rem;
   }
   .modal-container {
@@ -187,6 +191,9 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 800px) {
+  .menu-bar {
+    display: flex;
+  }
   .modal-container {
     width: 17rem;
   }

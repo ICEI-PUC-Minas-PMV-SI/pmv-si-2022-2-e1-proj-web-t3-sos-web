@@ -10,7 +10,6 @@
   border-radius: 15px;
 }
 
-
 .denounce h1 {
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -85,20 +84,27 @@
   margin-right: 10px;
 }
 
-button {
-  height: 50px;
-  width: 50px;
+.gg-trash {
+  cursor: pointer;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: inherit;
+  height: 3rem;
+  width: 3rem;
   background-color: #d9d9d9;
   border-radius: 50%;
-  margin: 15px;
+  margin: 1rem;
   border-color: transparent;
   font-size: 1.3rem;
-  text-align: center;
   font-weight: bolder;
 }
 
 @media (max-width: 400px) {
-
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .denounce h4 {
     font-size: 0.8rem;
@@ -111,7 +117,6 @@ button {
 }
 
 @media (min-width: 800px) {
-
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .denounce h4 {
     font-size: 1rem;

@@ -152,22 +152,24 @@ tr:nth-child(even) {
 
 .modal-header {
   text-align: left;
-  margin-left: 25px;
+  margin-top: 1.25rem;
+  margin-left: 2rem;
   font-weight: bolder;
 }
 
 .modal-content {
-  background-color: beige;
-  background-size: 500px;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
-.Malicioso {
+.content-warning {
   color: red;
   font-weight: bolder;
   font-size: x-large;
 }
 
-.aloha {
+.content-link {
   font-weight: bolder;
 }
 
@@ -209,7 +211,7 @@ tr:nth-child(even) {
 
 @media (max-width: 800px) {
   .modal-container {
-    width: 17rem;
+    width: 18rem;
   }
   .denunciations main,
   .denunciations header {

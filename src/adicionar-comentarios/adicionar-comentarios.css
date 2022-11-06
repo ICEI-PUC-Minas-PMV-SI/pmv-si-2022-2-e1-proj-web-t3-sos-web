@@ -8,6 +8,12 @@
   font-size: 1.2rem;
 }
 
+.input-base {
+  border: 1px solid #ceb8a7 !important;
+  height: auto;
+  margin-top: 2rem;
+}
+
 .sign-up a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -61,14 +67,9 @@
 }
 
 @media (min-width: 400px) {
-
-
-
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
 
 @media (min-width: 800px) {
-
-
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
