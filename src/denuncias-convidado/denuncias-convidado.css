@@ -10,6 +10,11 @@ body {
   padding: 2rem;
 }
 
+.option-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .guest-denunciations header,
 .guest-denunciations main {
   padding: 5px 30px 5px 30px;
@@ -141,6 +146,10 @@ tr:nth-child(even) {
   padding-left: 0.5rem;
 }
 
+.next-pagination {
+  cursor: pointer;
+}
+
 .table-footer {
   /* margin: 1rem 0; */
   display: flex;
@@ -162,6 +171,10 @@ tr:nth-child(even) {
 
 .pagination img {
   margin-bottom: 0.1rem;
+}
+
+.option-header {
+  display: none;
 }
 
 @media (max-width: 400px) {
@@ -191,6 +204,9 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 800px) {
+  .option-header {
+    display: flex;
+  }
   .modal-container {
     width: 17rem;
   }

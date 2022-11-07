@@ -169,6 +169,11 @@ tr:nth-child(even) {
   margin-bottom: 0.1rem;
 }
 
+.menu-bar,
+.option-header {
+  display: none;
+}
+
 @media (max-width: 400px) {
   .modal-container {
     width: 15rem;
@@ -188,6 +193,10 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 800px) {
+  .menu-bar,
+  .option-header {
+    display: flex;
+  }
   .modal-container {
     width: 17rem;
   }

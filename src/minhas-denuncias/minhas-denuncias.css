@@ -30,6 +30,12 @@
   min-height: 10rem;
 }
 
+.option-header {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+}
+
 .title-denounce-analyses {
   margin: 0;
   padding-left: 15px;
@@ -88,6 +94,10 @@
   cursor: pointer;
 }
 
+.next-pagination {
+  cursor: pointer;
+}
+
 .add-button {
   display: flex;
   align-items: center;
@@ -104,6 +114,11 @@
   font-weight: bolder;
 }
 
+.menu-bar,
+.option-header {
+  display: none;
+}
+
 @media (max-width: 400px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .denounce h4 {
@@ -116,8 +131,18 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .card-app {
+    height: 90vh;
+  }
+  .menu-bar,
+  .option-header {
+    display: flex;
+  }
+  .denounce {
+    padding: 1rem;
+  }
   .denounce h4 {
     font-size: 1rem;
     font-weight: bold;

@@ -1,7 +1,15 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sign-up {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 100%;
 }
 
 .sign-up p {
@@ -13,6 +21,12 @@
 .input-base {
   border: 1px solid #ceb8a7 !important;
   height: auto;
+  width: 15rem;
+}
+
+.text-area-base {
+  width: 17rem;
+  height: 15rem;
 }
 
 .sign-up a {
@@ -45,7 +59,8 @@
 }
 
 .form-container {
-  padding: 1rem auto;
+  width: 100%;
+  padding: 1rem;
 }
 
 .form-container p {
@@ -83,10 +98,13 @@
   font-weight: bold;
 }
 
+.menu-bar,
+.option-header {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .app-container {
-    width: 25rem;
-
     align-items: center;
   }
 
@@ -97,8 +115,6 @@
 
 @media (max-width: 400px) {
   .app-container {
-    width: 22rem;
-
     align-items: center;
   }
 
@@ -115,6 +131,14 @@
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .menu-bar,
+  .option-header {
+    display: flex;
+  }
+  .option-header {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
