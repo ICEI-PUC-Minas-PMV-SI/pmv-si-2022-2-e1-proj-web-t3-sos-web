@@ -26,12 +26,17 @@
   <div class="app">
     <div class="top-navbar">
       <p>Fazer login</p>
-      <img src="../assets/user.svg" alt="user">
+      <a href="../login/login.html">
+        <img src="../assets/user.svg" alt="user">
+      </a>
     </div>
     <div class="app-container">
       <div class="card-app">
         <div class="guest-denunciations">
           <header>
+            <div class="option-header">
+              <img class="tree-dots-option" src="../assets/tree-dots.svg" alt="Search" />
+            </div>
             <h1>Denúncias</h1>
             <div class="form-search">
               <p>Pesquisa</p>
@@ -44,9 +49,9 @@
             </div>
             <div class="filters">
               <p>Filtros</p>
-              <button class="button-base">Internacional</button>
-              <button class="button-base">Nacional</button>
-              <button class="button-base">Outros</button>
+              <button class="button-base">Alta</button>
+              <button class="button-base">Média</button>
+              <button class="button-base">Baixa</button>
             </div>
           </header>
           <main>
@@ -109,7 +114,10 @@
             </table>
             <div class="table-footer">
               <p>Total de registros: 10</p>
-              <p>Página 1 de 143</p>
+              <div class="pagination">
+                <p>Página 1 de 143</p>
+                <img class="next-pagination" src="../assets/chevron-right.svg" alt="next-pagination">
+              </div>
             </div>
           </main>
         </div>

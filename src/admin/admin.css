@@ -155,6 +155,25 @@ tr:nth-child(even) {
   margin-bottom: 1.25rem;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination p {
+  margin-right: 0.75rem;
+}
+
+.pagination img {
+  margin-bottom: 0.1rem;
+}
+
+.menu-bar,
+.option-header {
+  display: none;
+}
+
 @media (max-width: 400px) {
   .modal-container {
     width: 15rem;
@@ -174,6 +193,10 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 800px) {
+  .menu-bar,
+  .option-header {
+    display: flex;
+  }
   .modal-container {
     width: 17rem;
   }

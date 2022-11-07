@@ -18,35 +18,46 @@
 
 <body>
   <!-- DESKTOP -->
-  <div class="left-navbar">
+  <nav class="left-navbar">
     <div class="logo-nav">
       <img src="../assets/white_icon.svg" alt="sos-logo">
       <h4>WEB</h4>
     </div>
     <div class="nav-options">
       <div class="home-nav">
-        <img id="home-icon" class="left-nav-icon" src="../assets/icon-home.svg" alt="home">
+        <a href="../denuncias/denuncias.html">
+          <img id="home-icon" class="left-nav-icon" src="../assets/icon-home.svg" alt="home">
+        </a>
         <p>Denúncias</p>
       </div>
       <div class="user-denunciations-nav">
-        <img id="denunciations-icon" class="left-nav-icon" src="../assets/icon-tasklist.svg" alt="denunciations">
+        <a href="../minhas-denuncias/minhas-denuncias.html">
+          <img id="denunciations-icon" class="left-nav-icon" src="../assets/icon-tasklist.svg" alt="denunciations">
+        </a>
         <p>Minhas denúncias</p>
       </div>
       <div class="logout-nav">
-        <img id="logout-icon" class="left-nav-icon" src="../assets/exit.svg" alt="logout">
+        <a href="../login/login.html">
+          <img id="logout-icon" class="left-nav-icon" src="../assets/exit.svg" alt="logout">
+        </a>
         <p>Sair</p>
       </div>
     </div>
-  </div>
+  </nav>
   <div class="app">
-    <div class="top-navbar">
+    <header class="top-navbar">
       <p>Lorem ipsum</p>
-      <img src="../assets/user.svg" alt="user">
-    </div>
+      <a href="../usuario/usuario.html">
+        <img src="../assets/user.svg" alt="user">
+      </a>
+    </header>
     <div class="app-container">
       <div class="card-app">
         <div class="denunciations">
           <header>
+            <div class="option-header">
+              <img class="tree-dots-option" src="../assets/tree-dots.svg" alt="Search" />
+            </div>
             <h1>Denúncias</h1>
             <div class="form-search">
               <p>Pesquisa</p>
@@ -59,9 +70,9 @@
             </div>
             <div class="filters">
               <p>Filtros</p>
-              <button class="button-base">Internacional</button>
-              <button class="button-base">Nacional</button>
-              <button class="button-base">Outros</button>
+              <button class="button-base">Alta</button>
+              <button class="button-base">Média</button>
+              <button class="button-base">Baixa</button>
             </div>
           </header>
           <main>
@@ -122,10 +133,20 @@
                 <td><a href="../denuncia-modal/denuncia-modal.html">Alta</a></td>
               </tr>
             </table>
-            <div class="table-footer">
-              <p>Total de registros: 10</p>
-              <p>Página 1 de 143</p>
-            </div>
+            <footer>
+              <div class="table-footer">
+                <p>Total de registros: 10</p>
+                <div class="pagination">
+                  <p>Página 1 de 143</p>
+                  <img class="next-pagination" src="../assets/chevron-right.svg" alt="next-pagination">
+                </div>
+              </div>
+              <div class="menu-bar">
+                <img src="../assets/icon-user.svg" alt="icon">
+                <img src="../assets/icon-home.svg" alt="icon">
+                <img src="../assets/icon-tasklist.svg" alt="icon">
+              </div>
+            </footer>
           </main>
         </div>
       </div>

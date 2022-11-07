@@ -8,6 +8,12 @@
   font-size: 1.2rem;
 }
 
+.input-base {
+  border: 1px solid #ceb8a7 !important;
+  height: auto;
+  margin-top: 2rem;
+}
+
 .sign-up a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -60,15 +66,23 @@
   align-items: flex-start;
 }
 
+.menu-bar,
+.option-header {
+  display: none;
+}
+
 @media (min-width: 400px) {
-
-
-
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 }
 
-@media (min-width: 800px) {
-
-
+@media (max-width: 800px) {
+  .menu-bar,
+  .option-header {
+    display: flex;
+  }
+  .option-header {
+    width: 100%;
+    justify-content: flex-end;
+  }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }

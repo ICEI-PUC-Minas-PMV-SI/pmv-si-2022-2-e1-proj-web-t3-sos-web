@@ -10,7 +10,6 @@
   border-radius: 15px;
 }
 
-
 .denounce h1 {
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -29,6 +28,12 @@
   width: 85%;
   height: fit-content;
   min-height: 10rem;
+}
+
+.option-header {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
 }
 
 .title-denounce-analyses {
@@ -85,20 +90,36 @@
   margin-right: 10px;
 }
 
-button {
-  height: 50px;
-  width: 50px;
+.gg-trash {
+  cursor: pointer;
+}
+
+.next-pagination {
+  cursor: pointer;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: inherit;
+  height: 3rem;
+  width: 3rem;
   background-color: #d9d9d9;
   border-radius: 50%;
-  margin: 15px;
+  margin: 1rem;
   border-color: transparent;
   font-size: 1.3rem;
-  text-align: center;
   font-weight: bolder;
 }
 
-@media (max-width: 400px) {
+.menu-bar,
+.option-header {
+  display: none;
+}
 
+@media (max-width: 400px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .denounce h4 {
     font-size: 0.8rem;
@@ -110,9 +131,18 @@ button {
   }
 }
 
-@media (min-width: 800px) {
-
+@media (max-width: 800px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .card-app {
+    height: 90vh;
+  }
+  .menu-bar,
+  .option-header {
+    display: flex;
+  }
+  .denounce {
+    padding: 1rem;
+  }
   .denounce h4 {
     font-size: 1rem;
     font-weight: bold;
