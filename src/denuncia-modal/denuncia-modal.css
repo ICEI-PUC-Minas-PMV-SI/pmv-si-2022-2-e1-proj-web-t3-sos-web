@@ -151,6 +151,8 @@ tr:nth-child(even) {
 }
 
 .modal-header {
+  display: flex;
+  justify-content: space-between;
   text-align: left;
   margin-top: 1.25rem;
   margin-left: 2rem;

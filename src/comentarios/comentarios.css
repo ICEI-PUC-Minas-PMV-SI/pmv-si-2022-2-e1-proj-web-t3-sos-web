@@ -1,22 +1,90 @@
-.Titulo {
-
-  text-align: center;
-  font-size: 40px;
-  font-weight: bolder;
-
+.comments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.malicioso {
-
-  font-size: 30px;
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 1.25rem;
+  margin-left: 2rem;
   font-weight: bolder;
-  color: rgb(250, 0, 0);
 }
 
-.riscoalto {
+.modal-content {
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  padding: 1rem;
+}
 
-  text-align: right;
-  border-right: 20rem;
+.content-warning {
+  color: red;
+  font-weight: bolder;
+  font-size: x-large;
+}
 
+.content-link {
+  font-weight: bolder;
+}
 
+.add-comment {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-comment a {
+  text-decoration: inherit;
+}
+
+.add-comment p {
+  margin-right: 2.5rem;
+  color: #cb1616;
+}
+
+.user-image {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.user-comment {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.comment-container {
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #bebaba;
+}
+
+.menu-bar,
+.option-header {
+  display: none;
+}
+
+.tree-dots-option {
+  margin-right: 1rem;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 800px) {
+  .menu-bar,
+  .option-header {
+    display: flex;
+  }
+  .option-header {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
