@@ -7,32 +7,33 @@
 
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../base.css" />
-  <link rel="stylesheet" href="./denuncias-convidado.css" />
+  <link rel="stylesheet" href="./denuncia-modal-convidado.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
     rel="stylesheet" />
 
-  <title>Denúncias convidado - SOS WEB</title>
+  <title>Denúncias modal - SOS Web</title>
 </head>
 
 <body>
-  <div class="left-navbar">
+  <!-- DESKTOP -->
+  <nav class="left-navbar">
     <div class="logo-nav">
       <img src="../assets/white_icon.svg" alt="sos-logo">
       <h4>WEB</h4>
     </div>
-  </div>
+  </nav>
   <div class="app">
-    <div class="top-navbar">
+    <header class="top-navbar">
       <p>Fazer login</p>
-      <a href="../login/login.html">
+      <a href="../usuario/usuario.html">
         <img src="../assets/user.svg" alt="user">
       </a>
-    </div>
+    </header>
     <div class="app-container">
       <div class="card-app">
-        <div class="guest-denunciations">
+        <div class="denunciations">
           <header>
             <div class="option-header">
               <img class="tree-dots-option" src="../assets/tree-dots.svg" alt="Search" />
@@ -54,6 +55,25 @@
               <button class="button-base">Baixa</button>
             </div>
           </header>
+          <div class="modal-overlay">
+            <div class="modal-container">
+              <a class="close-modal" type="button" href="../denuncias-convidado/denuncias-convidado.html">
+                <p class="btn-close-modal">x</p>
+              </a>
+              <div class="modal-header">
+                <h1> Aloha </h1>
+              </div>
+              <div class="modal-content">
+                <p class="content-warning"> Malicioso </p>
+                <br />
+                <p class="content-link">www.aloha.com.br</p>
+                <br />
+                Esse site de compras possui muitos comentários e avaliações de golpes
+                e aparentemente a plataforma não pune os estelionatários.
+              </div>
+            </div>
+          </div>
+
           <main>
             <table style="overflow-x: auto">
               <tr class="table-header">
@@ -118,6 +138,11 @@
                 <p>Página 1 de 143</p>
                 <img class="next-pagination" src="../assets/chevron-right.svg" alt="next-pagination">
               </div>
+            </div>
+            <div class="menu-bar">
+              <img src="../assets/icon-user.svg" alt="icon">
+              <img src="../assets/icon-home.svg" alt="icon">
+              <img src="../assets/icon-tasklist.svg" alt="icon">
             </div>
           </main>
         </div>
