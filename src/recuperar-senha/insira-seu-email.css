@@ -1,7 +1,4 @@
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--theme);
 }
 
@@ -23,7 +20,7 @@ body {
   margin-top: 30px;
 }
 
-.form-login {
+.form-recupsenha2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +28,7 @@ body {
 }
 
 .form-container {
-  padding: 1rem auto;
+  padding: 9rem auto;
 }
 
 .form-container p {
@@ -58,32 +55,6 @@ body {
   font-weight: 400;
   font-size: 40px;
   margin-left: 5px;
-}
-
-.options {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.options a {
-  margin: 0.5rem auto;
-}
-
-.button-base {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  text-decoration: inherit;
-  width: 70%;
-  height: 2rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 @media (min-width: 600px) {
