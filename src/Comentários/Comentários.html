@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../base.css" />
+  <link rel="stylesheet" href="./Comentários.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+    rel="stylesheet" />
+
+  <title>Comentários</title>
+</head>
+
+<body>
+  <div class="left-navbar">
+    <div class="logo-nav">
+      <img src="../assets/white_icon.svg" alt="sos-logo">
+      <h4>WEB</h4>
+    </div>
+    <div class="nav-options">
+      <div class="home-nav">
+        <img id="home-icon" class="left-nav-icon" src="../assets/icon-home.svg" alt="home">
+        <p>Denúncias</p>
+      </div>
+      <div class="user-denunciations-nav">
+        <img id="denunciations-icon" class="left-nav-icon" src="../assets/icon-tasklist.svg" alt="denunciations">
+        <p>Minhas denúncias</p>
+      </div>
+      <div class="logout-nav">
+        <img id="logout-icon" class="left-nav-icon" src="../assets/exit.svg" alt="logout">
+        <p>Sair</p>
+      </div>
+    </div>
+  </div>
+  <div class="app">
+    <div class="top-navbar">
+      <p>Lorem ipsum</p>
+      <img src="../assets/user.svg" alt="user">
+    </div>
+    <div class="app-container">
+      <div class="card-app">
+        <div class="sign-up">
+          <!-- DIV DA PÁGINA -->
+          <div class="form-container">
+            <p class="Titulo">Aloha </p>
+            <form name="form_login" class="form-login" action="do_login.html" method="POST">
+              <div class="table">
+                <div>
+                  <p class="malicioso">Malicioso</p>
+                  <p class="riscoalto">RISCO ALTO </p>
+                </div>
+                <b>Link ou email da denúncia</b>
+
+                <input class="text" class="input-base" name="link" size="40px" />
+                <br />
+                <br />
+                <b>Conte sua história:</b>
+                <textarea class="text" rows="10" cols="50" style="resize:none"> preencha com algum texto </textarea>
+                <br />
+                <class id="anexar"> Anexar documento <img src="../assets/paper-clip 1.jpg" width="28" height="28">
+                </class>
+                <br />
+                <input type="submit" class="button-base bg-main-color" size="30px" value="Finalizar Denúncia" />
+            </form>
+            <!-- <div class=" menu-bar">
+              <img src="../assets/icon-user.svg" alt="icon">
+              <img src="../assets/icon-home.svg" alt="icon">
+              <img src="../assets/icon-tasklist.svg" alt="icon">
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

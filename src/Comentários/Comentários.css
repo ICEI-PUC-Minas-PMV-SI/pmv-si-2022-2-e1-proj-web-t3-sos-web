@@ -1,0 +1,22 @@
+.Titulo {
+
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+
+}
+
+.malicioso {
+
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(250, 0, 0);
+}
+
+.riscoalto {
+
+  text-align: right;
+  border-right: 20rem;
+
+
+}
