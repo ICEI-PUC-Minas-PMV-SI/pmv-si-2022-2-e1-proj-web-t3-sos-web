@@ -8,6 +8,9 @@
 
 Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cadastrar dados relacionados a integridade e a veracidade de endereços virtuais (url's) disponíveis na web.
 
+Atualmente é possível acessar o projeto utilizando o link abaixo:
+https://icei-puc-minas-pmv-si.github.io/pmv-si-2022-2-e1-proj-web-t3-sos-web/
+
 ## Integrantes
 
 * Hugo Almeida
