@@ -47,7 +47,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise) | ALTA | Hugo / Rafael |
 |RF-006| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito | ALTA | Lucas |
 |RF-007| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise | MÉDIA | Lucas |
-|RF-008| Todo cadastro de usuários deve ser validado pelo sistema | ALTA | Todos |
+|RF-008| Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados pelo sistema | ALTA | Todos |
 |RF-009| Permitir que o usuário comente uma denúncia desde que esteja logado | BAIXA | Túlio |
 |RF-010| Permitir que o usuário recupere sua senha esquecida | BAIXA | Marcos |
 ### Requisitos não Funcionais
