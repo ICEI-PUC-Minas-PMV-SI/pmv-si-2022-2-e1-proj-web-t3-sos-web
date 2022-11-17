@@ -17,29 +17,48 @@
 </head>
 
 <body>
+
+
+
   <div class="card-mobile sign-up">
     <div class="form-container">
       <p class="text-main-color">Cadastro</p>
       <br />
-      <form name="form_login" class="form-login" action="../login/login.html"> <br />
+      <form name="form_login" class="form-login"> <br />
         <!-- method="POST" -->
-        <input type="text" class="input-base" name="nome" placeholder="Nome Completo" /><br />
-        <input type="text" class="input-base" name="cpf" placeholder="CPF" /><br />
-        <input type="email" class="input-base" name="Email" placeholder="Email" /><br />
-        <input type="tel" class="input-base" name="Telefone" placeholder="Telefone" /><br />
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
+        <label id="labelNome" for="nome"> </label>
+        <input type="text" class="input-base" id="nome" placeholder="Nome Completo" required />
+
+        <br />
+        <lable id="labelCpf" for="cpf"> </lable>
+        <input type="number" class="input-base" id="cpf" placeholder="CPF" />
+
+        <br />
+        <label id="labelEmail" for="email"> </label>
+        <input type="email" class="input-base" id="email" placeholder="Email" />
+        <br />
+        <label id="labelTel" for="telefone"></label>
+        <input type="number" class="input-base" id="telefone" placeholder="Telefone" />
         <br />
         <br />
-        <input type="text" class="input-base" name="usuario" placeholder="Usuário" /><br />
-        <input type="password" class="input-base" name="senha" placeholder="Senha" /><br />
+        <br />
+        <label id="labelUsuario" for="usuario"></label>
+        <input type="text" class="input-base" id="usuario" placeholder="Usuário" />
+        <br />
+        <label id="labelSenha" for="senha"> </label>
+        <input type="password" class="input-base" id="senha" placeholder="Senha" />
         <br />
         <br />
-        <input type="submit" class="button-base bg-main-color" value="Cadastrar" />
-        <br />
-        <br />
-      </form>
+        <button onclick="cadastrar()" class="button-base bg-main-color" id="validar">Cadastrar</button>
+
     </div>
   </div>
   </div>
+  <script src="cadastro.js"></script>
 </body>
 
 </html>
