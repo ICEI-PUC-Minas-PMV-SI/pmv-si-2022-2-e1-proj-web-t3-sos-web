@@ -135,6 +135,7 @@ function cadastrar() {
 
 
     window.location.href = "../login/login.html"
+    return
 
 
     //msgSuccess.setAttribute('style', 'display: block')
