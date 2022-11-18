@@ -116,8 +116,6 @@ telefone.addEventListener('keyup', () => {
 function cadastrar() {
   if (validNome && validUsuario && validSenha && validEmail && validCpf && validTelefone) {
 
-    alert('Cadastro com sucesso');
-
 
     let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
 
@@ -131,11 +129,12 @@ function cadastrar() {
         telefoneCad: telefone.value
       }
     )
-
-
     localStorage.setItem('listaUser', JSON.stringify(listaUser))
 
+    alert('Cadastro com sucesso');
 
+
+    window.location.href = "../login/login.html"
 
 
     //msgSuccess.setAttribute('style', 'display: block')
