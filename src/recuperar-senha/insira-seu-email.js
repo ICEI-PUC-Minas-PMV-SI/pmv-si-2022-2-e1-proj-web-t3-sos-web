@@ -7,7 +7,7 @@ function sendEmail(email) {
     To: email,
     From: "marcos.sabino@sga.pucminas.br",
     Subject: "S.O.S Web",
-    Body: "<html> <h2>S.O.S Web - Recuperação de senha</h2> <p>Acesse o link para alterar sua senha:</p> <br></br> <a href='https://icei-puc-minas-pmv-si.github.io/pmv-si-2022-2-e1-proj-web-t3-sos-web/src/recuperar-senha/recuperar-senha.html'>Clique aqui</a> </html>"
+    Body: `<html> <h2>S.O.S Web - Recuperação de senha</h2> <p>Acesse o link para alterar sua senha:</p> <br></br> <a href='http://localhost:5500/src/recuperar-senha/recuperar-senha.html?usuario=${email}'>Clique aqui</a> </html>`
   }).then(
     message => {
       if (message == "OK") {
