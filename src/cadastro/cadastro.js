@@ -134,13 +134,12 @@ function cadastrar() {
     alert('Cadastro com sucesso');
 
 
+    //msgSuccess.setAttribute('style', 'display: block')
+    // msgSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
+
+
     window.location.href = "../login/login.html"
     return
-
-
-    //msgSuccess.setAttribute('style', 'display: block')
-    //msgSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
-
 
 
   }
@@ -148,6 +147,7 @@ function cadastrar() {
 
   else {
     alert('Favor preencher os dados corretamente');
+
 
     // msgError.setAttribute('style', 'display: block');
     //msgError.innerHTML = '<strong>Preencha todos os campos corretamente antes de cadastrar</strong>';
