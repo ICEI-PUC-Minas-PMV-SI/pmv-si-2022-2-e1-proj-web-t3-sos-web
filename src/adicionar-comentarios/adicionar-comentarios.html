@@ -61,13 +61,14 @@
             <form name="form_login" class="form-login" action="../comentarios/comentarios.html">
               <!-- method="POST" -->
               <br />
-              <p1 class="escreva">Escreva algum comentário:</p1>
-              <textarea class="input-base" rows="22" cols="36"
-                style=" resize:none"> Conte a sua experiência... </textarea>
+              <p1 class="escreva">Escreva algum comentário:</p1><br />
+              <label id="labelComentario" for="comentario"></label>
+              <textarea id="comentario" class="input-base" rows="22" cols="36" style=" resize:none">  </textarea>
               <br />
               <br />
               <br />
-              <input type="submit" class="button-base bg-main-color" value="Enviar comentário" />
+              <button onclick="enviar()" type="submit" class="button-base bg-main-color" value="Enviar comentário">
+                Enviar comentário</button>
             </form>
             <br />
             <br />
@@ -87,6 +88,7 @@
         </div>
       </div>
     </div>
+    <script src="adicionar-comentarios.js"></script>
 </body>
 
 </html>
