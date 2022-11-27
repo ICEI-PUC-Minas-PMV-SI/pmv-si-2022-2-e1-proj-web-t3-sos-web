@@ -14,6 +14,7 @@
     rel="stylesheet" />
   <link href='https://css.gg/trash.css' rel='stylesheet'>
   <link href='https://css.gg/add.css' rel='stylesheet'>
+  <script src="minhas-denuncias.js" defer></script>
 
   <title>Minhas denúncias - SOS WEB</title>
 </head>
@@ -60,10 +61,10 @@
           </div>
           <h1>Minhas Denúncias</h1>
           <!-- Analyses-->
-          <div class="denounce-analyses">
+          <div class="denounce-analyses" id="d-a">
             <div class="title-denounce-analyses">
               <h2>Spotlight</h2>
-              <i style="margin-right: 10px;" class="gg-trash"></i>
+              <i onclick="myDelete()" style="margin-right: 10px;" class="gg-trash"></i>
             </div>
             <div style="margin-left: 25px;">
               <h3>Em Análise</h3>
@@ -73,10 +74,10 @@
           </div>
 
           <!-- Malicious-->
-          <div class="denounce-malicious">
+          <div class="denounce-malicious" id="d-a">
             <div class="title-denounce-malicious">
               <h2>BaixeAgora</h2>
-              <i style="margin-right: 10px;" class="gg-trash"></i>
+              <i onclick="myDelete()" style="margin-right: 10px;" class="gg-trash"></i>
             </div>
             <div style="margin-left: 25px;">
               <h3>Malicioso</h3>
