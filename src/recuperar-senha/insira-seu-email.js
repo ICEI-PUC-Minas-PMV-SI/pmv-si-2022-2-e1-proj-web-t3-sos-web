@@ -1,4 +1,5 @@
 function sendEmail(email) {
+  const url = window.location.origin;
 
   Email.send({
     Host: "smtp.elasticemail.com",
@@ -7,7 +8,7 @@ function sendEmail(email) {
     To: email,
     From: "marcos.sabino@sga.pucminas.br",
     Subject: "S.O.S Web",
-    Body: `<html> <h2>S.O.S Web - Recuperação de senha</h2> <p>Acesse o link para alterar sua senha:</p> <br></br> <a href='http://localhost:5500/src/recuperar-senha/recuperar-senha.html?usuario=${email}'>Clique aqui</a> </html>`
+    Body: `<html> <h2>S.O.S Web - Recuperação de senha</h2> <p>Acesse o link para alterar sua senha:</p> <br></br> <a href='${url}/src/recuperar-senha/recuperar-senha.html?usuario=${email}'>Clique aqui</a> </html>`
   }).then(
     message => {
       if (message == "OK") {
