@@ -1,6 +1,6 @@
 function sendEmail(email) {
   const urlSlit = window.location.href.split("/");
-  const url = urlSlit.splice(0, urlSlit.length - 1).join("/");
+  const url = urlSlit.splice(0, urlSlit.length - 3).join("/");
   console.log(url);
 
   Email.send({
