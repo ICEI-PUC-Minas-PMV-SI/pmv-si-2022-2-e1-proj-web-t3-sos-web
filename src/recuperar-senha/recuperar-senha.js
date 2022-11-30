@@ -1,49 +1,32 @@
+var email = new URLSearchParams(window.location.search).get("usuario");
+var indiceUsuario = listaUsuarios.findIndex(
+  (usuarioLista) => email && usuarioLista.email === email
+);
+if (!email || indiceUsuario === -1) {
+  window.location.href = LOGIN_PAGINA;
+}
+
 function addNewPassword(e) {
-  e.preventDefault()
+  e.preventDefault();
 
-  const password = e.target[0].value
-  const confirmPassword = e.target[1].value
+  const password = e.target[0].value;
+  const confirmPassword = e.target[1].value;
 
-  if (password == '' || confirmPassword == '') {
-    alert('Preencha todos os campos!')
+  if (password == "" || confirmPassword == "") {
+    alert("Preencha todos os campos!");
     return;
   }
 
-  const busca = window.location.search
-
-  const email = busca.split('?usuario=')[1]
-
   if (password == confirmPassword) {
-    var listaUser = JSON.parse(localStorage.getItem('listaUser'))
-    for (let i = 0; i < listaUser.length; i++) {
-      if (email == listaUser[i].emailCad) {
-
-        listaUser[i] = {
-          nomeCad: listaUser[i].nomeCad,
-          userCad: listaUser[i].userCad,
-          senhaCad: password,
-          cpfCad: listaUser[i].cpfCad,
-          telefoneCad: listaUser[i].telefoneCad,
-          emailCad: listaUser[i].emailCad
-        }
-
-        localStorage.setItem('listaUser', JSON.stringify(listaUser))
-
-        alert('Senha atualizada com sucesso!')
-        window.location.href = "../login/login.html"
-
-        return
-      }
-    }
+    listaUsuarios[indiceUsuario].senha = password;
+    localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
+    alert("Senha alterada com sucesso!");
+    window.location.href = LOGIN_PAGINA;
   } else {
-    alert('As senhas devem ser iguais!');
+    alert("As senhas devem ser iguais!");
   }
 }
 
-document.addEventListener('submit', (e) => {
-  addNewPassword(e)
-})
-
-
-
-
+document.addEventListener("submit", (e) => {
+  addNewPassword(e);
+});

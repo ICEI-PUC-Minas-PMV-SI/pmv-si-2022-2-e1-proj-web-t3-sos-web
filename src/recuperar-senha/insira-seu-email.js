@@ -1,7 +1,13 @@
 function sendEmail(email) {
+  const usuarioExiste = listaUsuarios.some(
+    (usuarioLista) => usuarioLista.email === email
+  );
+  if (!usuarioExiste) {
+    alert("Email não cadastrado");
+    return;
+  }
   const urlSlit = window.location.href.split("/");
   const url = urlSlit.splice(0, urlSlit.length - 3).join("/");
-  console.log(url);
 
   Email.send({
     Host: "smtp.elasticemail.com",
@@ -21,9 +27,11 @@ function sendEmail(email) {
     }
   });
 }
-document.addEventListener("submit", (e) => {
+document.getElementById("form_recupsenha2").addEventListener("submit", (e) => {
   e.preventDefault();
+  const form = new FormData(e.target);
 
-  var email = e.target[0].value;
+  const { email } = Object.fromEntries(form);
+
   sendEmail(email);
 });
