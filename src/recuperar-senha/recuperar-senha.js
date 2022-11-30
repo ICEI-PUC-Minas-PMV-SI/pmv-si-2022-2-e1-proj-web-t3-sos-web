@@ -4,7 +4,7 @@ function addNewPassword(e) {
   const password = e.target[0].value
   const confirmPassword = e.target[1].value
 
-  if(password == '' || confirmPassword == '') {
+  if (password == '' || confirmPassword == '') {
     alert('Preencha todos os campos!')
     return;
   }
@@ -12,8 +12,8 @@ function addNewPassword(e) {
   const busca = window.location.search
 
   const email = busca.split('?usuario=')[1]
-  
-  if(password == confirmPassword) {
+
+  if (password == confirmPassword) {
     var listaUser = JSON.parse(localStorage.getItem('listaUser'))
     for (let i = 0; i < listaUser.length; i++) {
       if (email == listaUser[i].emailCad) {
@@ -21,8 +21,8 @@ function addNewPassword(e) {
         listaUser[i] = {
           nomeCad: listaUser[i].nomeCad,
           userCad: listaUser[i].userCad,
-          senhaCad:  password,
-          cpfCad:  listaUser[i].cpfCad,
+          senhaCad: password,
+          cpfCad: listaUser[i].cpfCad,
           telefoneCad: listaUser[i].telefoneCad,
           emailCad: listaUser[i].emailCad
         }
@@ -31,7 +31,7 @@ function addNewPassword(e) {
 
         alert('Senha atualizada com sucesso!')
         window.location.href = "../login/login.html"
-  
+
         return
       }
     }
