@@ -1,162 +1,163 @@
-let senha = document.querySelector('#senha')
-let labelSenha = document.querySelector('#labelSenha')
-let validSenha = false
+let cpf = document.querySelector("#cpf");
+let labelCpf = document.querySelector("#labelCpf");
+let validCpf = false;
 
-let nome = document.querySelector('#nome')
-let labelNome = document.querySelector('#labelNome')
-let validNome = false
+let email = document.querySelector("#email");
+let labelEmail = document.querySelector("#labelEmail");
+let validEmail = false;
 
-let usuario = document.querySelector('#usuario')
-let labelUsuario = document.querySelector('#labelUsuario')
-let validUsuario = false
+let telefone = document.querySelector("#telefone");
+let labelTel = document.querySelector("#labelTel");
+let validTelefone = false;
 
-let cpf = document.querySelector('#cpf')
-let labelCpf = document.querySelector('#labelCpf')
-let validCpf = false
+let msgError = document.querySelector("#msgError");
+let msgSuccess = document.querySelector("#msgSuccess");
 
-let email = document.querySelector('#email')
-let labelEmail = document.querySelector('#labelEmail')
-let validEmail = false
+email.addEventListener("keyup", () => {
+  if (email.value.length <= 4) {
+    limpaCampo(labelEmail, email, validEmail);
+    return;
+  }
 
-let telefone = document.querySelector('#telefone')
-let labelTel = document.querySelector('#labelTel')
-let validTelefone = false
-
-let msgError = document.querySelector('#msgError')
-let msgSuccess = document.querySelector('#msgSuccess')
-
-nome.addEventListener('keyup', () => {
-  if (nome.value.length <= 3) {
-    labelNome.setAttribute('style', 'color: red')
-    labelNome.innerHTML = 'Nome *Insira no minimo 4 caracteres'
-    nome.setAttribute('style', 'outline-color: red')
-    validNome = false
+  if (!TestaEmail(email.value)) {
+    labelEmail.setAttribute("style", "color: red");
+    labelEmail.innerHTML = "Digite um email válido";
+    email.setAttribute("style", "outline-color: red");
+    validEmail = false;
   } else {
-    labelNome.setAttribute('style', 'color: green')
-    labelNome.innerHTML = 'Nome válido'
-    nome.setAttribute('style', 'outline-color: green')
-    validNome = true
+    labelEmail.setAttribute("style", "color: green");
+    labelEmail.innerHTML = "Email válido";
+    email.setAttribute("style", "outline-color: green");
+    validEmail = true;
   }
-})
+});
 
-senha.addEventListener('keyup', () => {
-  if (senha.value.length <= 5) {
-    labelSenha.setAttribute('style', 'color: red')
-    labelSenha.innerHTML = 'Senha *Insira no minimo 6 caracteres'
-    senha.setAttribute('style', 'outline-color: red')
-    validSenha = false
+cpf.addEventListener("keyup", () => {
+  if (!cpf.value.length) {
+    limpaCampo(labelCpf, cpf, validCpf);
+    return;
+  }
+
+  if (cpf.value.length != 11) {
+    labelCpf.setAttribute("style", "color: red");
+    labelCpf.innerHTML = "Cpf *Insira os 11 números";
+    usuario.setAttribute("style", "outline-color: red");
+    validCpf = false;
+  } else if (!TestaCPF(cpf.value)) {
+    labelCpf.setAttribute("style", "color: red");
+    labelCpf.innerHTML = "Cpf inválido";
+    usuario.setAttribute("style", "outline-color: red");
+    validCpf = false;
   } else {
-    labelSenha.setAttribute('style', 'color: green')
-    labelSenha.innerHTML = 'Senha válida'
-    senha.setAttribute('style', 'outline-color: green')
-    validSenha = true
+    labelCpf.setAttribute("style", "color: green");
+    labelCpf.innerHTML = "Cpf válido";
+    cpf.setAttribute("style", "outline-color: green");
+    validCpf = true;
   }
-})
+});
 
+telefone.addEventListener("keyup", () => {
+  if (!telefone.value.length) {
+    limpaCampo(labelTel, telefone, validTelefone);
+    return;
+  }
+  const digitosTelefone = telefone.value.replace(/\D/g, "");
 
-usuario.addEventListener('keyup', () => {
-  if (usuario.value.length <= 4) {
-    labelUsuario.setAttribute('style', 'color: red')
-    labelUsuario.innerHTML = 'Usuário *Insira no minimo 5 caracteres'
-    usuario.setAttribute('style', 'outline-color: red')
-    validUsuario = false
+  if (digitosTelefone.length < 10 || digitosTelefone.length > 11) {
+    labelTel.setAttribute("style", "color: red");
+    labelTel.innerHTML = "*Insira um número correto com DDD";
+    telefone.setAttribute("style", "outline-color: red");
+    validTelefone = false;
   } else {
-    labelUsuario.setAttribute('style', 'color: green')
-    labelUsuario.innerHTML = 'Usuário válido'
-    usuario.setAttribute('style', 'outline-color: green')
-    validUsuario = true
+    labelTel.setAttribute("style", "color: green");
+    labelTel.innerHTML = "Número válido";
+    telefone.setAttribute("style", "outline-color: green");
+    validTelefone = true;
   }
-})
+});
 
+document.getElementById("form_cadastro").addEventListener("submit", (e) => {
+  e.preventDefault();
 
-cpf.addEventListener('keyup', () => {
-  if (cpf.value.length <= 10) {
-    labelCpf.setAttribute('style', 'color: red')
-    labelCpf.innerHTML = 'Cpf *Insira no minimo 11 números'
-    usuario.setAttribute('style', 'outline-color: red')
-    validCpf = false
-  } else {
-    labelCpf.setAttribute('style', 'color: green')
-    labelCpf.innerHTML = 'Cpf válido'
-    cpf.setAttribute('style', 'outline-color: green')
-    validCpf = true
-  }
-})
+  const formularioValido = validEmail && validCpf && validTelefone;
 
-email.addEventListener('keyup', () => {
-  if (!email.checkValidity()) {
-    labelEmail.setAttribute('style', 'color: red')
-    labelEmail.innerHTML = 'Digite um email válido'
-    email.setAttribute('style', 'outline-color: red')
-    validEmail = false
-  } else {
-    (email.value.length > 4)
-    labelEmail.setAttribute('style', 'color: green')
-    labelEmail.innerHTML = 'Email válido'
-    email.setAttribute('style', 'outline-color: green')
-    validEmail = true
-  }
-})
+  const form = new FormData(e.target);
 
+  const { nome, cpf, email, telefone, nascimento, usuario, senha } =
+    Object.fromEntries(form);
 
-telefone.addEventListener('keyup', () => {
-  if (telefone.value.length <= 10) {
-    labelTel.setAttribute('style', 'color: red')
-    labelTel.innerHTML = '*Insira um número correto com DDD'
-    senha.setAttribute('style', 'outline-color: red')
-    validTelefone = false
-  } else {
-    labelTel.setAttribute('style', 'color: green')
-    labelTel.innerHTML = 'Número válido'
-    senha.setAttribute('style', 'outline-color: green')
-    validTelefone = true
-  }
-})
-
-function cadastrar() {
-  if (validNome && validUsuario && validSenha && validEmail && validCpf && validTelefone) {
-
-
-    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
-
-    listaUser.push(
-      {
-        nomeCad: nome.value,
-        userCad: usuario.value,
-        senhaCad: senha.value,
-        cpfCad: cpf.value,
-        emailCad: email.value,
-        telefoneCad: telefone.value
-      }
-    )
-    localStorage.setItem('listaUser', JSON.stringify(listaUser))
-
-    alert('Cadastro com sucesso');
-
-
-    //msgSuccess.setAttribute('style', 'display: block')
-    // msgSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
-
-
-    window.location.href = "../login/login.html"
-    return
-
-
+  if (!formularioValido) {
+    alert("Preencha os campos corretamente");
+    return;
   }
 
+  const usuarioJaExiste = listaUsuarios.some(
+    (usuarioLista) =>
+      usuarioLista.usuario === usuario ||
+      usuarioLista.email === email ||
+      usuarioLista.cpf === cpf
+  );
 
-  else {
-    alert('Favor preencher os dados corretamente');
-
-
-    // msgError.setAttribute('style', 'display: block');
-    //msgError.innerHTML = '<strong>Preencha todos os campos corretamente antes de cadastrar</strong>';
-
+  if (usuarioJaExiste) {
+    alert("Usuário já cadastrado!");
+    return;
   }
 
+  const [ano, mes, dia] = nascimento.split("-");
 
+  const novoUsuario = {
+    nome,
+    cpf: `${cpf.slice(0, 3)}.${cpf.slice(3, 6)}.${cpf.slice(6, 9)}-${cpf.slice(
+      9,
+      11
+    )}`,
+    email,
+    telefone: `${telefone.slice(0, 2)} ${telefone.slice(
+      2,
+      telefone.length - 4
+    )}-${telefone.slice(-4)}`,
+    nascimento: `${dia}/${mes}/${ano}`,
+    usuario,
+    senha,
+    administrador: false,
+  };
+  listaUsuarios.push(novoUsuario);
+  localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
+  alert("Usuário cadastrado com sucesso");
+  window.location.href = LOGIN_PAGINA;
+});
 
+function limpaCampo(label, campo, valid) {
+  label.innerHTML = "";
+  campo.setAttribute("style", "outline-color: #f94949");
+  valid = true;
 }
 
+function TestaEmail(email) {
+  return email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  );
+}
 
+function TestaCPF(strCPF) {
+  var Soma;
+  var Resto;
+  Soma = 0;
+  if (strCPF == "00000000000") return false;
 
+  for (i = 1; i <= 9; i++)
+    Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (11 - i);
+  Resto = (Soma * 10) % 11;
+
+  if (Resto == 10 || Resto == 11) Resto = 0;
+  if (Resto != parseInt(strCPF.substring(9, 10))) return false;
+
+  Soma = 0;
+  for (i = 1; i <= 10; i++)
+    Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (12 - i);
+  Resto = (Soma * 10) % 11;
+
+  if (Resto == 10 || Resto == 11) Resto = 0;
+  if (Resto != parseInt(strCPF.substring(10, 11))) return false;
+  return true;
+}

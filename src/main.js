@@ -1,10 +1,10 @@
 const LOGIN_PAGINA = "../login/login.html";
 const ADMIN_PAGINA = "../admin/admin.html";
 const DENUNCIAS_PAGINA = "../denuncias/denuncias.html";
-var listaUsuarios = [
+var listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [
   {
     nome: "João Augusto",
-    dataNascimento: "25/12/1998",
+    nascimento: "25/12/1998",
     cpf: "123.456.789-00",
     email: "aluno@email.com",
     telefone: "21 0800-8000",
@@ -14,7 +14,7 @@ var listaUsuarios = [
   },
   {
     nome: "João Augusto",
-    dataNascimento: "25/12/1998",
+    nascimento: "25/12/1998",
     cpf: "123.456.789-01",
     email: "administrador@email.com",
     telefone: "21 0800-8000",
@@ -23,6 +23,8 @@ var listaUsuarios = [
     administrador: true,
   },
 ];
+
+localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
 
 var usuarioLogado = JSON.parse(localStorage.getItem("usuario"));
 

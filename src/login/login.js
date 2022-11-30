@@ -1,16 +1,4 @@
-function main() {
-  redirecionaLogado();
-
-  var usuarios = JSON.parse(localStorage.getItem("usuarios"));
-  if (!usuarios || !usuarios.length) {
-    localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
-    return;
-  }
-
-  listaUsuarios = usuarios;
-}
-
-main();
+redirecionaLogado();
 
 document.getElementById("form_login").addEventListener("submit", (e) => {
   e.preventDefault();
