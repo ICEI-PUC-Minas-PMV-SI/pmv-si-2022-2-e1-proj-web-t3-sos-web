@@ -1,5 +1,5 @@
 function init() {
-  window.location.href = './src/login/login.html'
+  window.location.href = './src/pages/login/login.html'
   return
 }
 

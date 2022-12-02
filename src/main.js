@@ -1,6 +1,7 @@
 const LOGIN_PAGINA = "../login/login.html";
 const ADMIN_PAGINA = "../admin/admin.html";
 const DENUNCIAS_PAGINA = "../denuncias/denuncias.html";
+
 var listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [
   {
     nome: "João Augusto",
