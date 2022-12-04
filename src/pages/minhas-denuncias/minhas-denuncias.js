@@ -38,7 +38,7 @@ function adicionarCards(denuncias) {
     resto.setAttribute("style", "margin-left: 25px;");
 
     var ztatus = document.createElement("h3");
-    var contentZtatus = document.createTextNode("Em Analise");
+    var contentZtatus = document.createTextNode("Pendente");
     ztatus.appendChild(contentZtatus);
 
     var endereco = document.createElement("h4");

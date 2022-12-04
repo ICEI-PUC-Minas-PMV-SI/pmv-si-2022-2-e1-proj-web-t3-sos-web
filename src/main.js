@@ -5,7 +5,7 @@ const COMENTARIOS_PAGINA = "../comentarios/comentarios.html";
 const MINHAS_DENUNCIAS = "../minhas-denuncias/minhas-denuncias.html";
 
 const statusDenuncia = {
-  ANALISE: "Em análise",
+  PENDENTE: "Pendente",
   APROVADA: "Aprovada",
   NEGADA: "Negada",
 };
@@ -64,8 +64,8 @@ function deslogaSeAdmin() {
   }
 }
 
-function parseStatus(status = statusDenuncia.ANALISE) {
-  return statusDenuncia[status] || statusDenuncia.ANALISE;
+function parseStatus(status = statusDenuncia.PENDENTE) {
+  return statusDenuncia[status] || statusDenuncia.PENDENTE;
 }
 
 function parseNocividade(
@@ -109,6 +109,11 @@ function redirecionaLogado() {
   window.location.href = usuarioLogado.administrador
     ? ADMIN_PAGINA
     : DENUNCIAS_PAGINA;
+}
+
+function paginate(array, pageSize, pageNumber) {
+  // human-readable page numbers usually start with 1, so we reduce 1 in the first argument
+  return array.slice((pageNumber - 1) * pageSize, pageNumber * pageSize);
 }
 
 function preencheUsuarioNoMenu() {

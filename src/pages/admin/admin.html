@@ -86,20 +86,26 @@
                     name="search"
                     placeholder="Pesquisa"
                   />
-                  <div class="button-search">
+                  <a id="btn-search" class="button-search">
                     <img
                       class="img-search"
                       src="../../assets/icon-search.svg"
                       alt="Search"
                     />
-                  </div>
+                  </a>
                 </form>
               </div>
               <div class="filters">
                 <p>Filtros</p>
-                <button class="button-base">Pendente</button>
-                <button class="button-base">Aprovada</button>
-                <button class="button-base">Negada</button>
+                <button value="PENDENTE" class="button-base btn-filter">
+                  Pendente
+                </button>
+                <button value="APROVADA" class="button-base btn-filter">
+                  Aprovada
+                </button>
+                <button value="NEGADA" class="button-base btn-filter">
+                  Negada
+                </button>
               </div>
             </header>
             <main>
@@ -116,8 +122,15 @@
               <div class="table-footer">
                 <p>Total de registros: 10</p>
                 <div class="pagination">
-                  <p>Página 1 de 143</p>
                   <img
+                    style="display: none"
+                    class="back-pagination"
+                    src="../../assets/chevron-left.svg"
+                    alt="back-pagination"
+                  />
+                  <p></p>
+                  <img
+                    style="display: none"
                     class="next-pagination"
                     src="../../assets/chevron-right.svg"
                     alt="next-pagination"

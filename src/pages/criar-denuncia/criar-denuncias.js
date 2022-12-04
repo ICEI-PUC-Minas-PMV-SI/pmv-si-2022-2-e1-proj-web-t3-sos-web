@@ -33,7 +33,7 @@ document
       nome,
       endereco,
       historia,
-      status: statusDenuncia.ANALISE,
+      status: statusDenuncia.PENDENTE,
       comentarios: [],
       votacao: {
         positivo: 0,
