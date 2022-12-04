@@ -37,6 +37,9 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 |Instituição/Vendedor| Texto | Colocar nome da loja, vendedor que o usúario realizou a compra| Magazine luiza  |
 |Link/Email  | Texto | Endereço eletrônico | www.magazinEEluiza.com.br |
 |História| Texto | Campo destinado ao usúario regristar o ocorrido | Realizei uma compra neste site e o produto nunca chegou. |
+|Nocividade| Texto | Campo enumerado como "Alta", "Média" ou "Baixa" | Baixa |
+|Status| Texto | Campo enumerado como "Em análise", "Aprovada" ou "Negada" | Em análise |
+|Responsável| Texto | Campo que armazena o usuário que registrou a denúncia | usuario-teste |
 
 
 > **Links Úteis**:
