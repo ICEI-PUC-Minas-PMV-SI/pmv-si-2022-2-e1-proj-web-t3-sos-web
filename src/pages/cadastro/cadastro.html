@@ -1,68 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="stylesheet" href="./cadastro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="../../reset.css" />
-  <link rel="stylesheet" href="../../base.css" />
-  <link rel="stylesheet" href="./cadastro.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
-    rel="stylesheet" />
+    <title>Cadastro - SOS WEB</title>
+  </head>
 
-  <script src="../../main.js" defer></script>
-  <script src="cadastro.js" defer></script>
-  <title>Cadastro - SOS WEB</title>
-</head>
+  <body>
+    <div class="card-mobile sign-up">
+      <div class="form-container">
+        <p class="text-main-color">Cadastro</p>
+        <br />
+        <form name="form_login" id="form_cadastro" class="form-login">
+          <br />
+          <!-- method="POST" -->
 
-<body>
-  <div class="card-mobile sign-up">
-    <div class="form-container">
-      <p class="text-main-color">Cadastro</p>
-      <br />
-      <form name="form_login" id="form_cadastro" class="form-login">
-        <br />
-        <!-- method="POST" -->
+          <div id="msgError"></div>
+          <div id="msgSuccess"></div>
 
-        <div id="msgError"></div>
-        <div id="msgSuccess"></div>
+          <label id="labelNome" for="nome"> </label>
+          <input
+            type="text"
+            class="input-base"
+            id="nome"
+            minlength="3"
+            name="nome"
+            placeholder="Nome Completo"
+            required
+          />
 
-        <label id="labelNome" for="nome"> </label>
-        <input type="text" class="input-base" id="nome" minlength="3" name="nome" placeholder="Nome Completo"
-          required />
+          <br />
+          <label id="labelCpf" for="cpf"> </label>
+          <input
+            type="number"
+            class="input-base"
+            id="cpf"
+            name="cpf"
+            placeholder="CPF"
+            required
+          />
 
-        <br />
-        <label id="labelCpf" for="cpf"> </label>
-        <input type="number" class="input-base" id="cpf" name="cpf" placeholder="CPF" required />
-
-        <br />
-        <label id="labelEmail" for="email"> </label>
-        <input type="email" class="input-base" id="email" minlength="5" name="email" placeholder="Email" required />
-        <br />
-        <label id="labelTel" for="telefone"></label>
-        <input type="tel" class="input-base" id="telefone" name="telefone" placeholder="Telefone" required />
-        <br />
-        <label id="labelNasc" for="nascimento"></label>
-        <input type="date" class="input-base" style="width: 100%" id="nascimento" name="nascimento" min="1900-01-01"
-          max="2003-12-31" placeholder="Data de nascimento" required />
-        <br />
-        <br />
-        <br />
-        <label id="labelUsuario" for="usuario"></label>
-        <input type="text" class="input-base" id="usuario" name="usuario" minlength="3" placeholder="Usuário"
-          required />
-        <br />
-        <label id="labelSenha" for="senha"> </label>
-        <input type="password" class="input-base" id="senha" name="senha" minlength="6" placeholder="Senha" required />
-        <br />
-        <br />
-        <input type="submit" class="button-base bg-main-color" id="validar" value="Cadastrar" />
-      </form>
+          <br />
+          <label id="labelEmail" for="email"> </label>
+          <input
+            type="email"
+            class="input-base"
+            id="email"
+            minlength="5"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <br />
+          <label id="labelTel" for="telefone"></label>
+          <input
+            type="tel"
+            class="input-base"
+            id="telefone"
+            name="telefone"
+            placeholder="Telefone"
+            required
+          />
+          <br />
+          <label id="labelNasc" for="nascimento"></label>
+          <input
+            type="date"
+            class="input-base"
+            style="width: 100%"
+            id="nascimento"
+            name="nascimento"
+            min="1900-01-01"
+            max="2003-12-31"
+            placeholder="Data de nascimento"
+            required
+          />
+          <br />
+          <br />
+          <br />
+          <label id="labelUsuario" for="usuario"></label>
+          <input
+            type="text"
+            class="input-base"
+            id="usuario"
+            name="usuario"
+            minlength="3"
+            placeholder="Usuário"
+            required
+          />
+          <br />
+          <label id="labelSenha" for="senha"> </label>
+          <input
+            type="password"
+            class="input-base"
+            id="senha"
+            name="senha"
+            minlength="6"
+            placeholder="Senha"
+            required
+          />
+          <br />
+          <br />
+          <input
+            type="submit"
+            class="button-base bg-main-color"
+            id="validar"
+            value="Cadastrar"
+          />
+        </form>
+      </div>
     </div>
-  </div>
-</body>
-
+    <script src="../../DOMUtils.js"></script>
+    <script src="../../main.js"></script>
+    <script src="cadastro.js"></script>
+  </body>
 </html>
