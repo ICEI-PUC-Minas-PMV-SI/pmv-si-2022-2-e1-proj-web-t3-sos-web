@@ -1,5 +1,3 @@
-const denuncias = JSON.parse(localStorage.getItem("denuncias")) || [];
-
 function main() {
   deslogaSeAdmin();
   preencheUsuarioNoMenu();

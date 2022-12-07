@@ -116,8 +116,6 @@ function adicionarPaginaUnica() {
   pArr[0].classList.add("records");
   pArr[1].classList.add("pages");
 
-  console.log(pArr[0]);
-
   DOMUtils.adicionarTexto(pArr[0], "Total de registros: 0");
   DOMUtils.adicionarTexto(pArr[1], "Página 1 de 1");
 

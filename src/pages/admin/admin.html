@@ -81,6 +81,7 @@
                 <p>Pesquisa</p>
                 <form name="form-search" class="form-search" method="POST">
                   <input
+                    id="input-search"
                     type="search"
                     class="input-base"
                     name="search"
@@ -120,21 +121,24 @@
                 </tr>
               </table>
               <div class="table-footer">
-                <p>Total de registros: 10</p>
+                <p>Total de registros: <span class="total-entries"></span></p>
                 <div class="pagination">
-                  <img
-                    style="display: none"
-                    class="back-pagination"
-                    src="../../assets/chevron-left.svg"
-                    alt="back-pagination"
-                  />
-                  <p></p>
-                  <img
-                    style="display: none"
-                    class="next-pagination"
-                    src="../../assets/chevron-right.svg"
-                    alt="next-pagination"
-                  />
+                  <a href="#" style="display: none" class="back-pagination">
+                    <img
+                      src="../../assets/chevron-left.svg"
+                      alt="back-pagination"
+                    />
+                  </a>
+                  <p class="">
+                    Página <span class="page-number"></span> de
+                    <span class="total-pages"></span>
+                  </p>
+                  <a href="" style="display: none" class="next-pagination">
+                    <img
+                      src="../../assets/chevron-right.svg"
+                      alt="next-pagination"
+                    />
+                  </a>
                 </div>
               </div>
               <div class="menu-bar">

@@ -1,8 +1,13 @@
 var search = new URLSearchParams(window.location.search);
-var paginaAtual = search.get("pagina") || 1;
-var statusFiltrado = search.get("status");
+var paginaAtual = parseInt(search.get("pagina") || "1");
+var statusFiltrado =
+  (search.get("status") && search.get("status").split(",")) || [];
 var filtro = search.get("filtro");
-var registrosPorPagina = 10;
+var registrosPorPagina = 1;
+
+console.log(filtro);
+console.log(statusFiltrado);
+console.log(paginaAtual);
 function deslogaSeNaoAdmin() {
   if (!usuarioLogado || !usuarioLogado.administrador) {
     window.location.href = LOGIN_PAGINA;
@@ -15,6 +20,14 @@ function main() {
   preencheUsuarioNoMenu();
   preencherTabela();
   escutarEventos();
+
+  document.querySelectorAll(".btn-filter").forEach((btn) => {
+    if (statusFiltrado.includes(btn.value)) {
+      btn.classList.toggle("bg-main-color");
+    }
+  });
+
+  document.getElementById("input-search").value = filtro || "";
 }
 
 function escutarEventos() {
@@ -24,48 +37,81 @@ function escutarEventos() {
 
 function buscar() {
   DOMUtils.escutarEventoPorId("btn-search", "click", () => {
-    DOMUtils.removerElementosPorClasse("td-info");
-    DOMUtils.removerElementosPorClasse("pages");
-    DOMUtils.removerElementosPorClasse("records");
+    const valorBusca = document.getElementById("input-search").value || "";
 
-    const input = document.getElementsByClassName("input-base");
-    const valorBusca = input[0].value;
-
-    const denunciasFiltradas = valorBusca
-      ? filtrarPorValor(valorBusca)
-      : denuncias;
-    preencherTabela(denunciasFiltradas);
+    var href = new URL(window.location.href);
+    if (!valorBusca.length) {
+      href.searchParams.delete("filtro");
+      window.location.replace(href.toString());
+      return;
+    }
+    href.searchParams.set("filtro", valorBusca);
+    window.location.replace(href.toString());
   });
 }
 
 function filtrar() {
   DOMUtils.escutarEventoPorClasse("btn-filter", "click", (e) => {
-    filtrarPorNocividade(e.target.value);
+    filtrarPorNocividade(e);
   });
 }
 
-function filtrarPorNocividade(value) {
-  console.log(value);
-}
-
-function filtrarPorValor(valor) {
-  return denuncias.filter((o) =>
-    Object.keys(o).some((k) => {
-      return k !== "historia"
-        ? o[k].toLowerCase().includes(valor.toLowerCase())
-        : false;
-    })
-  );
+function filtrarPorNocividade(e) {
+  var status = statusFiltrado.includes(e.target.value)
+    ? statusFiltrado.filter((status) => status !== e.target.value)
+    : [...statusFiltrado, e.target.value];
+  e.target.classList.toggle("bg-main-color");
+  var href = new URL(window.location.href);
+  if (!status.length) {
+    href.searchParams.delete("status");
+    window.location.replace(href.toString());
+    return;
+  }
+  href.searchParams.set("status", status.join(","));
+  window.location.replace(href.toString());
 }
 
 function preencherTabela() {
   const table = document.querySelector("#denunciations-table");
-  if (!denuncias.length) {
+  const denunciasFiltradas = denuncias.filter((denuncia) => {
+    const filtroPorStatus =
+      !statusFiltrado.length || statusFiltrado.includes(denuncia.status);
+    const filtroPorValor =
+      !filtro ||
+      ["nome", "endereco", "responsavel", "historia"].some((chave) =>
+        denuncia[chave].toLowerCase().includes(filtro.toLowerCase())
+      );
+    return filtroPorStatus && filtroPorValor;
+  });
+  const denunciasPaginadas = denunciasFiltradas
+    .slice((paginaAtual - 1) * registrosPorPagina)
+    .slice(0, registrosPorPagina);
+  if (!denunciasFiltradas.length) {
     adicionarMensagemTabelaVazia();
     return;
   }
-  denunciasPaginadas;
-  denuncias.map(
+  var href = new URL(window.location.href);
+  const backPagination = document.querySelector(".back-pagination");
+  const nextPagination = document.querySelector(".next-pagination");
+  const totalDePaginas = Math.ceil(
+    denunciasFiltradas.length / registrosPorPagina
+  );
+  document.querySelector(".total-entries").innerText =
+    denunciasFiltradas.length;
+  document.querySelector(".page-number").innerText = paginaAtual;
+  document.querySelector(".total-pages").innerText = totalDePaginas;
+
+  if (paginaAtual > 1) {
+    href.searchParams.set("pagina", paginaAtual - 1);
+    backPagination.href = href.toString();
+  } else if (paginaAtual < totalDePaginas) {
+    href.searchParams.set("pagina", paginaAtual + 1);
+    nextPagination.href = href.toString();
+  }
+  backPagination.style.display = paginaAtual > 1 ? "block" : "none";
+  nextPagination.style.display =
+    paginaAtual < totalDePaginas ? "block" : "none";
+  denunciasPaginadas.map(
     ({ identificador, nome, endereco, responsavel, votacao, status }) => {
       const usuario = listaUsuarios.find(
         ({ usuario }) => usuario === responsavel
@@ -95,6 +141,9 @@ function adicionarMensagemTabelaVazia() {
   td.appendChild(emptyDataMessage);
   tr.appendChild(td);
   table.appendChild(td);
+  document.querySelector(".total-entries").innerText = 0;
+  document.querySelector(".page-number").innerText = 1;
+  document.querySelector(".total-pages").innerText = 1;
 }
 
 function alteraStatus(identificador, status) {
@@ -110,6 +159,7 @@ function alteraStatus(identificador, status) {
   document.querySelector(`#denuncia-${identificador} .btn-acao`).innerText = "";
   denuncias[indiceDenuncia].status = status;
   localStorage.setItem("denuncias", JSON.stringify(denuncias));
+  window.location.reload();
 }
 
 main();
