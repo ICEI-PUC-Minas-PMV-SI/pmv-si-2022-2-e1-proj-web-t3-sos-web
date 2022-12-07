@@ -3,11 +3,8 @@ var paginaAtual = parseInt(search.get("pagina") || "1");
 var statusFiltrado =
   (search.get("status") && search.get("status").split(",")) || [];
 var filtro = search.get("filtro");
-var registrosPorPagina = 1;
+var registrosPorPagina = 10;
 
-console.log(filtro);
-console.log(statusFiltrado);
-console.log(paginaAtual);
 function deslogaSeNaoAdmin() {
   if (!usuarioLogado || !usuarioLogado.administrador) {
     window.location.href = LOGIN_PAGINA;
@@ -28,6 +25,27 @@ function main() {
   });
 
   document.getElementById("input-search").value = filtro || "";
+
+  DOMUtils.escutarEventoPorClasse("close-modal", "click", (_e) => {
+    document.querySelector(".modal-overlay").style.display = "none";
+  });
+}
+
+function abrirModal(identificador) {
+  const denuncia = denuncias.find(
+    (denuncia) => denuncia.identificador === identificador
+  );
+  if (!denuncia) {
+    alert("Denúncia não encontrada");
+    return;
+  }
+  document.querySelector(".modal-header h1").innerText = denuncia.nome;
+  document.querySelector(
+    ".modal-header a"
+  ).href = `${COMENTARIOS_PAGINA}?identificador=${denuncia.identificador}`;
+  document.querySelector(".content-link").innerText = denuncia.endereco;
+  document.querySelector(".content-historia").innerText = denuncia.historia;
+  document.querySelector(".modal-overlay").style.display = "flex";
 }
 
 function escutarEventos() {
@@ -62,6 +80,7 @@ function filtrarPorNocividade(e) {
     : [...statusFiltrado, e.target.value];
   e.target.classList.toggle("bg-main-color");
   var href = new URL(window.location.href);
+  href.searchParams.set("pagina", 1);
   if (!status.length) {
     href.searchParams.delete("status");
     window.location.replace(href.toString());
@@ -75,7 +94,10 @@ function preencherTabela() {
   const table = document.querySelector("#denunciations-table");
   const denunciasFiltradas = denuncias.filter((denuncia) => {
     const filtroPorStatus =
-      !statusFiltrado.length || statusFiltrado.includes(denuncia.status);
+      !statusFiltrado.length ||
+      statusFiltrado.some(
+        (status) => denuncia.status === statusDenuncia[status]
+      );
     const filtroPorValor =
       !filtro ||
       ["nome", "endereco", "responsavel", "historia"].some((chave) =>
@@ -104,13 +126,13 @@ function preencherTabela() {
   if (paginaAtual > 1) {
     href.searchParams.set("pagina", paginaAtual - 1);
     backPagination.href = href.toString();
-  } else if (paginaAtual < totalDePaginas) {
+    backPagination.style.display = "block";
+  }
+  if (paginaAtual < totalDePaginas) {
     href.searchParams.set("pagina", paginaAtual + 1);
     nextPagination.href = href.toString();
+    nextPagination.style.display = "block";
   }
-  backPagination.style.display = paginaAtual > 1 ? "block" : "none";
-  nextPagination.style.display =
-    paginaAtual < totalDePaginas ? "block" : "none";
   denunciasPaginadas.map(
     ({ identificador, nome, endereco, responsavel, votacao, status }) => {
       const usuario = listaUsuarios.find(
@@ -121,9 +143,9 @@ function preencherTabela() {
         "beforeend",
         `<tr id="denuncia-${identificador}"><td>${endereco}</td><td>${nome}</td><td>${nocividade}</td><td>${
           (usuario && usuario.nome) || "-"
-        }</td><td class="td-status">${status}</td><td class="btn-acao">${
+        }</td><td class="td-status">${status}</td><td class="btn-acao"><button onclick="abrirModal('${identificador}')" class="icon-button">  <img src="../../assets/icon-eye.svg" alt="view" /></button>${
           status !== statusDenuncia.PENDENTE
-            ? "-"
+            ? ""
             : `<button onclick="alteraStatus('${identificador}', '${statusDenuncia.APROVADA}')" class="icon-button">  <img src="../../assets/icon-check.svg" alt="approve" /></button><button onclick="alteraStatus('${identificador}', '${statusDenuncia.NEGADA}')" class="icon-button">  <img src="../../assets/icon-cancel.svg" alt="cancel" /></button>`
         }</td></tr>`
       );

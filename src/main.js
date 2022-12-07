@@ -2,6 +2,8 @@ const LOGIN_PAGINA = "../login/login.html";
 const ADMIN_PAGINA = "../admin/admin.html";
 const DENUNCIAS_PAGINA = "../denuncias/denuncias.html";
 const COMENTARIOS_PAGINA = "../comentarios/comentarios.html";
+const ADICIONAR_COMENTARIOS_PAGINA =
+  "../adicionar-comentarios/adicionar-comentarios.html";
 const MINHAS_DENUNCIAS = "../minhas-denuncias/minhas-denuncias.html";
 
 const statusDenuncia = {

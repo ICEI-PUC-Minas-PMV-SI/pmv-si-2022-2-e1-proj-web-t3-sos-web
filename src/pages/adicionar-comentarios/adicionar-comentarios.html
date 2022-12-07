@@ -79,7 +79,8 @@
               </div>
               <p class="text-main-color">Comentário</p>
               <form
-                name="form_login"
+                id="form_add_comentario"
+                name="form_add_comentario"
                 class="form-login"
                 action="../comentarios/comentarios.html"
               >
@@ -88,6 +89,7 @@
                 <p1 class="escreva">Escreva algum comentário:</p1><br />
                 <label id="labelComentario" for="comentario"></label>
                 <textarea
+                  name="mensagem"
                   id="comentario"
                   class="input-base"
                   rows="22"
@@ -99,7 +101,6 @@
                 <br />
                 <br />
                 <button
-                  onclick="enviar()"
                   type="submit"
                   class="button-base bg-main-color"
                   value="Enviar comentário"

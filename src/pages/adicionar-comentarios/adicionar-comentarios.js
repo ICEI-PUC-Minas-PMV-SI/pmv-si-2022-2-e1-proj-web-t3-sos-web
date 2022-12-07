@@ -1,4 +1,21 @@
-preencheUsuarioNoMenu();
+function main() {
+  deslogaSeNaoLogado();
+  preencheUsuarioNoMenu();
+}
+main();
+
+var identificador = new URLSearchParams(window.location.search).get(
+  "identificador"
+);
+
+const denuncia = denuncias.find(
+  (denuncia) => denuncia.identificador === identificador
+);
+if (!denuncia) {
+  alert("Denúncia não encontrada");
+  window.location.href = DENUNCIAS_PAGINA;
+}
+
 let comentario = document.querySelector("#comentario");
 let labelComentario = document.querySelector("#labelComentario");
 let validComentario = false;
@@ -18,20 +35,19 @@ comentario.addEventListener("keyup", () => {
   }
 });
 
-function enviar() {
-  if (validComentario) {
-    let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]");
-    listaUser.push({
-      comentarioCad: comentario.value,
+document
+  .getElementById("form_add_comentario")
+  .addEventListener("submit", (e) => {
+    e.preventDefault();
+    const form = new FormData(e.target);
+
+    const { mensagem } = Object.fromEntries(form);
+
+    denuncia.comentarios.push({
+      mensagem: mensagem.trim(), // trim() remove espaços em branco no início e no fim da string
+      usuario: usuarioLogado.usuario,
     });
-    localStorage.setItem("listaUser", JSON.stringify(listaUser));
-
-    alert("mensagem enviada");
-
-    window.location.href = "../comentarios/comentarios.html";
-    return;
-  } else {
-    alert("favor preencher o comentário corretamente");
-    preventDefault();
-  }
-}
+    localStorage.setItem("denuncias", JSON.stringify(denuncias));
+    window.location.href =
+      COMENTARIOS_PAGINA + "?identificador=" + identificador;
+  });
