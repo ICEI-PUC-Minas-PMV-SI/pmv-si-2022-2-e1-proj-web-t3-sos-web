@@ -79,25 +79,22 @@ Caso de teste  | CT 08 Tela do Administrador
 ---------------------------------------
 
 
- 
-
-
- 
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
 
 # Registro de Testes de Software
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+| Teste Vídeo|  CT 01 Cadastrar o usuário |
+|--------------|------------------------------------------------|
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/2022-12-08%2019-57-29.mp4
+
+- Resultado: Tela de cadastro funcionado corretamente , tanto nos inputs como no ato de cadastrar.
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+
+
+
 
 ## Avaliação
 
