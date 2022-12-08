@@ -23,7 +23,7 @@ Caso de teste  | CT 02 Logar com usuário cadastrado
 | Requisito associado|RF-008	Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados pelo sistema|
 |Objetivo do Teste| Verificar se o usuário consegue logar no site com o seu usuário e senha cadastrados
 |Passos|1- Acessar o endereço do site no navegador(GitHub) / 2- Na tela de login, colocar o usuário e senha devidamente cadastrados; / 3-Clicar no botão entrar.
-|Critério de êxito | Obter o aviso: 'Bem vindo' seguido do nome cadastrado e cair para a tela denúncias. Caso não for cadastrado ou errar o nome/usuário, irá aparecer uma mensagem de: usuário não encontrado |
+|Critério de êxito | Obter o aviso: 'Bem-vindo' seguido do nome cadastrado e cair para a tela denúncias. Caso não for cadastrado ou errar o nome/usuário, irá aparecer uma mensagem de: usuário não encontrado |
 
 
 

@@ -42,6 +42,15 @@ body {
   padding: 0.3rem;
 }
 
+.input-base-date {
+  border: 1px solid #ceb8a7 !important;
+  border-radius: 10px;
+  height: 1.5rem;
+  width: 11rem;
+  padding: 0.3rem;
+
+}
+
 .input-base::placeholder {
   color: #ceb8a7;
 }

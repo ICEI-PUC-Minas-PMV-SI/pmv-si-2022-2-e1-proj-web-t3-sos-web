@@ -1,7 +1,26 @@
-// Deletar
-function myDelete() {
-  const deletando = document.getElementById("d-a");
-  deletando.remove();
+
+function deletarDenuncia(deleteButton) {
+  var titleContainer = deleteButton.parentNode;
+  var card = titleContainer.parentNode;
+  var conteudo = card.childNodes[1];
+  var endereco = conteudo.childNodes[1];
+  var conteudoEndereco = endereco.innerText || endereco.textContent;
+  var index = denuncias.findIndex(denuncia => denuncia.endereco === conteudoEndereco);
+  denuncias.splice(index, 1);
+
+  localStorage.setItem('denuncias', JSON.stringify(denuncias));
+  const cards = document.getElementsByClassName('denounce-analyses')
+  for (var i = cards.length - 1; i >= 0; --i) {
+    cards[i].remove();
+  }
+  refrescarPagina();
+}
+
+function escutarEvento() {
+  DOMUtils.escutarEventoPorClasse('gg-trash', 'click', (e) => {
+    // console.log(e)
+    deletarDenuncia(e.target);
+  })
 }
 
 // JSON.Stringfly (conversão para linguagem do navegador) && JSON.Parse (conversão para JavaScript)
@@ -12,6 +31,7 @@ function adicionarCards(denuncias) {
   for (let i = 0; i < denuncias.length; i++) {
     // Variável selecionando Objeto do HTML
     var divPrincipal = document.querySelector(".denounce");
+    // card.childNodes
 
     // Variável criando Elemento do HTML
     var card = document.createElement("div");
@@ -31,9 +51,18 @@ function adicionarCards(denuncias) {
     h2.appendChild(content);
 
     titulo.appendChild(h2);
+
+    var iconeDeletar = document.createElement('i');
+    iconeDeletar.setAttribute('class', 'gg-trash');
+    iconeDeletar.setAttribute('style', 'margin-right: 10px');
+
+    titulo.appendChild(iconeDeletar);
+
     card.appendChild(titulo);
 
-    card.appendChild(document.createElement("div"));
+    var conteudoDenuncia = document.createElement("div");
+    conteudoDenuncia.setAttribute('class', 'denunciation-content');
+    card.appendChild(conteudoDenuncia);
     var resto = card.getElementsByTagName("div")[1];
     resto.setAttribute("style", "margin-left: 25px;");
 
@@ -54,31 +83,29 @@ function adicionarCards(denuncias) {
 }
 
 function adicionarMensagemPadrao() {
-  // COLOCAR CÓDIGO AQUI
-  // PASSO 2:
-  // necessário pegar a div com class "denounce" e colocar numa variável
-  // criar uma div e colocar numa variável, adicionar a classe chamada "mensagem"
-  // na div "mensagem", adicionar um texto falando que não existe denúncias ainda
-  // adicionar div "mensagem" dentro da div "denounce"
-  // criar uma estilação pra essa div "mensagem" no arquivo css
+  const divPrincipal = document.querySelector('.denounce');
+  const texto = document.createTextNode('Você ainda não possui denúncias cadastradas!');
+  divPrincipal.insertBefore(texto, divPrincipal.children[2]);
+  divPrincipal.setAttribute('style', 'padding: 0');
+}
+
+function refrescarPagina() {
+  const denunciasDoUsuario = denuncias.filter(
+    (denuncia) => denuncia.responsavel === usuarioLogado.usuario
+  );
+  if(denunciasDoUsuario.length) {
+    adicionarCards(denunciasDoUsuario);
+    escutarEvento();
+  } else {
+    adicionarMensagemPadrao();
+  }
 }
 
 function main() {
   deslogaSeAdmin();
   preencheUsuarioNoMenu();
 
-  const denunciasDoUsuario = denuncias.filter(
-    (denuncia) => denuncia.responsavel === usuarioLogado.usuario
-  );
-
-  // PASSO 1:
-
-  // se existem denuncias, vai chamar a função adicionarCards
-  // ou então se não existem denuncias, vai chamar a função adicionarMensamgem;
-
-  adicionarCards(denunciasDoUsuario);
-
-  adicionarMensagemPadrao();
+  refrescarPagina();
 }
 
 main();
