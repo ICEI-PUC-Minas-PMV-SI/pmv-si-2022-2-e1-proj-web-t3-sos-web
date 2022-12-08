@@ -1,3 +1,8 @@
+let nome = document.querySelector("#nome");
+let labelNome = document.querySelector("#labelNome");
+
+
+
 let cpf = document.querySelector("#cpf");
 let labelCpf = document.querySelector("#labelCpf");
 let validCpf = false;
@@ -12,6 +17,25 @@ let validTelefone = false;
 
 let msgError = document.querySelector("#msgError");
 let msgSuccess = document.querySelector("#msgSuccess");
+
+nome.addEventListener("keyup", () => {
+  if (nome.value.length < 3) {
+    limpaCampo(labelNome, nome);
+    return;
+  }
+
+  if (nome.value.length < 4) {
+    labelNome.setAttribute("style", "color: red");
+    labelNome.innerHTML = "Digite um nome válido";
+    nome.setAttribute("style", "outline-color: red");
+
+  } else {
+    labelNome.setAttribute("style", "color: green");
+    labelNome.innerHTML = "Nome válido";
+    nome.setAttribute("style", "outline-color: green");
+
+  }
+});
 
 email.addEventListener("keyup", () => {
   if (email.value.length <= 4) {
