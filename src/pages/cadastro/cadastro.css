@@ -88,20 +88,22 @@ body {
   display: none;
 }
 
-@media (min-width: 400px) {
+#validar {
+  width: 12rem;
+}
+
+@media (max-width: 400px) {
   .sign-up {
-    width: 20rem;
+    width: 12rem;
 
   }
-
-
 }
 
 @media (min-width: 600px) {
 
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .sign-up {
-    width: 25rem;
+    width: 20rem;
   }
 }
 
