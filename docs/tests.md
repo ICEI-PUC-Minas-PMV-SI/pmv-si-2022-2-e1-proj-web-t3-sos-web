@@ -63,9 +63,9 @@ Caso de teste  | CT 07 Tela do Usuário
 
 Caso de teste  | CT 08 Tela do Administrador
 |------------|-------------------------------------------------------|
-| Requisito associado| RF-006	Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito.<br/>RF-011	SiO sistema deverá possuir a funcionalidade de login de administrador.|
+| Requisito associado| RF-006	Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito.<br/>RF-011	O sistema deverá possuir a funcionalidade de login de administrador.|
 |Objetivo do Teste| Testar as funcionalidades do Administrador de aprovar ou reijetar uma denúncia |
-|Passos| 1 - Realizar o Login do administrador ( usuário: admin, senha: 1,2,3,4,5,6);<br/>  2 - Sistema irá direcionar para a tela Deúnncias exclusiva do admin;<br/>  3 - Na tela denúncias admin, podemos utilizar o campo de busca e/ou os filtros de pendente, aprovada e negada para a procura das denúncias;<br/>  4 - No campo abaixo, podemos clicar no ícone de um olho ao lado das denúncias para melhor detalhamento e clicar 'x' para reprovar e 'v' para aprová-las, utilizando a  aba de ação;<br/> 5 - Clicar em sair para deslogar.
+|Passos| 1 - Realizar o Login do administrador ( usuário: admin, senha: 1,2,3,4,5,6);<br/>  2 - Sistema irá direcionar para a tela Deúncias exclusiva do admin;<br/>  3 - Na tela denúncias admin, podemos utilizar o campo de busca e/ou os filtros de pendente, aprovada e negada para a procura das denúncias;<br/>  4 - No campo abaixo, podemos clicar no ícone de um olho ao lado das denúncias para melhor detalhamento e clicar 'x' para reprovar e 'v' para aprová-las, utilizando a  aba de ação;<br/> 5 - Clicar em sair para deslogar.
  |Critério de êxito | Tarefa do usuário bem sucedida|  |
  
  -------------------------------------
