@@ -107,7 +107,7 @@ function slugify(string = "") {
 
 function redirecionaLogado() {
   if (!usuarioLogado) return;
-  alert("Seja bem vindo " + usuarioLogado.nome);
+  alert("Seja bem-vindo " + usuarioLogado.nome);
   window.location.href = usuarioLogado.administrador
     ? ADMIN_PAGINA
     : DENUNCIAS_PAGINA;

@@ -1,10 +1,10 @@
 class DOMUtils {
   // Classe criada para aumentar a produtividade e diminuir
   // a quantidade de chamadas repetitivas aos métodos da
-  // DOM API tornando o código menos verboso e poluído
+  // DOM API, tornando o código menos verboso e poluído
   
-  // Como todo classe utilitária, certos métodos podem acabar não sendo reutilizados e
-  // reaproveitados como mo propósito inicial. Por isso, métodos utilizados apenas
+  // Como toda classe utilitária, certos métodos podem acabar não sendo reutilizados
+  // nem reaproveitados como mo propósito inicial. Por isso, métodos utilizados apenas
   // uma vez serão passíveis de refatoração e deixarão de existir nesta classe
 
   constructor() {}
@@ -21,7 +21,7 @@ class DOMUtils {
     while(elementos.length){
       elementos[0].parentNode.removeChild(elementos[0]);
     }
-}
+  }
 
   static escutarEventoPorId(id, evento, cb) {
     // Esse método é um açúcar sintático e escuta a 

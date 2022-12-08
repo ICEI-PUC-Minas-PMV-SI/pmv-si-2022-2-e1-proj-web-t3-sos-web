@@ -17,29 +17,10 @@
   font-size: 2.2rem;
 }
 
-.email-container {
+.center {
   display: flex;
   align-items: center;
-}
-
-.telephone-container {
-  display: flex;
-  align-items: center;
-}
-
-.age-container {
-  display: flex;
-  align-items: center;
-}
-
-.data-container {
-  display: flex;
-  align-items: center;
-}
-
-.chat-container {
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
 
 .menu-bar {

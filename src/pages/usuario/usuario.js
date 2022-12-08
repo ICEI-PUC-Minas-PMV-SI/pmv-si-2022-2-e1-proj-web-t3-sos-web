@@ -1,49 +1,47 @@
-console.log(JSON.parse(localStorage.getItem("usuario")))
 var usuario = JSON.parse(localStorage.getItem("usuario"))
 
-document.getElementById("edit-email").addEventListener("click", (e) => {
+function labelParaInput(key) {
+  document.getElementById(`${key}-info`).remove();
+  var input = document.createElement("input");
+  input.setAttribute('class', 'input-base');
+  document.getElementById(`${key}-container`).appendChild(input);
+  document.getElementById(`edit-${key}`).remove();
+  var botaoSalvar = document.createElement("button");
+  botaoSalvar.innerText = 'Salvar';
+  botaoSalvar.setAttribute('class', 'button-base');
+  botaoSalvar.setAttribute('class', 'bg-main-color');
+  botaoSalvar.setAttribute('style', 'padding: 0.3rem');
+  document.getElementById(`${key}-container`).appendChild(botaoSalvar);
+}
 
-  document.getElementById("email-info").remove()
-  var input = document.createElement("input")
-  document.getElementById("email-container").appendChild(input)
-  document.getElementById("edit-email").remove()
-  var botaoSalvar = document.createElement("button")
-  document.getElementById("email-container").appendChild(botaoSalvar)
-})
-document.getElementById("edit-telephone").addEventListener("click", (e) => {
+function escutarEventos() {
+  editar();
+}
 
-  document.getElementById("telephone-info").remove()
-  var input = document.createElement("input")
-  document.getElementById("telephone-container").appendChild(input)
-  document.getElementById("edit-telephone").remove()
-  var botaoSalvar = document.createElement("button")
-  document.getElementById("telephone-container").appendChild(botaoSalvar)
-})
-document.getElementById("edit-age").addEventListener("click", (e) => {
+function editar() {
+  DOMUtils.escutarEventoPorId('edit-email', 'click', () => {
+    labelParaInput('email');
+  })
+  
+  DOMUtils.escutarEventoPorId('edit-telephone', 'click', () => {
+    labelParaInput('telephone');
+  })
+  
+  DOMUtils.escutarEventoPorId('edit-age', 'click', () => {
+    labelParaInput('age');
+  })
+  
+  DOMUtils.escutarEventoPorId('edit-data', 'click', () => {
+    labelParaInput('data');
+  })
+  
+  DOMUtils.escutarEventoPorId('edit-chat', 'click', () => {
+    labelParaInput('chat');
+  })
+}
 
-  document.getElementById("age-info").remove()
-  var input = document.createElement("input")
-  document.getElementById("age-container").appendChild(input)
-  document.getElementById("edit-age").remove()
-  var botaoSalvar = document.createElement("button")
-  document.getElementById("age-container").appendChild(botaoSalvar)
-})
-document.getElementById("edit-data").addEventListener("click", (e) => {
+function main() {
+  escutarEventos();
+}
 
-  document.getElementById("data-info").remove()
-  var input = document.createElement("input")
-  document.getElementById("data-container").appendChild(input)
-  document.getElementById("edit-data").remove()
-  var botaoSalvar = document.createElement("button")
-  document.getElementById("data-container").appendChild(botaoSalvar)
-})
-document.getElementById("edit-chat").addEventListener("click", (e) => {
-
-  document.getElementById("chat-info").remove()
-  var input = document.createElement("input")
-  document.getElementById("chat-container").appendChild(input)
-  document.getElementById("edit-chat").remove()
-  var botaoSalvar = document.createElement("button")
-  document.getElementById("chat-container").appendChild(botaoSalvar)
-})
-
+main();
