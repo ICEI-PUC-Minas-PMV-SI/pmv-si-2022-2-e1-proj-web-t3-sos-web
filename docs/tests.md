@@ -84,7 +84,7 @@ Caso de teste  | CT 08 Tela do Administrador
 
 ###Teste Vídeo:  CT 01 Cadastrar o usuário 
 
-https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Cadastro.mp4
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Cadastro2.mp4
 
 - Resultado: Tela de cadastro funcionado corretamente , tanto nos inputs como no ato de cadastrar.
 
