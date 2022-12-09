@@ -24,7 +24,7 @@ Caso de teste  | CT 02 Logar com usuário cadastrado|
 
 Caso de teste  | CT 03 Recuperar senha 
 |------------|-------------------------------------------------|
-| Requisito associado|RF-010	Permitir que o usuário recupere sua senha esquecida|
+| Requisito associado|RF-010	Permitir que o usuário recupere sua senha |
 |Objetivo do Teste| Testar se o usuário consegue recuperar sua senha com sucesso|
 |Passos|1- Acessar o endereço do site no navegador(GitHub);<br/>  2- Na tela de login, clicar em: "Esqueceu sua senha?";<br/>  3 - Na tela de recuperar senha, inserir corretamente seu email;<br/> 4 - Abrir o email do SOS web na caixa de entrada do email inserido(verificar a caixa SPAM);<br/>  5 - clicar no link que irá aparecer abrindo uma nova página para inserir a nova senha;<br/>  6 - inserir e confirmar a nova senha;<br/> 7 - Voltar para a tela de Login
 |Critério de êxito | Sua nova senha deverá funcionar na tela de Login |
@@ -92,7 +92,20 @@ Caso de teste  | CT 08 Tela do Administrador
 - [x] Aprovado
 - [ ] Reprovado
 
+-----------------------------------
+### Teste vídeo : CT 02 Logar com usuário cadastrado
 
+
+
+
+---------------------------------
+### Teste vídeo : CT 03 Recuperar senha 
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2003%20Recuperar%20senha%20(1).gif)
+- Resultado: Email recebido corretamente e senha alterada com sucesso
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
 
 
 ## Avaliação
