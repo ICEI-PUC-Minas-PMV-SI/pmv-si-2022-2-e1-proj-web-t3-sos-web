@@ -95,8 +95,13 @@ Caso de teste  | CT 08 Tela do Administrador
 -----------------------------------
 ### Teste vídeo : CT 02 Logar com usuário cadastrado
 
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2002%20Logar%20com%20usu%C3%A1rio%20cadastrado.gif)
 
-
+- Resultado: Usuário logado com sucesso
+- 
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
 
 ---------------------------------
 ### Teste vídeo : CT 03 Recuperar senha 
