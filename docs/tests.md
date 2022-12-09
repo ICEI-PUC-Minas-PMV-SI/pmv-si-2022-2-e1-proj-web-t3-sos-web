@@ -82,7 +82,7 @@ Caso de teste  | CT 08 Tela do Administrador
 
 # Registro de Testes de Software
 
-###Teste Vídeo:  CT 01 Cadastrar o usuário 
+### Teste Vídeo:  CT 01 Cadastrar o usuário 
 
 https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Cadastro2.mp4
 
