@@ -35,7 +35,7 @@
         <a href="../minhas-denuncias/minhas-denuncias.html">
           <img id="denunciations-icon" class="left-nav-icon" src="../../assets/icon-tasklist.svg" alt="denunciations">
         </a>
-        <p>Minhas denúncias</p>
+        <p id="acao-user-denunciations-nav"></p>
       </div>
       <div class="logout-nav">
         <a href="../login/login.html">
@@ -49,7 +49,7 @@
     <header class="top-navbar">
       <p id="top-user-name"></p>
       <a href="../usuario/usuario.html">
-        <img src="../../assets/user.svg" alt="user">
+        <img src="../../assets/user.svg" class="profile-pic-nav" alt="user">
       </a>
     </header>
     <div class="app-container">
@@ -59,8 +59,11 @@
             <img class="tree-dots-option" src="../../assets/tree-dots.svg" alt="logout" />
           </div>
           <div class="user-image">
-            <img src="../../assets/user.svg" alt="logo" />
-            <img class="edit-icon" src="../../assets/edit.svg" alt="edit" />
+            <img id="profile-picture" src="../../assets/user.svg" alt="logo" />
+            <label for="file-input">
+              <img class="edit-icon" src="../../assets/edit.svg" alt="edit" />
+            </label>
+            <input type="file" id="file-input">
           </div>
           <span>
             Nome do usuário

@@ -38,6 +38,7 @@
 
 .edit-icon {
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .user-image {
@@ -46,6 +47,16 @@
 
 .menu-bar,
 .option-header {
+  display: none;
+}
+
+#profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+#file-input {
   display: none;
 }
 

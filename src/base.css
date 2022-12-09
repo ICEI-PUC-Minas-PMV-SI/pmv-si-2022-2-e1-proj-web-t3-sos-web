@@ -48,7 +48,6 @@ body {
   height: 1.5rem;
   width: 11rem;
   padding: 0.3rem;
-
 }
 
 .input-base::placeholder {
@@ -275,6 +274,10 @@ body {
 .modal-content {
   margin: 2rem;
   font-size: 20px;
+}
+
+.profile-pic-nav {
+  border-radius: 50px;
 }
 
 @media (max-width: 400px) {

@@ -133,5 +133,14 @@ function preencheUsuarioNoMenu() {
     DOMUtils.adicionarTexto("#acao-user-denunciations-nav", menuDenuncia.acao);
     document.querySelector(".user-denunciations-nav a").href =
       menuDenuncia.href;
+    
+    preencherFotoNoMenu(usuarioLogado)
+  }
+}
+
+function preencherFotoNoMenu(usuarioLogado) {
+  if(usuarioLogado?.foto) {
+    const fotoPerfil = document.querySelector('.profile-pic-nav');
+    fotoPerfil.src = usuarioLogado?.foto;
   }
 }
