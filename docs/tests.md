@@ -1,9 +1,9 @@
 # Plano de Testes de Software
 ----------------------------
 
-. **Grupos de usuários escolhidos:** Devs do Projeto
+. **Grupos de usuários escolhidos:** Desenvolvedores do Projeto
 
-. **Ferramentas utilizadas:** Navegador Google Chrome
+. **Ferramentas utilizadas:** Navegador Google Chrome, Brave .
 
 Caso de teste  | CT 01 Cadastrar o usuário|
 |------------|-------------------------------------------------|
@@ -66,7 +66,7 @@ Caso de teste  | CT 08 Tela do Administrador
 | Requisito associado| RF-006	Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito.<br/>RF-011	O sistema deverá possuir a funcionalidade de login de administrador.|
 |Objetivo do Teste| Testar as funcionalidades do Administrador de aprovar ou reijetar uma denúncia |
 |Passos| 1 - Realizar o Login do administrador ( usuário: admin, senha: 1,2,3,4,5,6);<br/>  2 - Sistema irá direcionar para a tela Deúncias exclusiva do admin;<br/>  3 - Na tela denúncias admin, podemos utilizar o campo de busca e/ou os filtros de pendente, aprovada e negada para a procura das denúncias;<br/>  4 - No campo abaixo, podemos clicar no ícone de um olho ao lado das denúncias para melhor detalhamento e clicar 'x' para reprovar e 'v' para aprová-las, utilizando a  aba de ação;<br/> 5 - Clicar em sair para deslogar.
- |Critério de êxito | Tarefa do usuário bem sucedida|  |
+ |Critério de êxito | Tarefa do Administrador bem sucedida|  |
  
  -------------------------------------
  
@@ -78,6 +78,14 @@ Caso de teste  | CT 08 Tela do Administrador
  |Critério de êxito | Dados do usuário editado com sucesso  |
 ---------------------------------------
 
+
+ Caso de teste  | CT 10 Responsividade
+|------------|-------------------------------------------------------|
+| Requisito associado| RNF-001	A aplicação deve ser responsiva |
+|Objetivo do Teste| verificar se o site é responsivo para diversos tamanhos de tela|
+|Passos| 1 - Abrir o site na página a ser testada e logar (no caso do vídeo será a Tela Denuncias );<br/>  2 - Aperta a tecla F112 e testar os tamanhos de resoluçoes;<br/>  3 - testar em outras paginas do projeto.
+ |Critério de êxito | Site responsivo para as resoluções aplicadas  |
+---------------------------------------
 
 
 # Registro de Testes de Software
@@ -97,7 +105,7 @@ Caso de teste  | CT 08 Tela do Administrador
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2002%20Logar%20com%20usu%C3%A1rio%20cadastrado.gif)
 
-- Resultado: Usuário logado com sucesso
+- Resultado: Usuário logado com sucesso.
 - 
 **Situação final:**
 - [x] Aprovado
@@ -112,6 +120,25 @@ Caso de teste  | CT 08 Tela do Administrador
 - [x] Aprovado
 - [ ] Reprovado
 
+-------------------------------
+### Teste vídeo : CT 08 Tela Administrador
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2008%20Tela%20do%20Administrador.gif)
+- Resultado: Tarefa do Administrador de rejeitar/aprovar denúncia bem sucedida, Tal como a procura com os filtros. **Feedback do usuário e suas denúncias a testar**.
+- 
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+
+---------------------------------
+### Teste vídeo : CT 10 Responsividade
+
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Responsividade.gif)
+- Resultado : Tela de Denúncia responsiva.
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+--------------------------------------------------
 
 ## Avaliação
 
