@@ -1,8 +1,6 @@
 let nome = document.querySelector("#nome");
 let labelNome = document.querySelector("#labelNome");
 
-
-
 let cpf = document.querySelector("#cpf");
 let labelCpf = document.querySelector("#labelCpf");
 let validCpf = false;
@@ -155,12 +153,6 @@ function limpaCampo(label, campo, valid) {
   label.innerHTML = "";
   campo.setAttribute("style", "outline-color: #f94949");
   valid = true;
-}
-
-function TestaEmail(email) {
-  return email.match(
-    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  );
 }
 
 function TestaCPF(strCPF) {

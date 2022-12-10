@@ -38,7 +38,7 @@
         <p id="acao-user-denunciations-nav"></p>
       </div>
       <div class="logout-nav">
-        <a href="../login/login.html">
+        <a onclick="desloga()">
           <img id="logout-icon" class="left-nav-icon" src="../../assets/exit.svg" alt="logout">
         </a>
         <p>Sair</p>
@@ -65,45 +65,34 @@
             </label>
             <input type="file" id="file-input">
           </div>
-          <span>
-            Nome do usuário
-          </span>
+          <div id="name-container">
+            <p id="name-info"></p>
+            <img id="edit-name" class="edit-icon" src="../../assets/edit.svg" alt="edit" />
+          </div>
           <div id="email-container" class="center">
             <img src="../../assets/email.svg" alt="logo" />
-            <span id="email-info" style="margin-left: 10px;">
-              michaelalberto@gmail.com
-            </span>
+            <p id="email-info" class="info"></p>
             <img id="edit-email" class="edit-icon" src="../../assets/edit.svg" alt="edit" />
           </div>
           <div id="telephone-container" class="center">
             <img src="../../assets/telephone.svg" alt="logo" />
-            <span id="telephone-info" style="margin-left: 10px;">
-              55 (31) 99999-9999
-            </span>
+            <p id="telephone-info" class="info"></p>
             <img id="edit-telephone" class="edit-icon" src="../../assets/edit.svg" alt="edit" />
           </div>
           <div id="age-container" class="center">
             <img src="../../assets/age-group.svg" alt="logo" />
-            <span id="age-info" style="margin-left: 10px;">
-              18 anos
-            </span>
+            <p id="age-info" class="info"></p>
             <img id="edit-age" class="edit-icon" src="../../assets/edit.svg" alt="edit" />
           </div>
           <div id="data-container" class="center">
             <img src="../../assets/data.svg" alt="logo" />
-            <span id="data-info" style="margin-left: 10px;">
-              10 Análises
-            </span>
-            <img id="edit-data" class="edit-icon" src="../../assets/edit.svg" alt="edit" />
+            <p id="data-info" class="info"></p>
           </div>
           <div id="chat-container" class="center">
             <img src="../../assets/chat.svg" alt="logo" />
-            <span id="chat-info" style="margin-left: 10px;">
-              1 Comentário
-            </span>
-            <img id="edit-chat" class="edit-icon" src="../../assets/edit.svg" alt="edit" />
+            <p id="chat-info" class="info"></p>
           </div>
-          <div id="menu-bar">
+          <div class="menu-bar">
             <a href="../usuario/usuario.html">
               <img src="../../assets/icon-user.svg" alt="icon">
             </a>
