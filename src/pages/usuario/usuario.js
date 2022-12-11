@@ -155,7 +155,6 @@ function mostrarInput(key) {
     let inputText = input.value;
     const ehValido = validarInformacao(key, input.value, button);
     if(ehValido) {
-      console.log(inputText);
       inputText = key === 'age'
         ? formatInputToDateString(inputText)
         : inputText;
@@ -163,7 +162,7 @@ function mostrarInput(key) {
       const dadoFoiSalvo =  salvarDados(key, inputText);
 
       if (dadoFoiSalvo) {
-        info.innerText = `${transformarDataParaIdade(inputText)} anos`;
+        info.innerText = key === 'age' ? `${transformarDataParaIdade(inputText)} anos` : inputText;
         input.remove();
         button.remove();
 
