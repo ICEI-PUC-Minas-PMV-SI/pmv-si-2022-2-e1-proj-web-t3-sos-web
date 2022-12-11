@@ -134,7 +134,7 @@ function preencheUsuarioNoMenu() {
     document.querySelector(".user-denunciations-nav a").href =
       menuDenuncia.href;
     
-    preencherFotoNoMenu(usuarioLogado)
+    preencherFotoNoMenu(usuarioLogado);
   }
 }
 

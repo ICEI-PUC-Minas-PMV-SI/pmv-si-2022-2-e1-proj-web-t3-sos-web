@@ -97,6 +97,8 @@ function salvarImagem(base64Image) {
 
   localStorage.setItem('usuario', JSON.stringify(usuario));
   localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+  preencherFotoNoMenu(usuario);
 }
 
 function escutarEventos() {
@@ -149,7 +151,7 @@ function mostrarInput(key) {
   })
 
   button.addEventListener('click', () => {
-    const inputText = input.value;
+    let inputText = input.value;
     const ehValido = validarInformacao(key, input.value, button);
     if(ehValido) {
       if(key === 'age') {
@@ -161,6 +163,10 @@ function mostrarInput(key) {
         info.innerText = inputText;
         input.remove();
         button.remove();
+
+
+        document.getElementById('top-user-name').innerText = '';
+        DOMUtils.adicionarTexto("#top-user-name", usuario.nome);
     
         info.setAttribute('style', 'display: inherit;');
         editBtn.setAttribute('style', 'display: inherit;');
