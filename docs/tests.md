@@ -30,7 +30,7 @@ Caso de teste  | CT 03 Recuperar senha
 |Critério de êxito | Sua nova senha deverá funcionar na tela de Login |
 
 ---------------------------
-Caso de teste  | CT 04 entrada de usuários não cadastrados e consulta de  sites nocivos 
+Caso de teste  | CT 04 Entrada de usuários não cadastrados e consulta de  sites nocivos 
 |------------|-------------------------------------------------------|
 | Requisito associado|RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito.<br/> RF-002  A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias e com filtros que vão de baixa a alta nocividade.|
 |Objetivo do Teste| Verificar se o usuário sem cadastro consegue entrar para fazer consultas de site/emails nocivos |
