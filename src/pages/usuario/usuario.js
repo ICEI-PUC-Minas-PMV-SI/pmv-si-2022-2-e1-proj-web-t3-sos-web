@@ -155,13 +155,15 @@ function mostrarInput(key) {
     let inputText = input.value;
     const ehValido = validarInformacao(key, input.value, button);
     if(ehValido) {
-      if(key === 'age') {
-        const date = formatDateStringToInput(inputText);
-        inputText = `${transformarDataParaIdade(date)} anos`;
-      }
+      console.log(inputText);
+      inputText = key === 'age'
+        ? formatInputToDateString(inputText)
+        : inputText;
+
       const dadoFoiSalvo =  salvarDados(key, inputText);
+
       if (dadoFoiSalvo) {
-        info.innerText = inputText;
+        info.innerText = `${transformarDataParaIdade(inputText)} anos`;
         input.remove();
         button.remove();
 
@@ -275,7 +277,7 @@ function formatDateStringToInput(date) {
 
 function formatInputToDateString(date) {
   const dateArr = date.split('-');
-  const inputDate = `${dateArr[2]}-${dateArr[1]}-${dateArr[0]}`;
+  const inputDate = `${dateArr[2]}/${dateArr[1]}/${dateArr[0]}`;
   return inputDate; 
 }
 
