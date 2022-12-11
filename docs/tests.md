@@ -30,11 +30,11 @@ Caso de teste  | CT 03 Recuperar senha
 |Critério de êxito | Sua nova senha deverá funcionar na tela de Login |
 
 ---------------------------
-Caso de teste  | CT 04 entrada de usuários não cadastrados e consulta de  sites nocivos 
+Caso de teste  | CT 04 Entrada de usuários não cadastrados e consulta de  sites nocivos 
 |------------|-------------------------------------------------------|
 | Requisito associado|RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito.<br/> RF-002  A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias e com filtros que vão de baixa a alta nocividade.|
 |Objetivo do Teste| Verificar se o usuário sem cadastro consegue entrar para fazer consultas de site/emails nocivos |
-|Passos|1 - Na tela principal de Login, clicar no botão: "Entrar como convidado";<br/>  2 - Na tela de denúncias, testar a procura por nome e os filtros de baixa, média e alta nocividade;<br/> 3 - clicar em cima do respectivo site a ser consultado  e testar se o modal com a informações do site irá abrir;<br/> 4 - Caso queira voltar para a tela de login , clicar no ícone no canto superior direito, fazer login|
+|Passos|1 - Na tela principal de Login, clicar no botão: "Entrar como convidado";<br/>  2 - Na tela de denúncias, testar filtro de busca;<br/> 3 - clicar em cima do respectivo site a ser consultado  e testar se o modal com a informações do site irá abrir;<br/> 4 - Caso queira voltar para a tela de login , clicar no ícone no canto superior direito, fazer login|
 |Critério de êxito | Usuário sem cadastro deve consultar os sites sem intercorrências |
 
 ----------------------------
@@ -49,7 +49,7 @@ Caso de teste  | CT 06 Tela denúncias e minhas denuncias
 |------------|-------------------------------------------------------|
 | Requisito associado| RF-002 A aplicação deve permitir que um usuário cadastrado ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias e com filtros que vão de baixa a alta nocividade.<br/>RF-004 A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |
 |Objetivo do Teste| Verificar a funcionalidade da tela de denúncias e minhas denúncias |
-|Passos| 1 - Realizar o Login;<br/>  2- Na tela denúncias, usuário poderá pesquisar pelo nome no campo de pesquisa;<br/> 3 - Nos botões abaixo do campo de procura, poderá ordenar a procura com os filtros de baixa, média e alta nocividade;<br/>  4 - Clicando no card com os site/emails denunciados, abrirá um modal detalhando a denúncia clicada;<br/>  5 - clicando em minhas denúncias no painel esquerdo, teremos as denúncias adicionadas com o seu status de pendente ou aprovada;<br/> 6 - clicar em sair você será deslogado.
+|Passos| 1 - Realizar o Login;<br/>  2- Na tela denúncias, usuário poderá pesquisar pelo nome no campo de pesquisa;<br/>  3 - Clicando no card com os site/emails denunciados, abrirá um modal detalhando a denúncia clicada;<br/>  4 - Clicando em minhas denúncias no painel esquerdo, teremos as denúncias adicionadas com o seu status de pendente ou aprovada;<br/> 5 - Clicar em sair você será deslogado.
  |Critério de êxito | Êxito no teste da procura das denúncias e  teste dos botões  |
 --------------------------
 
@@ -83,7 +83,7 @@ Caso de teste  | CT 08 Tela do Administrador
 |------------|-------------------------------------------------------|
 | Requisito associado| RNF-001	A aplicação deve ser responsiva |
 |Objetivo do Teste| verificar se o site é responsivo para diversos tamanhos de tela|
-|Passos| 1 - Abrir o site na página a ser testada e logar (no caso do vídeo será a Tela Denuncias );<br/>  2 - Aperta a tecla F112 e testar os tamanhos de resoluçoes;<br/>  3 - testar em outras paginas do projeto.
+|Passos| 1 - Abrir o site na página a ser testada e logar (no caso do vídeo será a Tela Denuncias );<br/>  2 - Aperta a tecla F112 e testar os tamanhos de resoluçoes;<br/>  3 - Testar em outras paginas do projeto.
  |Critério de êxito | Site responsivo para as resoluções aplicadas  |
 ---------------------------------------
 
