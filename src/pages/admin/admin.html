@@ -47,7 +47,9 @@
   <div class="app">
     <div class="top-navbar">
       <p id="top-user-name"></p>
-      <img src="../../assets/user.svg" class="profile-pic-nav" alt="user" />
+      <a href="../usuario/usuario.html">
+        <img src="../../assets/user.svg" class="profile-pic-nav" alt="user" />
+      </a>
     </div>
     <div class="app-container">
       <div class="card-app">
@@ -56,7 +58,7 @@
             <div class="option-header">
               <img class="tree-dots-option" src="../../assets/tree-dots.svg" alt="logout" />
             </div>
-            <h1>Denúncias</h1>
+            <h1>Gerenciar Denúncias</h1>
             <div class="form-search">
               <p>Pesquisa</p>
               <form name="form-search" class="form-search" method="POST">
@@ -92,6 +94,8 @@
                   </a>
                 </div>
                 <div class="modal-content">
+                  <p class="content-warning"></p>
+                  <br />
                   <p class="content-link"></p>
                   <br />
                   <span class="content-historia"></span>
@@ -102,10 +106,9 @@
               <tr class="table-header">
                 <th>Site/E-mail</th>
                 <th>Nome</th>
-                <th>Nocividade</th>
                 <th>Usuário responsável</th>
                 <th>Situacão</th>
-                <th>Acão</th>
+                <th>Ação</th>
               </tr>
             </table>
             <div class="table-footer">

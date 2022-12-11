@@ -3,6 +3,7 @@ var denuncias = JSON.parse(localStorage.getItem("denuncias"));
 var fileInput = document.getElementById('file-input');
 
 function main() {
+  deslogaSeNaoLogado();
   preencheUsuarioNoMenu();
   preencherFoto();
   preencherDadosUsuario();

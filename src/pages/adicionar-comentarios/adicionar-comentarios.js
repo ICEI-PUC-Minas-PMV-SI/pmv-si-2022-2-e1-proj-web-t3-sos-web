@@ -46,6 +46,7 @@ document
     denuncia.comentarios.push({
       mensagem: mensagem.trim(), // trim() remove espaços em branco no início e no fim da string
       usuario: usuarioLogado.usuario,
+      cpf: usuarioLogado.cpf
     });
     localStorage.setItem("denuncias", JSON.stringify(denuncias));
     window.location.href =

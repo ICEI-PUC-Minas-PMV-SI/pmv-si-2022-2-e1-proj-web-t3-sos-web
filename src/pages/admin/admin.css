@@ -51,6 +51,7 @@ body {
   padding: 0.3rem;
   background-color: var(--theme);
   color: white;
+  cursor: pointer;
 }
 
 .button-search .img-search {
@@ -147,7 +148,6 @@ tr:nth-child(even) {
 }
 
 .table-footer {
-  /* margin: 1rem 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -174,7 +174,44 @@ tr:nth-child(even) {
   display: none;
 }
 
+.next-pagination {
+  cursor: pointer;
+}
+
+.view-icon {
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 1.25rem;
+  margin-left: 2rem;
+  font-weight: bolder;
+}
+
+.modal-content {
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.content-warning {
+  color: red;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.content-link {
+  font-weight: bolder;
+}
+
 @media (max-width: 400px) {
+  .card-app {
+    height: 95vh;
+    padding-bottom: 1rem;
+  }
   .modal-container {
     width: 15rem;
   }

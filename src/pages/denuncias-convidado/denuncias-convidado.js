@@ -5,16 +5,10 @@ var statusFiltrado =
 var filtro = search.get("filtro");
 var registrosPorPagina = 10;
 
-function deslogaSeNaoAdmin() {
-  if (!usuarioLogado || !usuarioLogado.administrador) {
-    window.location.href = LOGIN_PAGINA;
-  }
-}
-
 function main() {
-  deslogaSeNaoLogado();
-  deslogaSeNaoAdmin();
-  preencheUsuarioNoMenu();
+  localStorage.removeItem("usuario");
+  usuarioLogado = null;
+
   preencherTabela();
   escutarEventos();
 
@@ -31,6 +25,8 @@ function main() {
   });
 }
 
+main();
+
 function abrirModal(identificador) {
   const denuncia = denuncias.find(
     (denuncia) => denuncia.identificador === identificador
@@ -39,51 +35,15 @@ function abrirModal(identificador) {
     alert("Denúncia não encontrada");
     return;
   }
-  
-  denuncia.status === 'Negada'
-  denuncia.status === 'Pendente'
-  denuncia.status === 'Aprovada'
-  
-  const textoAviso = formatarTextoAviso(denuncia.status);
-  const corAviso = adicionarCorAviso(textoAviso);
-
   document.querySelector(".modal-header h1").innerText = denuncia.nome;
-  document.querySelector(
-    ".modal-header a"
-  ).href = `${COMENTARIOS_PAGINA}?identificador=${denuncia.identificador}`;
-  const contentWarning = document.querySelector(".content-warning");
-  contentWarning.innerText = textoAviso;
-  contentWarning.setAttribute('style', corAviso);
+  document.querySelector(".content-warning").innerText = "Malicioso";
   document.querySelector(".content-link").innerText = denuncia.endereco;
   document.querySelector(".content-historia").innerText = denuncia.historia;
   document.querySelector(".modal-overlay").style.display = "flex";
 }
 
-function formatarTextoAviso(status) {
-  switch (status) {
-    case 'Negada':
-      return 'Confiável';
-    case 'Aprovada':
-      return 'Malicioso'
-    default:
-      return 'Pendente';
-  }
-}
-
-function adicionarCorAviso(textoAviso) {
-  switch (textoAviso) {
-    case 'Confiável':
-      return 'color: green;';
-    case 'Malicioso':
-      return 'color: red;';
-    default:
-      return 'color: orange;';
-  }
-}
-
 function escutarEventos() {
   buscar();
-  filtrar();
 }
 
 function buscar() {
@@ -101,36 +61,10 @@ function buscar() {
   });
 }
 
-function filtrar() {
-  DOMUtils.escutarEventoPorClasse("btn-filter", "click", (e) => {
-    filtrarPorNocividade(e);
-  });
-}
-
-function filtrarPorNocividade(e) {
-  var status = statusFiltrado.includes(e.target.value)
-    ? statusFiltrado.filter((status) => status !== e.target.value)
-    : [...statusFiltrado, e.target.value];
-  e.target.classList.toggle("bg-main-color");
-  var href = new URL(window.location.href);
-  href.searchParams.set("pagina", 1);
-  if (!status.length) {
-    href.searchParams.delete("status");
-    window.location.replace(href.toString());
-    return;
-  }
-  href.searchParams.set("status", status.join(","));
-  window.location.replace(href.toString());
-}
-
 function preencherTabela() {
   const table = document.querySelector("#denunciations-table");
   const denunciasFiltradas = denuncias.filter((denuncia) => {
-    const filtroPorStatus =
-      !statusFiltrado.length ||
-      statusFiltrado.some(
-        (status) => denuncia.status === statusDenuncia[status]
-      );
+    const filtroPorStatus = denuncia.status === 'Aprovada';
     const filtroPorValor =
       !filtro ||
       ["nome", "endereco", "responsavel", "historia"].some((chave) =>
@@ -167,19 +101,11 @@ function preencherTabela() {
     nextPagination.style.display = "block";
   }
   denunciasPaginadas.map(
-    ({ identificador, nome, endereco, responsavel, votacao, status }) => {
-      const usuario = listaUsuarios.find(
-        ({ usuario }) => usuario === responsavel
-      );
+    ({ identificador, nome, endereco }) => {
       table.insertAdjacentHTML(
         "beforeend",
-        `<tr id="denuncia-${identificador}"><td>${endereco}</td><td>${nome}</td><td>${
-          (usuario && usuario.nome) || "-"
-        }</td><td class="td-status">${status}</td><td class="btn-acao"><button onclick="abrirModal('${identificador}')" class="icon-button">  <img class="view-icon" src="../../assets/icon-eye.svg" alt="view" /></button>${
-          status !== statusDenuncia.PENDENTE
-            ? ""
-            : `<button onclick="alteraStatus('${identificador}', '${statusDenuncia.APROVADA}')" class="icon-button">  <img src="../../assets/icon-check.svg" alt="approve" /></button><button onclick="alteraStatus('${identificador}', '${statusDenuncia.NEGADA}')" class="icon-button">  <img src="../../assets/icon-cancel.svg" alt="cancel" /></button>`
-        }</td></tr>`
+        `<tr id="denuncia-${identificador}"><td>${endereco}</td><td>${nome}</td>
+        <td class="btn-acao"><button onclick="abrirModal('${identificador}')" class="icon-button">  <img class="view-icon" src="../../assets/icon-eye.svg" alt="view" /></button></td></tr>`
       );
     }
   );
@@ -216,4 +142,3 @@ function alteraStatus(identificador, status) {
   window.location.reload();
 }
 
-main();

@@ -60,6 +60,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: fill;
+  cursor: pointer;
 }
 
 .filters {
@@ -80,7 +81,7 @@ body {
   padding: 0.3rem;
 }
 
-.btn-filter {
+.filters .button-base {
   border-radius: 20px;
   width: 20%;
   height: 2rem;
@@ -106,6 +107,11 @@ body {
   justify-content: flex-end;
 }
 
+.icon-button {
+  border: none;
+  background-color: transparent;
+}
+
 table {
   margin: 1rem 0;
   border-collapse: collapse;
@@ -121,6 +127,7 @@ td {
   margin: 1rem 0;
   text-align: center;
   padding: 0.5rem 0;
+  vertical-align: middle;
 }
 
 td a {
@@ -137,12 +144,10 @@ tr:nth-child(even) {
 }
 
 .table-header th {
-  text-align: left;
   padding-left: 0.5rem;
 }
 
 .table-footer {
-  /* margin: 1rem 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -171,6 +176,35 @@ tr:nth-child(even) {
 
 .next-pagination {
   cursor: pointer;
+}
+
+.view-icon {
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 1.25rem;
+  margin-left: 2rem;
+  font-weight: bolder;
+}
+
+.modal-content {
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.content-warning {
+  color: red;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.content-link {
+  font-weight: bolder;
 }
 
 @media (max-width: 400px) {

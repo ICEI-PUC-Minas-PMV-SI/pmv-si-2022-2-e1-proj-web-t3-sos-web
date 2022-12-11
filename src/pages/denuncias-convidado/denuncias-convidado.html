@@ -2,8 +2,8 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="../../reset.css" />
   <link rel="stylesheet" href="../../base.css" />
@@ -13,15 +13,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
     rel="stylesheet" />
 
-  <title>Denúncias convidado - SOS WEB</title>
+  <script src="../../DOMUtils.js" defer></script>
+  <script src="../../main.js" defer></script>
+  <script src="denuncias-convidado.js" defer></script>
+
+  <title>Denúncias - SOS WEB</title>
 </head>
 
 <body>
+  <!-- DESKTOP -->
   <div class="left-navbar">
     <div class="logo-nav">
-      <img src="../../assets/white_icon.svg" alt="sos-logo">
+      <img src="../../assets/white_icon.svg" alt="sos-logo" />
       <h4>WEB</h4>
     </div>
+
   </div>
   <div class="app">
     <div class="top-navbar">
@@ -32,7 +38,7 @@
     </div>
     <div class="app-container">
       <div class="card-app">
-        <div class="guest-denunciations">
+        <div class="denunciations">
           <header>
             <div class="option-header">
               <img class="tree-dots-option" src="../../assets/tree-dots.svg" alt="logout" />
@@ -41,83 +47,63 @@
             <div class="form-search">
               <p>Pesquisa</p>
               <form name="form-search" class="form-search" method="POST">
-                <input type="search" class="input-base" name="search" placeholder="Pesquisa" />
-                <div class="button-search">
+                <input id="input-search" type="search" class="input-base" name="search" placeholder="Pesquisa" />
+                <a id="btn-search" class="button-search">
                   <img class="img-search" src="../../assets/icon-search.svg" alt="Search" />
-                </div>
+                </a>
               </form>
-            </div>
-            <div class="filters">
-              <p>Filtros</p>
-              <button class="button-base">Alta</button>
-              <button class="button-base">Média</button>
-              <button class="button-base">Baixa</button>
             </div>
           </header>
           <main>
-            <table style="overflow-x: auto">
+            <div class="modal-overlay" style="display: none">
+              <div class="modal-container">
+                <a class="close-modal" type="button">
+                  <p class="btn-close-modal">x</p>
+                </a>
+                <div class="modal-header">
+                  <h1></h1>
+                </div>
+                <div class="modal-content">
+                  <p class="content-warning"></p>
+                  <br />
+                  <p class="content-link"></p>
+                  <br />
+                  <span class="content-historia"></span>
+                </div>
+              </div>
+            </div>
+            <table style="overflow-x: auto" id="denunciations-table">
               <tr class="table-header">
                 <th>Site/E-mail</th>
                 <th>Nome</th>
-                <th>Nocividade</th>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html"><span>Baixa</span></a></td>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Média</a></td>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Alta</a></td>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Alta</a></td>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Alta</a></td>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Média</a></td>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Alta</a></td>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Média</a></td>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Baixa</a></td>
-              </tr>
-              <tr>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">www.aloha.com.br</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Aloha</a></td>
-                <td><a href="../denuncia-modal-convidado/denuncia-modal-convidado.html">Alta</a></td>
+                <th>Ação</th>
               </tr>
             </table>
             <div class="table-footer">
-              <p>Total de registros: 10</p>
+              <p>Total de registros: <span class="total-entries"></span></p>
               <div class="pagination">
-                <p>Página 1 de 143</p>
-                <img class="next-pagination" src="../../assets/chevron-right.svg" alt="next-pagination">
+                <a href="#" style="display: none" class="back-pagination">
+                  <img src="../../assets/chevron-left.svg" alt="back-pagination" />
+                </a>
+                <p class="">
+                  Página <span class="page-number"></span> de
+                  <span class="total-pages"></span>
+                </p>
+                <a href="" style="display: none" class="next-pagination">
+                  <img src="../../assets/chevron-right.svg" alt="next-pagination" />
+                </a>
               </div>
+            </div>
+            <div class="menu-bar">
+              <a href="../usuario/usuario.html">
+                <img src="../../assets/icon-user.svg" alt="icon" />
+              </a>
+              <a href="../denuncias/denuncias.html">
+                <img id="home-icon" class="left-nav-icon" src="../../assets/icon-home.svg" alt="home" />
+              </a>
+              <a href="../minhas-denuncias/minhas-denuncias.html">
+                <img src="../../assets/icon-tasklist.svg" alt="icon" />
+              </a>
             </div>
           </main>
         </div>

@@ -1,8 +1,4 @@
 function sendEmail(email) {
-  const usuarioExiste = listaUsuarios.some(
-    (usuarioLista) => usuarioLista.email === email
-  );
-
   const urlSlit = window.location.href.split("/");
   const url = urlSlit.splice(0, urlSlit.length - 4).join("/");
 
@@ -25,7 +21,7 @@ function sendEmail(email) {
   });
 }
 
-document.getElementById("form_recupsenha2").addEventListener("submit", (e) => {
+document.getElementById("form_inserir_email").addEventListener("submit", (e) => {
   e.preventDefault();
   const form = new FormData(e.target);
 

@@ -70,19 +70,6 @@ function parseStatus(status = statusDenuncia.PENDENTE) {
   return statusDenuncia[status] || statusDenuncia.PENDENTE;
 }
 
-function parseNocividade(
-  votacao = {
-    positivo: 0,
-    negativo: 0,
-  }
-) {
-  const { positivo, negativo } = votacao;
-  const media = positivo - negativo;
-  if (media >= 3) return "Alta";
-  if (media <= 0) return "Baixa";
-  return "Média";
-}
-
 function slugify(string = "") {
   return string
     .toLocaleLowerCase()

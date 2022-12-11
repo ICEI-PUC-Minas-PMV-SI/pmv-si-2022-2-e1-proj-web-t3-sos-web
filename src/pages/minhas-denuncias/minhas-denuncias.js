@@ -102,6 +102,7 @@ function refrescarPagina() {
 }
 
 function main() {
+  deslogaSeNaoLogado();
   deslogaSeAdmin();
   preencheUsuarioNoMenu();
 

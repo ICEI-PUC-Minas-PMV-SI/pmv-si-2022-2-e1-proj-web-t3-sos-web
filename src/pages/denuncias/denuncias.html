@@ -13,12 +13,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
     rel="stylesheet" />
 
+  <script src="../../DOMUtils.js" defer></script>
+  <script src="../../main.js" defer></script>
+  <script src="denuncias.js" defer></script>
+
   <title>Denúncias - SOS WEB</title>
 </head>
 
 <body>
   <!-- DESKTOP -->
-  <nav class="left-navbar">
+  <div class="left-navbar">
     <div class="logo-nav">
       <img src="../../assets/white_icon.svg" alt="sos-logo" />
       <h4>WEB</h4>
@@ -43,14 +47,14 @@
         <p>Sair</p>
       </div>
     </div>
-  </nav>
+  </div>
   <div class="app">
-    <header class="top-navbar">
+    <div class="top-navbar">
       <p id="top-user-name"></p>
       <a href="../usuario/usuario.html">
         <img src="../../assets/user.svg" class="profile-pic-nav" alt="user" />
       </a>
-    </header>
+    </div>
     <div class="app-container">
       <div class="card-app">
         <div class="denunciations">
@@ -62,55 +66,84 @@
             <div class="form-search">
               <p>Pesquisa</p>
               <form name="form-search" class="form-search" method="POST">
-                <input type="search" class="input-base" name="search" placeholder="Pesquisa" />
+                <input id="input-search" type="search" class="input-base" name="search" placeholder="Pesquisa" />
                 <a id="btn-search" class="button-search">
                   <img class="img-search" src="../../assets/icon-search.svg" alt="Search" />
                 </a>
               </form>
             </div>
-            <div class="filters">
+            <!-- <div class="filters">
               <p>Filtros</p>
-              <button class="button-base btn-filter">Alta</button>
-              <button class="button-base btn-filter">Média</button>
-              <button class="button-base btn-filter">Baixa</button>
-            </div>
+              <button value="PENDENTE" class="button-base btn-filter">
+                Pendente
+              </button>
+              <button value="APROVADA" class="button-base btn-filter">
+                Aprovada
+              </button>
+              <button value="NEGADA" class="button-base btn-filter">
+                Negada
+              </button>
+            </div> -->
           </header>
           <main>
-            <table style="overflow-x: auto">
+            <div class="modal-overlay" style="display: none">
+              <div class="modal-container">
+                <a class="close-modal" type="button">
+                  <p class="btn-close-modal">x</p>
+                </a>
+                <div class="modal-header">
+                  <h1></h1>
+                  <a>
+                    <img style="padding-right: 1.5rem" src="../../assets/arrow-right.svg" alt="Comentários" />
+                  </a>
+                </div>
+                <div class="modal-content">
+                  <p class="content-warning"></p>
+                  <br />
+                  <p class="content-link"></p>
+                  <br />
+                  <span class="content-historia"></span>
+                </div>
+              </div>
+            </div>
+            <table style="overflow-x: auto" id="denunciations-table">
               <tr class="table-header">
                 <th>Site/E-mail</th>
                 <th>Nome</th>
-                <th>Nocividade</th>
+                <th>Ação</th>
               </tr>
             </table>
-            <footer>
-              <div class="table-footer">
-                <!-- <p class="records"></p> -->
-                <div class="pagination">
-                  <!-- <p class="pages"></p> -->
-                  <img class="next-pagination" src="../../assets/chevron-right.svg" alt="next-pagination" />
-                </div>
-              </div>
-              <div class="menu-bar">
-                <a href="../usuario/usuario.html">
-                  <img src="../../assets/icon-user.svg" alt="icon" />
+            <div class="table-footer">
+              <p>Total de registros: <span class="total-entries"></span></p>
+              <div class="pagination">
+                <a href="#" style="display: none" class="back-pagination">
+                  <img src="../../assets/chevron-left.svg" alt="back-pagination" />
                 </a>
-                <a href="../denuncias/denuncias.html">
-                  <img id="home-icon" class="left-nav-icon" src="../../assets/icon-home.svg" alt="home" />
-                </a>
-                <a href="../minhas-denuncias/minhas-denuncias.html">
-                  <img src="../../assets/icon-tasklist.svg" alt="icon" />
+                <p class="">
+                  Página <span class="page-number"></span> de
+                  <span class="total-pages"></span>
+                </p>
+                <a href="" style="display: none" class="next-pagination">
+                  <img src="../../assets/chevron-right.svg" alt="next-pagination" />
                 </a>
               </div>
-            </footer>
+            </div>
+            <div class="menu-bar">
+              <a href="../usuario/usuario.html">
+                <img src="../../assets/icon-user.svg" alt="icon" />
+              </a>
+              <a href="../denuncias/denuncias.html">
+                <img id="home-icon" class="left-nav-icon" src="../../assets/icon-home.svg" alt="home" />
+              </a>
+              <a href="../minhas-denuncias/minhas-denuncias.html">
+                <img src="../../assets/icon-tasklist.svg" alt="icon" />
+              </a>
+            </div>
           </main>
         </div>
       </div>
     </div>
   </div>
-  <script src="../../DOMUtils.js"></script>
-  <script src="../../main.js"></script>
-  <script src="./denuncias.js"></script>
 </body>
 
 </html>

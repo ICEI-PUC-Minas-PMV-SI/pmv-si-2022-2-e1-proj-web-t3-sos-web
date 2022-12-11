@@ -1,4 +1,5 @@
 function main() {
+  deslogaSeNaoLogado();
   deslogaSeAdmin();
   preencheUsuarioNoMenu();
 }

@@ -1,101 +1,118 @@
+var search = new URLSearchParams(window.location.search);
+var paginaAtual = parseInt(search.get("pagina") || "1");
+var statusFiltrado =
+  (search.get("status") && search.get("status").split(",")) || [];
+var filtro = search.get("filtro");
+var registrosPorPagina = 10;
+
 function main() {
+  deslogaSeNaoLogado();
   preencheUsuarioNoMenu();
   preencherTabela();
   escutarEventos();
+
+  document.querySelectorAll(".btn-filter").forEach((btn) => {
+    if (statusFiltrado.includes(btn.value)) {
+      btn.classList.toggle("bg-main-color");
+    }
+  });
+
+  document.getElementById("input-search").value = filtro || "";
+
+  DOMUtils.escutarEventoPorClasse("close-modal", "click", (_e) => {
+    document.querySelector(".modal-overlay").style.display = "none";
+  });
 }
 
-main();
-
-function preencherTabela(filtro = null) {
-  if (denuncias.length) {
-    adicionarValoresTabela(filtro);
-    adicionarPaginas(filtro);
-  } else {
-    adicionarMensagemTabelaVazia();
-    adicionarPaginaUnica();
+function abrirModal(identificador) {
+  const denuncia = denuncias.find(
+    (denuncia) => denuncia.identificador === identificador
+  );
+  if (!denuncia) {
+    alert("Denúncia não encontrada");
+    return;
   }
+  document.querySelector(".modal-header h1").innerText = denuncia.nome;
+  document.querySelector(
+    ".modal-header a"
+  ).href = `${COMENTARIOS_PAGINA}?identificador=${denuncia.identificador}`;
+  document.querySelector(".content-warning").innerText = "Malicioso";
+  document.querySelector(".content-link").innerText = denuncia.endereco;
+  document.querySelector(".content-historia").innerText = denuncia.historia;
+  document.querySelector(".modal-overlay").style.display = "flex";
 }
 
 function escutarEventos() {
   buscar();
-  filtrar();
 }
 
 function buscar() {
   DOMUtils.escutarEventoPorId("btn-search", "click", () => {
-    DOMUtils.removerElementosPorClasse("td-info");
-    DOMUtils.removerElementosPorClasse("pages");
-    DOMUtils.removerElementosPorClasse("records");
+    const valorBusca = document.getElementById("input-search").value || "";
 
-    const input = document.getElementsByClassName("input-base");
-    const valorBusca = input[0].value;
-
-    const denunciasFiltradas = valorBusca
-      ? filtrarPorValor(valorBusca)
-      : denuncias;
-    preencherTabela(denunciasFiltradas);
+    var href = new URL(window.location.href);
+    if (!valorBusca.length) {
+      href.searchParams.delete("filtro");
+      window.location.replace(href.toString());
+      return;
+    }
+    href.searchParams.set("filtro", valorBusca);
+    window.location.replace(href.toString());
   });
 }
 
-function filtrar() {
-  DOMUtils.escutarEventoPorClasse("btn-filter", "click", (e) => {
-    filtrarPorNocividade(e);
+function preencherTabela() {
+  const table = document.querySelector("#denunciations-table");
+  const denunciasFiltradas = denuncias.filter((denuncia) => {
+    const filtroPorStatus = denuncia.status === 'Aprovada';
+    const filtroPorValor =
+      !filtro ||
+      ["nome", "endereco", "responsavel", "historia"].some((chave) =>
+        denuncia[chave].toLowerCase().includes(filtro.toLowerCase())
+      );
+    return filtroPorStatus && filtroPorValor;
   });
-}
+  const denunciasPaginadas = denunciasFiltradas
+    .slice((paginaAtual - 1) * registrosPorPagina)
+    .slice(0, registrosPorPagina);
+  if (!denunciasFiltradas.length) {
+    adicionarMensagemTabelaVazia();
+    return;
+  }
+  var href = new URL(window.location.href);
+  const backPagination = document.querySelector(".back-pagination");
+  const nextPagination = document.querySelector(".next-pagination");
+  const totalDePaginas = Math.ceil(
+    denunciasFiltradas.length / registrosPorPagina
+  );
+  document.querySelector(".total-entries").innerText =
+    denunciasFiltradas.length;
+  document.querySelector(".page-number").innerText = paginaAtual;
+  document.querySelector(".total-pages").innerText = totalDePaginas;
 
-function filtrarPorNocividade(e) {
-  console.log("Filtro não implementado!");
-}
-
-function filtrarPorValor(valor) {
-  return denuncias.filter((o) =>
-    Object.keys(o).some((k) => {
-      return k !== "historia"
-        ? o[k].toLowerCase().includes(valor.toLowerCase())
-        : false;
-    })
+  if (paginaAtual > 1) {
+    href.searchParams.set("pagina", paginaAtual - 1);
+    backPagination.href = href.toString();
+    backPagination.style.display = "block";
+  }
+  if (paginaAtual < totalDePaginas) {
+    href.searchParams.set("pagina", paginaAtual + 1);
+    nextPagination.href = href.toString();
+    nextPagination.style.display = "block";
+  }
+  denunciasPaginadas.map(
+    ({ identificador, nome, endereco }) => {
+      table.insertAdjacentHTML(
+        "beforeend",
+        `<tr id="denuncia-${identificador}"><td>${endereco}</td><td>${nome}</td>
+        <td class="btn-acao"><button onclick="abrirModal('${identificador}')" class="icon-button">  <img class="view-icon" src="../../assets/icon-eye.svg" alt="view" /></button></td></tr>`
+      );
+    }
   );
 }
 
-function adicionarValoresTabela(filtro) {
-  const table = document.querySelector("table");
-
-  for (let denuncia of filtro ?? denuncias) {
-    const tr = document.createElement("tr");
-
-    let tdArr = DOMUtils.criarElementos("td", 3);
-    tdArr = DOMUtils.adicionarClasses(tdArr, "td-info");
-
-    let aArr = DOMUtils.criarElementos("a", 3);
-    const textos = DOMUtils.criarNosDeTexto([
-      denuncia.endereco,
-      denuncia.nome,
-      "Alta",
-    ]);
-
-    aArr = DOMUtils.adicionarFilhosAosNos(aArr, textos);
-    tdArr = DOMUtils.adicionarFilhosAosNos(tdArr, aArr);
-
-    tr.append(tdArr[0], tdArr[1], tdArr[2]);
-    table.append(tr);
-  }
-}
-
-function adicionarPaginas(filtro) {
-  const paginacao = document.querySelector(".pagination");
-  let p = document.createElement("p");
-  p.classList.add("pages");
-
-  paginacao.appendChild(p);
-
-  const totalDenuncias = (filtro ?? denuncias).length;
-
-  const totalPaginas = Math.ceil(totalDenuncias / 10);
-  DOMUtils.adicionarTexto(".pages", `Página 1 de ${totalPaginas}`);
-}
-
 function adicionarMensagemTabelaVazia() {
-  const table = document.querySelector("table");
+  const table = document.querySelector("#denunciations-table");
   const tr = document.createElement("tr");
   const td = document.createElement("td");
   const emptyDataMessage = document.createTextNode(
@@ -104,26 +121,25 @@ function adicionarMensagemTabelaVazia() {
   td.appendChild(emptyDataMessage);
   tr.appendChild(td);
   table.appendChild(td);
+  document.querySelector(".total-entries").innerText = 0;
+  document.querySelector(".page-number").innerText = 1;
+  document.querySelector(".total-pages").innerText = 1;
 }
 
-function adicionarPaginaUnica() {
-  const rodape = document.querySelector(".table-footer");
-  const paginacao = document.querySelector(".pagination");
-
-  removerIconeProximaPagina(paginacao);
-
-  let pArr = DOMUtils.criarElementos("p", 2);
-  pArr[0].classList.add("records");
-  pArr[1].classList.add("pages");
-
-  DOMUtils.adicionarTexto(pArr[0], "Total de registros: 0");
-  DOMUtils.adicionarTexto(pArr[1], "Página 1 de 1");
-
-  rodape.appendChild(pArr[0]);
-  paginacao.appendChild(pArr[1]);
+function alteraStatus(identificador, status) {
+  const indiceDenuncia = denuncias.findIndex(
+    (denuncia) => denuncia.identificador === identificador
+  );
+  if (indiceDenuncia === -1) {
+    alert("Denúncia não encontrada!");
+    return;
+  }
+  document.querySelector(`#denuncia-${identificador} .td-status`).innerText =
+    status;
+  document.querySelector(`#denuncia-${identificador} .btn-acao`).innerText = "";
+  denuncias[indiceDenuncia].status = status;
+  localStorage.setItem("denuncias", JSON.stringify(denuncias));
+  window.location.reload();
 }
 
-function removerIconeProximaPagina(paginacao) {
-  const proximaPagina = document.querySelector(".next-pagination");
-  paginacao.removeChild(proximaPagina);
-}
+main();
