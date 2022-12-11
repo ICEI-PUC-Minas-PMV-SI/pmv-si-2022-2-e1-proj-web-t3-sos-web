@@ -74,7 +74,7 @@ Caso de teste  | CT 08 Tela do Administrador
 |------------|-------------------------------------------------------|
 | Requisito associado| RF-009	Permitir que o usuário leia e/ou comente uma denúncia desde que esteja logado. |
 |Objetivo do Teste| Usuário ler ou comentar uma denúncia com sucesso |
-|Passos| 1 - Realizar o Login;<br/>  2 - Na parte das denúncias, clica no ícone(um olho na parte de ação) que deseja comentar;<br/> 3 -  Um modal com detalhes irá abrir ae é só clicar no ícone de uma seta para ir na tela dos comentários;<br/>  4 - na parte dos comentários, é só clicar em escrever comentário ;<br/> 5 - Escreva seu comentário e clique em enviar.
+|Passos| 1 - Realizar o Login;<br/>  2 - Na parte das denúncias, clica no ícone(um olho na parte de ação) que deseja comentar;<br/> 3 -  Um modal com detalhes irá abrir ae é só clicar no ícone de uma seta para ir na tela dos comentários;<br/>  4 - Na parte dos comentários, é só clicar em escrever comentário ;<br/> 5 - Escreva seu comentário e clique em enviar.
  |Critério de êxito | Seu comentário irá aparecer na tela dos comentários |
 ---------------------------------------
 
