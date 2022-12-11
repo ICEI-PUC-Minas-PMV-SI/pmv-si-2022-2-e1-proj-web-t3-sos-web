@@ -50,7 +50,20 @@
 
 .denounce-malicious {
   margin-top: 15px;
-  background-color: #fd9980;
+  background-color: #FF9781;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+  line-height: 2em;
+  padding-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  width: 85%;
+  height: fit-content;
+  min-height: 10rem;
+}
+
+.denounce-approved {
+  margin-top: 15px;
+  background-color: #B1FF81;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
   line-height: 2em;
@@ -65,6 +78,18 @@
   margin: 0;
   padding-left: 15px;
   background-color: #fe523a;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-denounce-approved {
+  margin: 0;
+  padding-left: 15px;
+  background-color: #62FF3A;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
@@ -120,6 +145,7 @@
 }
 
 @media (max-width: 400px) {
+
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .denounce h4 {
     font-size: 0.8rem;
@@ -132,17 +158,21 @@
 }
 
 @media (max-width: 800px) {
+
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .card-app {
     height: 90vh;
   }
+
   .menu-bar,
   .option-header {
     display: flex;
   }
+
   .denounce {
     padding: 1rem;
   }
+
   .denounce h4 {
     font-size: 1rem;
     font-weight: bold;

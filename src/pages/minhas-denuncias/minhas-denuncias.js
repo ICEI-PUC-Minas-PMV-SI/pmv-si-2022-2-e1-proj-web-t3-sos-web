@@ -36,14 +36,17 @@ function adicionarCards(denuncias) {
     // Variável criando Elemento do HTML
     var card = document.createElement("div");
 
+    // Definir CSS do Card
+    var tipoDenuncia = buscarTipoCard(denuncias[i].status);
+
     // Declarando CSS do Elemento Criado
-    card.classList.add("denounce-analyses");
+    card.classList.add(`denounce-${tipoDenuncia}`);
 
     // Definindo Posição dos Novos Elementos
     divPrincipal.insertBefore(card, divPrincipal.children[2]);
 
     var titulo = document.createElement("div");
-    titulo.classList.add("title-denounce-analyses");
+    titulo.classList.add(`title-denounce-${tipoDenuncia}`);
 
     var h2 = document.createElement("h2");
 
@@ -52,11 +55,12 @@ function adicionarCards(denuncias) {
 
     titulo.appendChild(h2);
 
-    var iconeDeletar = document.createElement('i');
-    iconeDeletar.setAttribute('class', 'gg-trash');
-    iconeDeletar.setAttribute('style', 'margin-right: 10px');
-
-    titulo.appendChild(iconeDeletar);
+    if (denuncias[i].status == "Pendente") {
+      var iconeDeletar = document.createElement('i');
+      iconeDeletar.setAttribute('class', 'gg-trash');
+      iconeDeletar.setAttribute('style', 'margin-right: 10px');
+      titulo.appendChild(iconeDeletar);
+    }
 
     card.appendChild(titulo);
 
@@ -67,7 +71,7 @@ function adicionarCards(denuncias) {
     resto.setAttribute("style", "margin-left: 25px;");
 
     var ztatus = document.createElement("h3");
-    var contentZtatus = document.createTextNode("Pendente");
+    var contentZtatus = document.createTextNode(denuncias[i].status);
     ztatus.appendChild(contentZtatus);
 
     var endereco = document.createElement("h4");
@@ -82,6 +86,14 @@ function adicionarCards(denuncias) {
   }
 }
 
+function buscarTipoCard(status) {
+  switch (status) {
+    case "Aprovada": return "approved";
+    case "Pendente": return "analyses";
+    case "Negada": return "malicious";
+  }
+}
+
 function adicionarMensagemPadrao() {
   const divPrincipal = document.querySelector('.denounce');
   const texto = document.createTextNode('Você ainda não possui denúncias cadastradas!');
@@ -91,9 +103,8 @@ function adicionarMensagemPadrao() {
 
 function refrescarPagina() {
   const denunciasDoUsuario = denuncias.filter(
-    (denuncia) => denuncia.responsavel === usuarioLogado.usuario
-  );
-  if(denunciasDoUsuario.length) {
+    (denuncia) => denuncia.responsavel === usuarioLogado.usuario);
+  if (denunciasDoUsuario.length) {
     adicionarCards(denunciasDoUsuario);
     escutarEvento();
   } else {
