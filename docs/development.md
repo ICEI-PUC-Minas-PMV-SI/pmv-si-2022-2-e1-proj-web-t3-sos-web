@@ -6,16 +6,16 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 |ID    | Descrição do Requisito  | Responsável | Artefato |
 |------|-----------------------------------------|----| ----|
-|RF-001 | A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos | Túlio |../criar-denuncia/criar-denuncia.html |
-|RF-002| A aplicação deve permitir que um usuário cadastrado ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias e com filtros que vão de baixa a alta nocividade das denúncias. | Michael  |../denuncias/denuncias.html |
-|RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito | Michael  |../denuncias-convidado/denuncias-convidado.html |
-|RF-004| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia | Hugo |../minhas-denuncias/minhas-denuncias.html |
-|RF-005| A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise) | Hugo/Rafael |../usuario/usuario.html  |
-|RF-006| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito | Lucas | ../admin/admin.html |
-|RF-007| Toda denúncia realizada pelo usuário entrará com status de pendente/em análise | Lucas |../minhas-denuncias/minhas-denuncias.html|
-|RF-008| Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados pelo sistema | Todos/Túlio | ../login/login.html  ../cadastro/cadastro.html|
-|RF-009| Permitir que o usuário comente uma denúncia desde que esteja logado | Túlio  |../addcoments/addcoments.html | 
-|RF-010| Permitir que o usuário recupere sua senha esquecida | Marcos | ../recuperar-senha/recuperar-senha.html |
+|RF-001 | A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos | Túlio |./src/pages/criar-denuncia/criar-denuncia.html |
+|RF-002| A aplicação deve permitir que um usuário cadastrado possa utilizar a paginação das denúncias e escolher a página que deseja. | Michael  |./src/pages/denuncias/denuncias.html |
+|RF-003| A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito | Michael  |./src/pages/denuncias-convidado/denuncias-convidado.html |
+|RF-004| A aplicação deve permitir que um usuário logado possa consultar o status da denúncia | Hugo |./src/pages/minhas-denuncias/minhas-denuncias.html |
+|RF-005| A aplicação deve permitir que um usuário logado gerencie o seu cadastro, realize/acompanhe sua denúncia e altere o status dela. (deletar denúncias em análise) | Hugo/Rafael |./src/pages/usuario/usuario.html  |
+|RF-006| Somente um administrador logado poderá decidir a ação ser tomada após as denúncias de tal suspeito | Lucas | ./src/pages/admin/admin.html |
+|RF-007| Toda denúncia realizada pelo usuário entrará com status de pendente | Lucas |./src/pages/minhas-denuncias/minhas-denuncias.html|
+|RF-008| Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados pelo sistema | Todos/Túlio | ./src/pages/login/login.html  ./src/pages/cadastro/cadastro.html|
+|RF-009| Permitir que o usuário comente uma denúncia desde que esteja logado | Túlio  | ./src/pages/adicionar-comentarios/adicionar-comentarios.html | 
+|RF-010| Permitir que o usuário recupere sua senha esquecida | Marcos | ./src/pages/recuperar-senha/recuperar-senha.html |
 
 # Descrição das estruturas:
 
