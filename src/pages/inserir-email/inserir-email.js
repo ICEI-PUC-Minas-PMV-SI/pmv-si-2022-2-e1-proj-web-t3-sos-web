@@ -1,4 +1,13 @@
 function sendEmail(email) {
+  var indiceUsuario = listaUsuarios.findIndex(
+    (usuarioLista) => email && usuarioLista.email === email
+  );
+
+  if(indiceUsuario === -1 || !indiceUsuario) {
+    alert('Esse email não foi cadastrado no sistema! Insira um email válido');
+    return;
+  }
+
   const urlSlit = window.location.href.split("/");
   const url = urlSlit.splice(0, urlSlit.length - 4).join("/");
 
@@ -16,12 +25,13 @@ function sendEmail(email) {
       window.location.href = "../login/login.html";
       return;
     } else {
+      console.error(message);
       alert("Erro ao enviar o email. Verifique!");
     }
   });
 }
 
-document.getElementById("form_inserir_email").addEventListener("submit", (e) => {
+document.getElementById("inserir_email").addEventListener("submit", (e) => {
   e.preventDefault();
   const form = new FormData(e.target);
 

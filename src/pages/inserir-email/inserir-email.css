@@ -57,8 +57,11 @@ body {
   margin-left: 5px;
 }
 
-@media (min-width: 600px) {
+#submit-button {
+  margin-top: 1rem;
+}
 
+@media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .sign-up {
     width: 25rem;
@@ -66,7 +69,6 @@ body {
 }
 
 @media (min-width: 800px) {
-
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .sign-up {
     width: 30rem;
@@ -75,7 +77,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-
   /* big landscape tablets, laptops, and desktops */
   .sign-up {
     display: flex;
