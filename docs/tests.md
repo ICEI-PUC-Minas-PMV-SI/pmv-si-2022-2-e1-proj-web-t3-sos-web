@@ -38,7 +38,7 @@ Caso de teste  | CT 04 entrada de usuários não cadastrados e consulta de  site
 |Critério de êxito | Usuário sem cadastro deve consultar os sites sem intercorrências |
 
 ----------------------------
-Caso de teste  | CT 05 adicionando minhas denuncias
+Caso de teste  | CT 05 Criando e adicionando minhas denuncias
 |------------|-------------------------------------------------------|
 | Requisito associado|RF-001	A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos.<br/> RF-004	A aplicação deve permitir que um usuário logado possa consultar o status da denúncia.<br/> RF-007	Toda denúncia realizada pelo usuário entrará com status de pendente/em análise|
 |Objetivo do Teste| Verificar a funcionalidade de cadastrar denúncias  |
@@ -121,6 +121,16 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 
 -------------------------------
+### Teste vídeo : CT 05 Criando e adicionando minhas denuncias
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Criar-den%C3%BAncia.gif)
+- Resultado: Denúncia criada e adicionada com sucesso. Denúncia em seguida é deletada do card.
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+
+
+----------------------------------
 ### Teste vídeo : CT 07 Tela do Usuário
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Usuario.gif)
 - Resultado: Dados como foto, nome e telefone, trocados com sucesso.
