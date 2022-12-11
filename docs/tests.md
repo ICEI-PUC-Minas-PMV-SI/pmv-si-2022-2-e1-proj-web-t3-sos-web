@@ -42,7 +42,7 @@ Caso de teste  | CT 05 adicionando minhas denuncias
 |------------|-------------------------------------------------------|
 | Requisito associado|RF-001	A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos.<br/> RF-004	A aplicação deve permitir que um usuário logado possa consultar o status da denúncia.<br/> RF-007	Toda denúncia realizada pelo usuário entrará com status de pendente/em análise|
 |Objetivo do Teste| Verificar a funcionalidade de cadastrar denúncias  |
-|Passos|1 - Realizar o Login;<br/>  2 - clicar no painel esquerdo no ícone "minhas denúncias";<br/> 3 - Na tela de minhas denúncias, clicar no círculo com o '+', indo para a tela de criar denúncias;<br/> 4 - Em criar denúncias, preencher corretamente os campos : "Nome da instituição/vendedor", "Link ou email da denúncia" e "Conte sua história" - detalhando o caso a ser denunciado.Clique em anexar, se caso tiver algum documento sobre;<br/> 5 - Clicar em finalizar denúncia;<br/> 6 - O card deverá ser adicionado na parte de minhas denúncias. Nele teremos um ícone com uma lixeira no qual o usuário poderá deletar caso queira. 
+|Passos|1 - Realizar o Login;<br/>  2 - clicar no painel esquerdo no ícone "minhas denúncias";<br/> 3 - Na tela de minhas denúncias, clicar no círculo com o '+', indo para a tela de criar denúncias;<br/> 4 - Em criar denúncias, preencher corretamente os campos : "Nome da instituição/vendedor", "Link ou email da denúncia" e "Conte sua história" - detalhando o caso a ser denunciado;<br/> 5 - Clicar em finalizar denúncia;<br/> 6 - O card deverá ser adicionado na parte de minhas denúncias. Nele teremos um ícone com uma lixeira no qual o usuário poderá deletar caso queira. 
 |Critério de êxito | Um card contendo os dados, em minhas denúncias, deverá ser adicionado com suas funcionalidades testadas. |
 ----------------------------
 Caso de teste  | CT 06 Tela denúncias e minhas denuncias
@@ -121,6 +121,17 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 
 -------------------------------
+### Teste vídeo : CT 07 Tela do Usuário
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Usuario.gif)
+- Resultado: Dados como foto, nome e telefone, trocados com sucesso.
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+
+--------------------------------------
+
+
 ### Teste vídeo : CT 08 Tela Administrador
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2008%20Tela%20do%20Administrador.gif)
 - Resultado: Tarefa do Administrador de rejeitar/aprovar denúncia bem sucedida, Tal como a procura com os filtros. **Feedback do usuário e suas denúncias a testar**.
