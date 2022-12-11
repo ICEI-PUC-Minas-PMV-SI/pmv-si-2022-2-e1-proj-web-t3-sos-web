@@ -121,6 +121,17 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 
 -------------------------------
+### Teste vídeo : CT 07 Tela do Usuário
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Usuario.gif)
+- Resultado: Dados como foto, nome e telefone, trocados com sucesso.
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+
+--------------------------------------
+
+
 ### Teste vídeo : CT 08 Tela Administrador
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2008%20Tela%20do%20Administrador.gif)
 - Resultado: Tarefa do Administrador de rejeitar/aprovar denúncia bem sucedida, Tal como a procura com os filtros. **Feedback do usuário e suas denúncias a testar**.
