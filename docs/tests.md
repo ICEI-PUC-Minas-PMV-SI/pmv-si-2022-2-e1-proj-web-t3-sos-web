@@ -30,11 +30,11 @@ Caso de teste  | CT 03 Recuperar senha
 |Critério de êxito | Sua nova senha deverá funcionar na tela de Login |
 
 ---------------------------
-Caso de teste  | CT 04 Entrada de usuários não cadastrados e consulta de  sites nocivos 
+Caso de teste  | CT 04 entrada de usuários não cadastrados e consulta de  sites nocivos 
 |------------|-------------------------------------------------------|
-| Requisito associado|RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito.<br/> RF-002  A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias e com filtros que vão de baixa a alta nocividade.|
+| Requisito associado|RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito.<br/> RF-002  A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos .|
 |Objetivo do Teste| Verificar se o usuário sem cadastro consegue entrar para fazer consultas de site/emails nocivos |
-|Passos|1 - Na tela principal de Login, clicar no botão: "Entrar como convidado";<br/>  2 - Na tela de denúncias, testar filtro de busca;<br/> 3 - clicar em cima do respectivo site a ser consultado  e testar se o modal com a informações do site irá abrir;<br/> 4 - Caso queira voltar para a tela de login , clicar no ícone no canto superior direito, fazer login|
+|Passos|1 - Na tela principal de Login, clicar no botão: "Entrar como convidado";<br/>  2 - Na tela de denúncias, testar a  busca;<br/> 3 - clicar em cima do respectivo site a ser consultado  e testar se o modal com a informações do site irá abrir;<br/> 4 - Caso queira voltar para a tela de login , clicar no ícone no canto superior direito, fazer login|
 |Critério de êxito | Usuário sem cadastro deve consultar os sites sem intercorrências |
 
 ----------------------------
@@ -47,7 +47,7 @@ Caso de teste  | CT 05 Criando e adicionando minhas denuncias
 ----------------------------
 Caso de teste  | CT 06 Tela denúncias e minhas denuncias
 |------------|-------------------------------------------------------|
-| Requisito associado| RF-002 A aplicação deve permitir que um usuário cadastrado ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias e com filtros que vão de baixa a alta nocividade.<br/>RF-004 A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |
+| Requisito associado| RF-002 A aplicação deve permitir que um usuário cadastrado ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias.<br/>RF-004 A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |
 |Objetivo do Teste| Verificar a funcionalidade da tela de denúncias e minhas denúncias |
 |Passos| 1 - Realizar o Login;<br/>  2- Na tela denúncias, usuário poderá pesquisar pelo nome no campo de pesquisa;<br/>  3 - Clicando no card com os site/emails denunciados, abrirá um modal detalhando a denúncia clicada;<br/>  4 - Clicando em minhas denúncias no painel esquerdo, teremos as denúncias adicionadas com o seu status de pendente ou aprovada;<br/> 5 - Clicar em sair você será deslogado.
  |Critério de êxito | Êxito no teste da procura das denúncias e  teste dos botões  |
@@ -74,7 +74,7 @@ Caso de teste  | CT 08 Tela do Administrador
 |------------|-------------------------------------------------------|
 | Requisito associado| RF-009	Permitir que o usuário leia e/ou comente uma denúncia desde que esteja logado. |
 |Objetivo do Teste| Usuário ler ou comentar uma denúncia com sucesso |
-|Passos| 1 - Realizar o Login;<br/>  2 - Na parte das denúncias, clica no ícone(um olho na parte de ação) que deseja comentar;<br/> 3 -  Um modal com detalhes irá abrir ae é só clicar no ícone de uma seta para ir na tela dos comentários;<br/>  4 - Na parte dos comentários, é só clicar em escrever comentário ;<br/> 5 - Escreva seu comentário e clique em enviar.
+|Passos| 1 - Realizar o Login;<br/>  2 - Na parte das denúncias, clica no ícone(um olho na parte de ação) que deseja comentar;<br/> 3 -  Um modal com detalhes irá abrir ae é só clicar no ícone de uma seta para ir na tela dos comentários;<br/>  4 - na parte dos comentários, é só clicar em escrever comentário ;<br/> 5 - Escreva seu comentário e clique em enviar.
  |Critério de êxito | Seu comentário irá aparecer na tela dos comentários |
 ---------------------------------------
 
@@ -121,6 +121,16 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 
 -------------------------------
+### Teste vídeo : CT 04 entrada de usuários não cadastrados e consulta de  sites nocivos
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2004%20Entrada%20de%20usu%C3%A1rios%20n%C3%A3o%20cadastrados%20e%20consulta%20de%20sites%20nocivos.gif)
+- Resultado: Usuário sem cadastro realizando consultas e verificando os detalhes das denúncias.
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+
+
+------------------------------------
 ### Teste vídeo : CT 05 Criando e adicionando minhas denuncias
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Criar-den%C3%BAncia.gif)
 - Resultado: Denúncia criada e adicionada com sucesso. Denúncia em seguida é deletada do card.
@@ -131,6 +141,18 @@ Caso de teste  | CT 08 Tela do Administrador
 
 
 ----------------------------------
+### Teste vídeo : CT 06 Tela denúncias e minhas denuncias
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2006%20Tela%20den%C3%BAncias%20e%20minhas%20denuncias.gif)
+- Resultado: Tela com as denúncias funcionando como planejado.
+
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+
+
+
+---------------------------
 ### Teste vídeo : CT 07 Tela do Usuário
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Usuario.gif)
 - Resultado: Dados como foto, nome e telefone, trocados com sucesso.
