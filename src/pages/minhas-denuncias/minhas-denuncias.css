@@ -48,9 +48,9 @@
   align-items: center;
 }
 
-.denounce-malicious {
+.denounce-disapproved {
   margin-top: 15px;
-  background-color: #FF9781;
+  background-color: #ff9781;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
   line-height: 2em;
@@ -63,7 +63,7 @@
 
 .denounce-approved {
   margin-top: 15px;
-  background-color: #B1FF81;
+  background-color: #b1ff81;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
   line-height: 2em;
@@ -74,7 +74,7 @@
   min-height: 10rem;
 }
 
-.title-denounce-malicious {
+.title-denounce-disapproved {
   margin: 0;
   padding-left: 15px;
   background-color: #fe523a;
@@ -89,7 +89,7 @@
 .title-denounce-approved {
   margin: 0;
   padding-left: 15px;
-  background-color: #62FF3A;
+  background-color: #62ff3a;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
@@ -145,7 +145,6 @@
 }
 
 @media (max-width: 400px) {
-
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .denounce h4 {
     font-size: 0.8rem;
@@ -158,7 +157,6 @@
 }
 
 @media (max-width: 800px) {
-
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .card-app {
     height: 90vh;

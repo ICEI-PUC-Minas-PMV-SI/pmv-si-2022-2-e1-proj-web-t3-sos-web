@@ -9,7 +9,10 @@ function deletarDenuncia(deleteButton) {
   denuncias.splice(index, 1);
 
   localStorage.setItem('denuncias', JSON.stringify(denuncias));
-  const cards = document.getElementsByClassName('denounce-analyses')
+  const cardsEmAnalise = document.getElementsByClassName('denounce-analyses');
+  const cardsReprovados = document.getElementsByClassName('denounce-disapproved');
+  const cardsAprovados = document.getElementsByClassName('denounce-approved');
+  const cards = [...cardsEmAnalise, ...cardsReprovados, ...cardsAprovados];
   for (var i = cards.length - 1; i >= 0; --i) {
     cards[i].remove();
   }
@@ -90,7 +93,7 @@ function buscarTipoCard(status) {
   switch (status) {
     case "Aprovada": return "approved";
     case "Pendente": return "analyses";
-    case "Negada": return "malicious";
+    case "Negada": return "disapproved";
   }
 }
 
