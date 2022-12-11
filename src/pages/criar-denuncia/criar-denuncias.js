@@ -34,10 +34,6 @@ document
       historia,
       status: statusDenuncia.PENDENTE,
       comentarios: [],
-      votacao: {
-        positivo: 0,
-        negativo: 0,
-      },
       responsavel: usuarioLogado.usuario,
     };
 

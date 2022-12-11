@@ -167,7 +167,7 @@ function preencherTabela() {
     nextPagination.style.display = "block";
   }
   denunciasPaginadas.map(
-    ({ identificador, nome, endereco, responsavel, votacao, status }) => {
+    ({ identificador, nome, endereco, responsavel, status }) => {
       const usuario = listaUsuarios.find(
         ({ usuario }) => usuario === responsavel
       );
