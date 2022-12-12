@@ -32,7 +32,7 @@ Caso de teste  | CT 03 Recuperar senha
 ---------------------------
 Caso de teste  | CT 04 entrada de usuários não cadastrados e consulta de  sites nocivos 
 |------------|-------------------------------------------------------|
-| Requisito associado|RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito.<br/> RF-002  A aplicação deve permitir que um usuário cadastrado possa utilizar a paginação das denúncias e escolher a página que deseja. .|
+| Requisito associado|RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito.<br/> 
 |Objetivo do Teste| Verificar se o usuário sem cadastro consegue entrar para fazer consultas de site/emails nocivos |
 |Passos|1 - Na tela principal de Login, clicar no botão: "Entrar como convidado";<br/>  2 - Na tela de denúncias, testar a  busca;<br/> 3 - clicar em cima do respectivo site a ser consultado  e testar se o modal com a informações do site irá abrir;<br/> 4 - Caso queira voltar para a tela de login , clicar no ícone no canto superior direito, fazer login|
 |Critério de êxito | Usuário sem cadastro deve consultar os sites sem intercorrências |
@@ -86,6 +86,15 @@ Caso de teste  | CT 08 Tela do Administrador
 |Passos| 1 - Abrir o site na página a ser testada e logar (no caso do vídeo será a Tela Denuncias );<br/>  2 - Aperta a tecla F112 e testar os tamanhos de resoluçoes;<br/>  3 - Testar em outras paginas do projeto.
  |Critério de êxito | Site responsivo para as resoluções aplicadas  |
 ---------------------------------------
+ 
+ Caso de teste  | CT 11 Paginação das denúncias
+|------------|-------------------------------------------------------|
+| Requisito associado| RF-002  A aplicação deve permitir que um usuário cadastrado possa utilizar a paginação das denúncias e escolher a página que deseja.|
+|Objetivo do Teste| verificar se páginação de várias denúncias funciona|
+|Passos| 1 - logar no site );<br/>  2 - Abrir a tela de Denúncias e verificar a paginação.<br/>  
+ |Critério de êxito | Com mais de 10 denúncias a página muda  |
+
+
 
 
 # Registro de Testes de Software
@@ -196,9 +205,25 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 --------------------------------------------------
 
+### Teste vídeo : CT 11 Paginação das denúncias
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT_11_Pagina%C3%A7%C3%A3o.gif)
+
+- Resultado: adicionando páginas com sucesso
+
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+---------------------------------------------------
+
+
 ## Avaliação
 
 Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+
+
+  A interface do Sistema apresenta um bom funcionamento, permitindo que o usuário faça o cadastro , logue, crie e leia denúncias sem intecorrências. A ideia do projeto na teoria correponde com a prática, no qual podemos monitorar as denúncias cadastradas com o auxílio do administrador. As telas estão responsivas, podendo haver pequenos erros em alguns detalhes. A API funciona de forma aceitável. O ponto fraco poderia ser na questão de como o Admnistrador separaria as denúncias nocivas das não-nocivas de forma eficaz, já que na forma lógica de programação, que pensamos , poderia ser burlado por um usuário de má fé. Projeto também poderia apresentar uma outra forma de comprovação das denúncias acusadas de fraude. No mais, concluímos que a aplicação cumpre grande parte das funcionalidades planejadas, mas poderíamos melhorar o sistema para a aplicação final.
+
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)

@@ -72,4 +72,3 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 | ID  | Restrição                                                                                 |
 | --- | ----------------------------------------------------------------------------------------- |
 | 01  | Somente usuários maiores de idade (+18) possam efetuar cadastro                           |
-| 02  | A partir de 5 denúncias o site/e-mail/vendedor/produto suspeito será exibido na blacklist |
