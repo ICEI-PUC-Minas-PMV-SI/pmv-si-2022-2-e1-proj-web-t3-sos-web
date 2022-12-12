@@ -5,7 +5,7 @@ Implementação do sistema descritas por meio dos requisitos funcionais e/ou nã
 Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 | ID     | Descrição do Requisito                                                                                                                                         | Responsável | Artefato                                                        |
-| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------- |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------- | ---------------------------- |
 | RF-001 | A aplicação deve permitir que um usuário autenticado registre sites/e-mails/vendedores suspeitos                                                               | Túlio       | ./src/pages/criar-denuncia/criar-denuncia.html                  |
 | RF-002 | A aplicação deve permitir que um usuário cadastrado possa utilizar a paginação das denúncias e escolher a página que deseja.                                   | Michael     | ./src/pages/denuncias/denuncias.html                            |
 | RF-003 | A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito                                     | Michael     | ./src/pages/denuncias-convidado/denuncias-convidado.html        |
@@ -16,6 +16,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 | RF-008 | Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados pelo sistema                                                            | Todos/Túlio | ./src/pages/login/login.html ./src/pages/cadastro/cadastro.html |
 | RF-009 | Permitir que o usuário comente uma denúncia desde que esteja logado                                                                                            | Túlio       | ./src/pages/adicionar-comentarios/adicionar-comentarios.html    |
 | RF-010 | Permitir que o usuário recupere sua senha esquecida                                                                                                            | Marcos      | ./src/pages/recuperar-senha/recuperar-senha.html                |
+| RF-011 | O sistema deverá possuir a funcionalidade de login de administrador                                                                                            | ALTA        | Lucas                                                           | ./src/pages/login/login.html |
 
 # Descrição das estruturas:
 
