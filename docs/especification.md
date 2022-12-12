@@ -52,6 +52,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-009 | Permitir que o usuário leia e/ou comente uma denúncia desde que esteja logado                                                                                  | BAIXA      | Túlio         |
 | RF-010 | Permitir que o usuário recupere sua senha esquecida                                                                                                            | BAIXA      | Marcos        |
 | RF-011 | O sistema deverá possuir a funcionalidade de login de administrador                                                                                            | ALTA       | Lucas         |
+| RF-012 | O sitema enviará um email para o usuário com o status da denúncia(aprovada ou negada)  |  ALTA       | Michael        |
 
 ### Requisitos não Funcionais
 
