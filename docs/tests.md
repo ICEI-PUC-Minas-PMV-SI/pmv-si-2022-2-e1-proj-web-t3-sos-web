@@ -167,12 +167,25 @@ Caso de teste  | CT 08 Tela do Administrador
 ### Teste vídeo : CT 08 Tela Administrador
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2008%20Tela%20do%20Administrador.gif)
 - Resultado: Tarefa do Administrador de rejeitar/aprovar denúncia bem sucedida, Tal como a procura com os filtros. **Feedback do usuário e suas denúncias a testar**.
-- 
+ 
 **Situação final:**
 - [x] Aprovado
 - [ ] Reprovado
 
 ---------------------------------
+### Teste vídeo : CT 09 Criar comentário
+
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2009%20Tela%20dos%20coment%C3%A1rios.gif)
+- Resultados: comentários lidos e criados com sucesso.
+
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+
+
+
+--------------------------------------------------------
+
 ### Teste vídeo : CT 10 Responsividade
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Responsividade.gif)
