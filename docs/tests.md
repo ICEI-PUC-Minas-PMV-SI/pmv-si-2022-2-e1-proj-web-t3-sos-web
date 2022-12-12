@@ -32,7 +32,7 @@ Caso de teste  | CT 03 Recuperar senha
 ---------------------------
 Caso de teste  | CT 04 entrada de usuários não cadastrados e consulta de  sites nocivos 
 |------------|-------------------------------------------------------|
-| Requisito associado|RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito.<br/> RF-002  A aplicação deve permitir que um usuário qualquer ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos .|
+| Requisito associado|RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito.<br/> RF-002  A aplicação deve permitir que um usuário cadastrado possa utilizar a paginação das denúncias e escolher a página que deseja. .|
 |Objetivo do Teste| Verificar se o usuário sem cadastro consegue entrar para fazer consultas de site/emails nocivos |
 |Passos|1 - Na tela principal de Login, clicar no botão: "Entrar como convidado";<br/>  2 - Na tela de denúncias, testar a  busca;<br/> 3 - clicar em cima do respectivo site a ser consultado  e testar se o modal com a informações do site irá abrir;<br/> 4 - Caso queira voltar para a tela de login , clicar no ícone no canto superior direito, fazer login|
 |Critério de êxito | Usuário sem cadastro deve consultar os sites sem intercorrências |
@@ -47,7 +47,7 @@ Caso de teste  | CT 05 Criando e adicionando minhas denuncias
 ----------------------------
 Caso de teste  | CT 06 Tela denúncias e minhas denuncias
 |------------|-------------------------------------------------------|
-| Requisito associado| RF-002 A aplicação deve permitir que um usuário cadastrado ordene a exibição de sites tendo como padrão a ordenação de sites/e-mails/vendedores/produtos com maiores números de denúncias.<br/>RF-004 A aplicação deve permitir que um usuário logado possa consultar o status da denúncia |
+| Requisito associado| RF-002 A aplicação deve permitir que um usuário cadastrado possa utilizar a paginação das denúncias e escolher a página que deseja.<br/>RF-004 A aplicação deve permitir que um usuário logado possa consultar o status da denúncia. |
 |Objetivo do Teste| Verificar a funcionalidade da tela de denúncias e minhas denúncias |
 |Passos| 1 - Realizar o Login;<br/>  2- Na tela denúncias, usuário poderá pesquisar pelo nome no campo de pesquisa;<br/>  3 - Clicando no card com os site/emails denunciados, abrirá um modal detalhando a denúncia clicada;<br/>  4 - Clicando em minhas denúncias no painel esquerdo, teremos as denúncias adicionadas com o seu status de pendente ou aprovada;<br/> 5 - Clicar em sair você será deslogado.
  |Critério de êxito | Êxito no teste da procura das denúncias e  teste dos botões  |
