@@ -200,5 +200,9 @@ Caso de teste  | CT 08 Tela do Administrador
 
 Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
 
+
+  A interface do Sistema apresenta um bom funcionamento, permitindo que o usuário faça o cadastro , logue, crie e leia denúncias sem intecorrências. A ideia do projeto na teoria correponde com a prática, no qual podemos monitorar as denúncias cadastradas com o auxílio do administrador. As telas estão responsivas, podendo haver pequenos erros em alguns detalhes. A API funciona de forma aceitável. O ponto fraco poderia ser na questão de como o Admnistrador separaria as denúncias nocivas das não-nocivas de forma eficaz, já que na forma lógica de programação, que pensamos , poderia ser burlado por um usuário de má fé. Projeto também poderia apresentar uma outra forma de comprovação das denúncias acusadas de fraude. No mais, concluímos que a aplicação cumpre grande parte das funcionalidades planejadas, mas poderíamos melhorar o sistema para a aplicação final.
+
+
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
