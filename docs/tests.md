@@ -94,6 +94,15 @@ Caso de teste  | CT 08 Tela do Administrador
 |Passos| 1 - logar no site );<br/>  2 - Abrir a tela de Denúncias e verificar a paginação.<br/>  
  |Critério de êxito | Com mais de 10 denúncias a página muda  |
 
+--------------------------------------------
+
+
+ Caso de teste  | CT 12 API para feedback das denúncias
+|------------|-------------------------------------------------------| 
+| Requisito associado| RF-012	O sitema enviará um email para o usuário com o status da denúncia(aprovada ou negada)|
+|Objetivo do Teste| verificar se o email sobre o status da sua denúncia chega ao usuário|
+|Passos| 1 - Logar como admin ;<br/>  2 - na tela de denúncias, rejeitar ou aprovar uma denúncia.<br/>  3 - verificar o email do usuário se o status da denúncia chegou.
+ |Critério de êxito | email do sistema recebido  |
 
 
 
@@ -215,7 +224,15 @@ Caso de teste  | CT 08 Tela do Administrador
 - [x] Aprovado
 - [ ] Reprovado
 ---------------------------------------------------
+### Teste vídeo : CT 12 Envio de email
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%20012%20email.gif)
+- Resultado: Email enviado com sucesso
 
+**Situação final:**
+- [x] Aprovado
+- [ ] Reprovado
+
+---------------------------------------------------
 
 ## Avaliação
 
