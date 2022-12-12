@@ -13,7 +13,7 @@ document.getElementById("form_login").addEventListener("submit", (e) => {
   );
 
   if (indiceUsuario === -1) {
-    alert("Usuário não encontrado");
+    alert("Usuário ou senha incorretos");
     return;
   }
 

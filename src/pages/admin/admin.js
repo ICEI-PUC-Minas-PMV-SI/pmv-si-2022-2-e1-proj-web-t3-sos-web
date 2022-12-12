@@ -208,12 +208,53 @@ function alteraStatus(identificador, status) {
     alert("Denúncia não encontrada!");
     return;
   }
+  
   document.querySelector(`#denuncia-${identificador} .td-status`).innerText =
     status;
   document.querySelector(`#denuncia-${identificador} .btn-acao`).innerText = "";
   denuncias[indiceDenuncia].status = status;
   localStorage.setItem("denuncias", JSON.stringify(denuncias));
-  window.location.reload();
+
+  if(status === 'Aprovada' || status === 'Negada') {
+    enviarEmail(denuncias[indiceDenuncia].responsavel, identificador, status)
+  } 
+  
+}
+
+function enviarEmail(responsavel, nomeDenuncia, status) {
+  var indiceUsuario = listaUsuarios.findIndex(
+    (usuarioLista) => usuarioLista.usuario === responsavel
+  );
+    
+  if(indiceUsuario === -1) {
+    return;
+  }
+
+  const email = listaUsuarios[indiceUsuario].email;
+
+  const urlSlit = window.location.href.split("/");
+  const url = urlSlit.splice(0, urlSlit.length - 4).join("/");
+  const texto = status === 'Aprovada'
+    ? `<h3>Sua denúncia "${nomeDenuncia}" foi aprovada!</h3><p>Caso queira saber se alguém já fez algum comentário sobre a sua denúncia e esteja logado no sistema, você pode visualizar sua denúncia <a href='${url}/src/pages/comentarios/comentarios.html?identificador=${nomeDenuncia}'>clicando aqui</a>.</p>`
+    : `<h3>Sua denúncia "${nomeDenuncia}" foi reprovada.</h3><p>Infelizmente sua denúncia não passou na nossa validação interna. Da próxima vez, tente detalhar melhor o ocorrido e solite novamente.</p>`;
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "marcos.sabino@sga.pucminas.br",
+    Password: "DF7DE980816DB8D752B26B8F488A08A92F56",
+    To: email,
+    From: "marcos.sabino@sga.pucminas.br",
+    Subject: "S.O.S Web",
+    Body: `<html><h2>S.O.S Web - Aprovação de denúncia</h2>${texto}</html>`,
+  }).then((message) => {
+    if (message == "OK") {
+      console.info('O status da denúncia foi enviado ao usuário via email');
+      return;
+    } else {
+      console.error(message);
+      console.warn('Não foi possível enviar o email para o usuário sobre o status da denúncia');
+      return;
+    }
+  });
 }
 
 main();
