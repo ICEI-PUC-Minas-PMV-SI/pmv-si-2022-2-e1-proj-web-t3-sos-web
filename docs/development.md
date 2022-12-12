@@ -17,6 +17,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 | RF-009 | Permitir que o usuário comente uma denúncia desde que esteja logado                                                                                            | Túlio       | ./src/pages/adicionar-comentarios/adicionar-comentarios.html    |
 | RF-010 | Permitir que o usuário recupere sua senha esquecida                                                                                                            | Marcos      | ./src/pages/recuperar-senha/recuperar-senha.html                |
 | RF-011 | O sistema deverá possuir a funcionalidade de login de administrador                                                                                            | ALTA        | Lucas                                                           | ./src/pages/login/login.html |
+|RF-012| RF-012	O sitema enviará um email para o usuário com o status da denúncia(aprovada ou negada)|ALTA| MICHAEL
 
 # Descrição das estruturas:
 
