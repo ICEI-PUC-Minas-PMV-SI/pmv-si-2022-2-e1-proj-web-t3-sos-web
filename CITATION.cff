@@ -1,29 +1,27 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title:
+title: SOS Web - Fugindo de fraudes
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
+  - family-names: Almeida
+    given-names: Hugo
+  - family-names: Soares Gomes
+    given-names: Lucas 
+  - family-names: Sabino Mendes de Sousa
+    given-names: Marcos
+  - family-names: Denucci Di Spirito
+    given-names: Marco Túlio
+  - family-names: Ferreira Dias
+    given-names: Michael Henrique
+  - family-names: Barroso Oliveira
+    given-names: Rafael Augusto
   - name-suffix: Professor XXXX
     affiliation: PUC Minas
-    family-names:
-    given-names:
+    family-names: De Nardin
+    given-names: Luciana
 keywords:
-  -
-  -
-repository-code:
+  - Golpe Virtual
+  - Site malicioso
+repository-code: https://icei-puc-minas-pmv-si.github.io/pmv-si-2022-2-e1-proj-web-t3-sos-web/src/pages/login/login.html
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-12-13
