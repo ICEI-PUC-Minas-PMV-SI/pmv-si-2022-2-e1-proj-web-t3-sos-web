@@ -13,17 +13,15 @@ O front-end é responsável por desenvolver por meio de código uma interface gr
 
 - **JavaScript** - que irá fornecer à página web a possibilidade de programação, transformação e processamento de dados enviados e recebidos, interagindo com a marcação e exibição de conteúdo da linguagem HTML e com a estilização desse conteúdo proporcionada pelo CSS.
 
-O banco de dados que utilizará-se é o ...
+O LocalStorage servirá como armazenamento.
 
-A hospedagem da aplicação web será feita no GitHub Pages.
+O GitHub Pages servirá para hospedagem do site.
 
 A solução implementada conta com os seguintes módulos:
 
 - **Páginas web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema;
 
-- **Banco de dados (IndexedDB)** - É uma coleção organizada de dados, de modo que pode ser facilmente acessada e gerenciada;
-
-- **Elastic Email API** - 
+- **Elastic Email API** - API de entrega de emails, que foi utilizado no sistema de recuperação de senha;
 
 - **Hospedagem** - Local na Internet onde as páginas são mantidas e acessadas pelo navegador;
 
