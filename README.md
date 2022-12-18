@@ -6,7 +6,9 @@
 
 `SEMESTRE: 1º`
 
-Estamos desenvolvendo uma plataforma com a qual o usuário possa consultar e cadastrar dados relacionados a integridade e a veracidade de endereços virtuais (url's) disponíveis na web, no intuito de orientar quem utiliza e prevenir os golpes virtuais.
+<center><img src="./docs/img/logo.png"></center>
+
+SOS Web é uma plataforma em que os usuários podem consultar e cadastrar dados relacionados a integridade e a veracidade de endereços virtuais (url ou email) disponíveis na web, no intuito de orientar quem utiliza e prevenir os golpes virtuais.
 
 Atualmente é possível acessar o projeto utilizando o link abaixo:
 
