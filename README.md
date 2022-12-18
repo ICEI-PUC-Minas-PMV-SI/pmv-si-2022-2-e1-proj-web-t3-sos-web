@@ -6,7 +6,7 @@
 
 `SEMESTRE: 1º`
 
-<center><img src="./docs/img/logo.png"></center>
+<p align="center"><img src="./docs/img/logo.png"></p>
 
 SOS Web é uma plataforma em que os usuários podem consultar e cadastrar dados relacionados a integridade e a veracidade de endereços virtuais (url ou email) disponíveis na web, no intuito de orientar quem utiliza e prevenir os golpes virtuais.
 
