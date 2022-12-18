@@ -28,18 +28,18 @@ https://icei-puc-minas-pmv-si.github.io/pmv-si-2022-2-e1-proj-web-t3-sos-web/
 # Documentação
 
 <ol>
-<li><a href=" "> Documentação de Contexto</a></li>
-<li><a href=" "> Especificação do Projeto</a></li>
+<li><a href="docs/context.md"> Documentação de Contexto</a></li>
+<li><a href="docs/especification.md"> Especificação do Projeto</a></li>
 <li><a href=" "> Metodologia</a></li>
-<li><a href=" "> Projeto de Interface</a></li>
+<li><a href="docs/interface.md"> Projeto de Interface</a></li>
 <li><a href=" "> Arquitetura da Solução</a></li>
-<li><a href=" "> Template padrão do Site</a></li>
-<li><a href=" "> Programação de Funcionalidades</a></li>
-<li><a href=" "> Plano de Testes de Software</a></li>
-<li><a href=" "> Registro de Testes de Software</a></li>
-<li><a href=" "> Plano de Testes de Usabilidade</a></li>
-<li><a href=" "> Registro de Testes de Usabilidade</a></li>
-<li><a href=" "> Apresentação do Projeto</a></li>
+<li><a href="docs/template.md"> Template padrão do Site</a></li>
+<li><a href="docs/development.md"> Programação de Funcionalidades</a></li>
+<li><a href="docs/tests.md"> Plano de Testes de Software</a></li>
+<li><a href="docs/tests.md"> Registro de Testes de Software</a></li>
+<li><a href="usability-tests.md"> Plano de Testes de Usabilidade</a></li>
+<li><a href="usability-tests.md"> Registro de Testes de Usabilidade</a></li>
+<li><a href="presentation/README.md"> Apresentação do Projeto</a></li>
 <li><a href=" "> Referências</a></li>
 </ol>
 
