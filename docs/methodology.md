@@ -1,20 +1,6 @@
-
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="docs/especification.md"> Documentação de Especificação</a></span>
-
-- Designação de tarefas e organização do time: 
- 
- A designação dos integrantes para a realização de tarefas, será feita em conjunto e dividida de acordo com a necessidade e complexidade de cada tarefa. Será utilizada a plataforma de comunicação Teams e Discord para a realização de reuniões semanais para discutir próximas etapas do projeto e a verificação dos resultados. Também será utilizado issues, tags, labels e milestones para a designação, classificação, prazos de entrega e verificação de status de andamento de cada tarefa. 
-- Documentação:  
-
- A documentação da metodologia será escrita por duas pessoas, será utilizado para essa etapa o repositório de conteúdo Github. Para o código, será utilizado a mesma ferramenta, juntamente com o editor de código VS Code que será utilizado para o desenvolvimento do código. Tais ferramentas foram escolhidas devido a interação entre o editor de código (VS Code) e o sistema de versionamento (Github).
-- User Flow e Wireframing:  
-
-Para essa etapa, primeiramente serão designadas quatro pessoas para fazer o user flow, o qual consiste em um mapeamento do trajeto que o usuário irá realizar ao entrar no site. Com isso, é levantada a quantidade de páginas do site necessárias para o usuário realizar as tarefas. Para essa etapa foi utilizado o Figma (Disponivel em: https://www.figma.com/ ) o qual consiste em uma plataforma de design de interfaces que permite a utilização de vários usuários para a criação de um produto, tendo uma variedade de possibilidades de criação para diversos tipos de plataformas e permite a acessibilidade em um sistema. 
-- Programação:
- 
- Para o desenvolvimento de código será utilizado o editor de código Visual Studio Code (VS Code), devido sua integração com o sistema de controle de versão Github. Todos os integrantes utilizarão esse editor e o código será aprisionado no Github. As linguagens de programação que serão utilizadas para o desenvolvimento do site serão, HTML, CSS e JavaScript. Para o armazenamento dos componentes gráficos que serão desenvolvidos, será utilizada a biblioteca Booststrap.
+O desenvolvimento do projeto é baseado no padrão de gerenciamento ágil de projetos chamado Scrum, usando reuniões e alinhando sobre o projeto sempre que possível a fim de organizar e gerenciar de forma mais dinâmica e ágil as entregas do projeto.
 
 
 ## Controle de Versão
@@ -23,48 +9,50 @@ A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 foi utilizado para hospedagem do repositório.
 
+O projeto segue a seguinte convenção para o nome de branchs:
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
+- `main`: versão de desenvolvimento e agora estável e testada do software
+- `page`: essa era a branch em que utilizávamos para deixar a versão mais estável e testada do software e que seria utilizada pelo Github Pages, porém foi descontinuada
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-
+A configuração do projeto se iniciou utilizando o Github para criação dos commits e organização das pastas. Porém isso poderia ser mais fácil utilizando uma ferramenta de versionamento, no caso decidimos escolher o Visual Studio Code por ser uma ferramenta muito boa e já consagrada. Os merges eram feitos usando o próprio VS Code com a ferramenta do Git, na qual é feito um "git pull" e um "git push" automáticos. Usamos apenas a branch principal "main" para atualizar diretamente os arquivos. Posteriormente deverá ser criada uma branch "dev" para que possamos desenvolver a aplicação sem atrapalhar a branch "main" que deverá possuir apenas o código válido e pronto para ser utilizado para o deploy da aplicação.
 
 ## Gerenciamento de Projeto
 
+O projeto é gerenciado pela supervisão da professora Luciana e pelos desenvolvedores mais experientes a nível técnico (Michael e Lucas). Em relação aos requisitos todos são diretamente responsáveis pelo desenvolvimento de ideias e funcionalidades (Hugo, Marcos, Marco Túlio, Rafael, Michael e Lucas). Deixamos sempre claro que todos são responsáveis pelo resultado final e todos desenvolveram e ajudaram em algum momento na documentação, nos requisitos e no código. Os maiores contribuidores de requisitos serão o Marcos, Marco Túlio e Michael.
+
 ### Divisão de Papéis
 
-A divisão de tarefas foi pensada com a ideia de divisão, o grupo foi ramificado ao longo do projeto para focar em determinadas sessões. Primeiro, era questionado a cada membro se  havia interesse específico por algum tema da sessão, caso houvesse interesse de uma ou mais pessoas, esses eram designados para a tarefa até chegar ao limite determinado de pessoas. Caso não houvesse preferência, era feita a divisão por escolha do Scrum Master.
-
-
+Cada membro ficará responsável por uma tela em específico e além disso cada um é livre para criar uma issue e atribuir a alguém do projeto.
 
 ### Processo
 
-O grupo faz reunião às segundas e sextas, nessas reuniões conversamos sobre as tarefas a serem realizadas no projeto e também como podemos estar desenvolvendo uma solução. Não seguimos o método Scrum, pois o tempo mínimo que ficamos em reunião é de uma hora, tempo necessário, pois esclarecemos não só dúvidas referentes ao trabalho, mas também geramos novas ideias. O acompanhamento do desenvolvimento do grupo é feito pelo Github, teams é Whatssap.
+Utilizando o Scrum via Github Projects, criamos as issues, atribuímos a alguém e depois essa tarefa é passada ao Backlog e colocada na Sprint, sendo a Sprint o conjunto de tarefas para serem realizadas num período de tempo. Após criada a Sprint, terá início a criação das tarefas. Após as tarefas serem finalizadas, cada um utilizará sua versão atual e irá adicionar o projeto ao Github na branch "main". Automaticamente utilizando o Github Pages o deploy será iniciado e a nossa página estará pronta para uso por outras pessoas.
 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Repositorio de conteúdo : Github
-- Gerencia de projetos: Github Projects 
-- Editor de código: Visual Studio Code (VS Code)
-- Ferramentas de comunicação: Teams, Discord e WhatsApp
-- Ferramentas de desenho de tela (_wireframing_): Figma
+- Visual Studio Code
+- Microsoft Teams
+- Whatsapp
+- Discord
+- Figma
+- Excalidraw
+- Git/Github
 
-Para o gerenciamento de projetos será utilizado o Github Projects Classic e para o repositorio do conteúdo o Github, que são, atualmente, as melhores plataformas de versionamento, além de gratuitas e amplamente utilizadas no mundo, o que facilita a busca de conteúdo, busca de soluções de problema. além de serem plataformas que facilitam o gerenciamento do projeto, auxiliando no direcionamento de atividades e controle de prazos.
+O editor de código Visual Studio Code, gratuito, foi escolhido porque ele oferece ampla gama de extensões que permitem que o editor ofereça funcionalidades expansíveis com diversas linguagens de programação e integração com o sistema de versionamento Git e Github, além disso é amplamente utilizado pela comunidade, permitindo encontrar suporte e informações a respeito dele.
 
-O editor de código Visual Studio Code (VS Code) foi escolhido porque ele possui uma integração com o
-sistema de versão Git e Github. Além de ser uma ferramenta gratuita, muito utilizada pela comunidade, facilitando o encontro de soluções e suporte necessario para o desenvolvimento do projeto. Somado a isso, possui grande funções interligadas a diversas linguagens de programação. 
+As ferramentas de comunicação Microsoft Teams, Whatsapp e Discord são utilizadas por possuírem maior aderência dos membros da equipe. O Microsoft Teams oferece plataforma segura, flexível e integrada com as soluções do Office 365, oferecendo assim todas as ferramentas necessárias para documentação e compartilhamento de informações. O Whatsapp ofecere comunicação entre os membros a partir de qualquer lugar e horário, possibilitando resolver questões relacionadas ao projeto de forma ágil. O Discord nos ajudou a comunicar de forma mais intuitiva e dinâmica do que o Microsoft Teams em certos momentos, sendo usado para debates e reuniões e troca de arquivos.
 
-As ferramentas de comunicação utilizadas Teams e WhatsApp foram escolhidas devido a facil adesão dessas ferramentas pela equipe, além de serem ferramentas gratuitas e de facil acesso. Somado a isso, o Teams possui ferramentas de agendamento de reuniões e compartilhamento de tela, além de gravações da reunião que facilitam a comunicação e o manejo do grupo. 
+A ferramenta para criação dos layouts e telas utilizada foi o Figma. O Figma nos forneceu um ambiente propício para criação dos nossos protótipos. Com ele conseguimos criar o nosso User Flow e Wireframe.
 
-Por fim, para criar diagramas utilizamos a ferramenta Figma por melhor captar as necessidades da nossa solução. UMa vez que, é uma ferramenta gratuita que permite a interação da equipe e é amplamente utilizada no mercado sendo facilmente encontrado suporte para possiveis problemas. 
+Quando havia alguma dúvida de requisito ou fluxo, o Excalidraw serviu de apoio para criação de diagramas a fim de sanar essas dúvidas que se mostraram mais complexas de serem explicadas.
 
- 
 > **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
 > - [Github](https://github.com/)
-> - [Figma](https://www.figma.com/)
 > - [VS Code](https://code.visualstudio.com/download)
+> - [Figma](https://www.figma.com/)
+> - [Excalidraw](https://excalidraw.com/)
+> - [Discord](https://discord.com/)
+> - [Whatsapp](https://www.microsoft.com/pt-br/microsoft-teams/group-chat-software)
+> - [Microsoft Teams](https://www.microsoft.com/pt-br/microsoft-teams/group-chat-software)
