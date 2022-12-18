@@ -32,7 +32,7 @@ https://icei-puc-minas-pmv-si.github.io/pmv-si-2022-2-e1-proj-web-t3-sos-web/
 <ol>
 <li><a href="docs/context.md"> Documentação de Contexto</a></li>
 <li><a href="docs/especification.md"> Especificação do Projeto</a></li>
-<li><a href="methodology.md"> Metodologia</a></li>
+<li><a href="docs/methodology.md"> Metodologia</a></li>
 <li><a href="docs/interface.md"> Projeto de Interface</a></li>
 <li><a href="docs/solution-architecture.md"> Arquitetura da Solução</a></li>
 <li><a href="docs/template.md"> Template padrão do Site</a></li>
