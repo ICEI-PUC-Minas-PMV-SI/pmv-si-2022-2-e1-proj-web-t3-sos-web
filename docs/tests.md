@@ -30,7 +30,7 @@ Caso de teste  | CT 03 Recuperar senha
 |Critério de êxito | Sua nova senha deverá funcionar na tela de Login |
 
 ---------------------------
-Caso de teste  | CT 04 entrada de usuários não cadastrados e consulta de  sites nocivos 
+Caso de teste  | CT 04 Entrada de usuários não cadastrados e consulta de  sites nocivos 
 |------------|-------------------------------------------------------|
 | Requisito associado|RF-003	A aplicação deve permitir que um usuário (logado ou não) possa realizar busca específica por site/e-mail/vendedor suspeito.<br/> 
 |Objetivo do Teste| Verificar se o usuário sem cadastro consegue entrar para fazer consultas de site/emails nocivos |
@@ -108,7 +108,7 @@ Caso de teste  | CT 08 Tela do Administrador
 
 # Registro de Testes de Software
 
-### Teste Vídeo:  CT 01 Cadastrar o usuário 
+### Teste Vídeo: CT 01 Cadastrar o usuário 
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Cadastro.gif)
 
@@ -119,7 +119,7 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 
 -----------------------------------
-### Teste vídeo : CT 02 Logar com usuário cadastrado
+### Teste vídeo: CT 02 Logar com usuário cadastrado
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2002%20Logar%20com%20usu%C3%A1rio%20cadastrado.gif)
 
@@ -130,7 +130,7 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 
 ---------------------------------
-### Teste vídeo : CT 03 Recuperar senha 
+### Teste vídeo: CT 03 Recuperar senha 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2003%20Recuperar%20senha%20(1).gif)
 - Resultado: Email recebido corretamente e senha alterada com sucesso
 
@@ -139,7 +139,7 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 
 -------------------------------
-### Teste vídeo : CT 04 entrada de usuários não cadastrados e consulta de  sites nocivos
+### Teste vídeo: CT 04 Entrada de usuários não cadastrados e consulta de  sites nocivos
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2004%20Entrada%20de%20usu%C3%A1rios%20n%C3%A3o%20cadastrados%20e%20consulta%20de%20sites%20nocivos.gif)
 - Resultado: Usuário sem cadastro realizando consultas e verificando os detalhes das denúncias.
 
@@ -149,7 +149,7 @@ Caso de teste  | CT 08 Tela do Administrador
 
 
 ------------------------------------
-### Teste vídeo : CT 05 Criando e adicionando minhas denuncias
+### Teste vídeo: CT 05 Criando e adicionando minhas denuncias
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Criar-den%C3%BAncia.gif)
 - Resultado: Denúncia criada e adicionada com sucesso. Denúncia em seguida é deletada do card.
 
@@ -159,7 +159,7 @@ Caso de teste  | CT 08 Tela do Administrador
 
 
 ----------------------------------
-### Teste vídeo : CT 06 Tela denúncias e minhas denuncias
+### Teste vídeo: CT 06 Tela denúncias e minhas denuncias
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2006%20Tela%20den%C3%BAncias%20e%20minhas%20denuncias.gif)
 - Resultado: Tela com as denúncias funcionando como planejado.
 
@@ -171,7 +171,7 @@ Caso de teste  | CT 08 Tela do Administrador
 
 
 ---------------------------
-### Teste vídeo : CT 07 Tela do Usuário
+### Teste vídeo: CT 07 Tela do Usuário
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Usuario.gif)
 - Resultado: Dados como foto, nome e telefone, trocados com sucesso.
 
@@ -182,7 +182,7 @@ Caso de teste  | CT 08 Tela do Administrador
 --------------------------------------
 
 
-### Teste vídeo : CT 08 Tela Administrador
+### Teste vídeo: CT 08 Tela Administrador
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2008%20Tela%20do%20Administrador.gif)
 - Resultado: Tarefa do Administrador de rejeitar/aprovar denúncia bem sucedida, Tal como a procura com os filtros. **Feedback do usuário e suas denúncias a testar**.
  
@@ -191,7 +191,7 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 
 ---------------------------------
-### Teste vídeo : CT 09 Criar comentário
+### Teste vídeo: CT 09 Criar comentário
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%2009%20Tela%20dos%20coment%C3%A1rios.gif)
 - Resultados: comentários lidos e criados com sucesso.
@@ -204,7 +204,7 @@ Caso de teste  | CT 08 Tela do Administrador
 
 --------------------------------------------------------
 
-### Teste vídeo : CT 10 Responsividade
+### Teste vídeo: CT 10 Responsividade
 
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/Responsividade.gif)
 - Resultado : Tela de Denúncia responsiva.
@@ -214,7 +214,7 @@ Caso de teste  | CT 08 Tela do Administrador
 - [ ] Reprovado
 --------------------------------------------------
 
-### Teste vídeo : CT 11 Paginação das denúncias
+### Teste vídeo: CT 11 Paginação das denúncias
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT_11_Pagina%C3%A7%C3%A3o.gif)
 
 - Resultado: adicionando páginas com sucesso
@@ -224,7 +224,7 @@ Caso de teste  | CT 08 Tela do Administrador
 - [x] Aprovado
 - [ ] Reprovado
 ---------------------------------------------------
-### Teste vídeo : CT 12 Envio de email
+### Teste vídeo: CT 12 Envio de email
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-2-e1-proj-web-t3-sos-web/blob/main/docs/videos/CT%20012%20email.gif)
 - Resultado: Email enviado com sucesso
 
