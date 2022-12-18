@@ -5,7 +5,7 @@
 
 - Designação de tarefas e organização do time: 
  
- A designação dos integrantes para a realização de tarefas, será feita em conjunto e dividida de acordo com a necessidade e complexidade de cada tarefa. Será utilizada a plataforma de comunicação Teams para a realização de reuniões semanais para discutir próximas etapas do projeto e a verificação dos resultados. Também será utilizado issues, tags, labels e milestones para a designação, classificação, prazos de entrega e verificação de status de andamento de cada tarefa. 
+ A designação dos integrantes para a realização de tarefas, será feita em conjunto e dividida de acordo com a necessidade e complexidade de cada tarefa. Será utilizada a plataforma de comunicação Teams e Discord para a realização de reuniões semanais para discutir próximas etapas do projeto e a verificação dos resultados. Também será utilizado issues, tags, labels e milestones para a designação, classificação, prazos de entrega e verificação de status de andamento de cada tarefa. 
 - Documentação:  
 
  A documentação da metodologia será escrita por duas pessoas, será utilizado para essa etapa o repositório de conteúdo Github. Para o código, será utilizado a mesma ferramenta, juntamente com o editor de código VS Code que será utilizado para o desenvolvimento do código. Tais ferramentas foram escolhidas devido a interação entre o editor de código (VS Code) e o sistema de versionamento (Github).
