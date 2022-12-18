@@ -13,17 +13,15 @@ O front-end é responsável por desenvolver por meio de código uma interface gr
 
 - **JavaScript** - que irá fornecer à página web a possibilidade de programação, transformação e processamento de dados enviados e recebidos, interagindo com a marcação e exibição de conteúdo da linguagem HTML e com a estilização desse conteúdo proporcionada pelo CSS.
 
-O LocalStorage servirá como armazenamento.
-
-O GitHub Pages servirá para hospedagem do site.
+- **Armazenamento de dados** - O armazenamento de dados é feito usando o localStorage do próprio navegador.
 
 A solução implementada conta com os seguintes módulos:
 
-- **Páginas web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema;
+- **Páginas web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
 
-- **Elastic Email API** - API de entrega de emails, que foi utilizada no sistema de recuperação de senha;
+- **Elastic Email API** - API de entrega de emails, que foi utilizada no sistema de recuperação de senha.
 
-- **Hospedagem** - Local na Internet onde as páginas são mantidas e acessadas pelo navegador;
+- **Hospedagem** - Para hospedagem foi utilizada a GitHub Pages.
 
 ## Tecnologias Utilizadas
 
