@@ -32,9 +32,9 @@ https://icei-puc-minas-pmv-si.github.io/pmv-si-2022-2-e1-proj-web-t3-sos-web/
 <ol>
 <li><a href="docs/context.md"> Documentação de Contexto</a></li>
 <li><a href="docs/especification.md"> Especificação do Projeto</a></li>
-<li><a href=" "> Metodologia</a></li>
+<li><a href="methodology.md"> Metodologia</a></li>
 <li><a href="docs/interface.md"> Projeto de Interface</a></li>
-<li><a href=" "> Arquitetura da Solução</a></li>
+<li><a href="solution-architecture.md"> Arquitetura da Solução</a></li>
 <li><a href="docs/template.md"> Template padrão do Site</a></li>
 <li><a href="docs/development.md"> Programação de Funcionalidades</a></li>
 <li><a href="docs/tests.md"> Plano de Testes de Software</a></li>
@@ -42,7 +42,7 @@ https://icei-puc-minas-pmv-si.github.io/pmv-si-2022-2-e1-proj-web-t3-sos-web/
 <li><a href="usability-tests.md"> Plano de Testes de Usabilidade</a></li>
 <li><a href="usability-tests.md"> Registro de Testes de Usabilidade</a></li>
 <li><a href="presentation/README.md"> Apresentação do Projeto</a></li>
-<li><a href=" "> Referências</a></li>
+<li><a href="references.md"> Referências</a></li>
 </ol>
 
 # Código
