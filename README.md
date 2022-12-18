@@ -27,15 +27,23 @@ https://icei-puc-minas-pmv-si.github.io/pmv-si-2022-2-e1-proj-web-t3-sos-web/
 
 * Luciana De Nardin
 
-# Planejamento
+# Documentação
 
-| Etapa         | Atividades |
-|  :----:   | ----------- |
-| ETAPA 1         |[Documentação de Contexto](docs/context.md) <br> [Especificação do Projeto](docs/especification.md) |
-| ETAPA 2         |[Projeto de Interface](docs/interface.md) <br> [Template Padrão](docs/template.md) |
-| ETAPA 3         |[Programação de Funcionalidades - HTML e CSS](docs/development.md) |
-| ETAPA 4         |[Programação de Funcionalidades - Javascript](docs/development.md) <br> [Testes de Software ](docs/tests.md) |
-| ETAPA 5         | [Apresentação](presentation/README.md) |
+<ol>
+<li><a href="docs/context.md"> Documentação de Contexto</a></li>
+<li><a href="docs/especification.md"> Especificação do Projeto</a></li>
+<li><a href=" "> Metodologia</a></li>
+<li><a href="docs/interface.md"> Projeto de Interface</a></li>
+<li><a href=" "> Arquitetura da Solução</a></li>
+<li><a href="docs/template.md"> Template padrão do Site</a></li>
+<li><a href="docs/development.md"> Programação de Funcionalidades</a></li>
+<li><a href="docs/tests.md"> Plano de Testes de Software</a></li>
+<li><a href="docs/tests.md"> Registro de Testes de Software</a></li>
+<li><a href="usability-tests.md"> Plano de Testes de Usabilidade</a></li>
+<li><a href="usability-tests.md"> Registro de Testes de Usabilidade</a></li>
+<li><a href="presentation/README.md"> Apresentação do Projeto</a></li>
+<li><a href=" "> Referências</a></li>
+</ol>
 
 # Código
 
